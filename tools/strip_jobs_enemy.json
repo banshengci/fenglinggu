@@ -1,0 +1,20 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/mistbat.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/enemies",
+    "names": ["enemy_mist_bat_fly_00", "enemy_mist_bat_fly_01", "enemy_mist_bat_fly_02", "enemy_mist_bat_fly_03"],
+    "count": 4, "out_size": 256, "tol": 22, "margin_frac": 0.16, "search_frac": 0.40
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/guardian.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/enemies",
+    "names": ["enemy_stone_guardian_fall_00", "enemy_stone_guardian_fall_01", "enemy_stone_guardian_fall_02", "enemy_stone_guardian_fall_03", "enemy_stone_guardian_fall_04", "enemy_stone_guardian_fall_05"],
+    "count": 6, "out_size": 256, "tol": 22, "margin_frac": 0.14, "search_frac": 0.42
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/ore4.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/enemies",
+    "names": ["enemy_ore_rock_stone", "enemy_ore_rock_copper", "enemy_ore_rock_iron", "enemy_ore_rock_crystal"],
+    "count": 4, "out_size": 256, "tol": 22, "margin_frac": 0.16, "search_frac": 0.40
+  }
+]

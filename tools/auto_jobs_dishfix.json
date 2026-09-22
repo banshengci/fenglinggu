@@ -1,0 +1,12 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/dish_fix4.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["dish_ginger_tea", "dish_baked_sweet_potato", "dish_jam_bun", "dish_festival_bento"],
+    "out_size": 256,
+    "tol": 22,
+    "merge_gap": 30,
+    "min_area_frac": 0.01,
+    "margin_frac": 0.10
+  }
+]

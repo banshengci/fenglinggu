@@ -1,0 +1,8 @@
+[
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_till_dust.png", "inset": 0.12, "out_size": 256, "margin": 0.14 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_water_drop.png", "inset": 0.12, "out_size": 256, "margin": 0.14 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_rock_spark.png", "inset": 0.12, "out_size": 256, "margin": 0.14 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_chime_ring.png", "inset": 0.12, "out_size": 256, "margin": 0.14 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_sun_dapple.png", "inset": 0.12, "out_size": 256, "margin": 0.14 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_breeze_leaf.png", "inset": 0.12, "out_size": 256, "margin": 0.14 }
+]

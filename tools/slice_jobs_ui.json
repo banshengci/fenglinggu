@@ -1,0 +1,20 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/plate_ui_prompt_crop.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/ui",
+    "names": ["ui_prompt_01", "ui_prompt_02", "ui_prompt_03", "ui_prompt_04", "ui_prompt_05", "ui_prompt_06", "ui_prompt_07"],
+    "out_size": 128, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/plate_ui_skill_crop.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/ui",
+    "names": ["ui_skill_01", "ui_skill_02", "ui_skill_03", "ui_skill_04", "ui_skill_05", "ui_skill_06"],
+    "out_size": 128, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/plate_ui_season_weather_crop.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/ui",
+    "names": ["ui_season_spring", "ui_season_summer", "ui_season_autumn", "ui_season_winter", "ui_weather_sunny", "ui_weather_rain", "ui_weather_snow", "ui_weather_fog"],
+    "out_size": 128, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.16
+  }
+]

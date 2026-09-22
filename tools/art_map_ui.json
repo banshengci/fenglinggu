@@ -1,0 +1,11 @@
+[
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_long_horizontal_dialogue_box_2026-09-22T08-22-38.png", "target": "D:/xinxiangmu/youxi/game/art/ui/ui_dialog.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_game_hotbar_slot_frame_in_wa_2026-09-22T08-22-24.png", "target": "D:/xinxiangmu/youxi/game/art/ui/ui_hotbar.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_cute_chunky_heart_icon_for_h_2026-09-22T08-22-20.png", "target": "D:/xinxiangmu/youxi/game/art/ui/ui_hp_heart.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_golden_coin_icon_with_a_tiny_2026-09-22T08-22-21.png", "target": "D:/xinxiangmu/youxi/game/art/ui/ui_coin.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_shiny_achievement_medal_badg_2026-09-22T08-22-21.png", "target": "D:/xinxiangmu/youxi/game/art/ui/ui_achievement.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_cute_small_camera_icon__crea_2026-09-22T08-22-23.png", "target": "D:/xinxiangmu/youxi/game/art/ui/ui_camera.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_set_of_game_controller_and_t_2026-09-22T08-22-44.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_ui_prompt_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Six_different_small_skill_perk_2026-09-22T08-22-25.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_ui_skill_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Eight_small_game_UI_icons_in_t_2026-09-22T08-22-23.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_ui_season_weather_crop.png", "bottom_frac": 0.10}
+]

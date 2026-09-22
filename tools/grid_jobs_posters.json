@@ -1,0 +1,8 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/posters4.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/marketing",
+    "names": ["poster_fishing", "poster_cooking", "poster_pet", "poster_stargaze"],
+    "cols": 2, "rows": 2, "out_size": 512, "tol": 25, "margin_frac": 0.06
+  }
+]

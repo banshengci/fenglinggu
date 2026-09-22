@@ -1,0 +1,14 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/slime_walk.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/enemies",
+    "names": ["enemy_slime_walk_00", "enemy_slime_walk_01", "enemy_slime_walk_02", "enemy_slime_walk_03"],
+    "count": 4, "out_size": 256, "tol": 22, "margin_frac": 0.16, "search_frac": 0.40
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/slime_hit.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/enemies",
+    "names": ["enemy_slime_hit_00", "enemy_slime_hit_01", "enemy_slime_hit_02", "enemy_slime_hit_03"],
+    "count": 4, "out_size": 256, "tol": 22, "margin_frac": 0.16, "search_frac": 0.40
+  }
+]

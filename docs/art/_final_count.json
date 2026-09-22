@@ -1,0 +1,96 @@
+{
+  "runtime": {
+    "count": 606,
+    "mb": 190.14
+  },
+  "stage": {
+    "count": 39,
+    "mb": 87.02
+  },
+  "total": {
+    "count": 645,
+    "mb": 277.17
+  },
+  "dirs": [
+    {
+      "dir": "items",
+      "count": 156,
+      "mb": 22.07
+    },
+    {
+      "dir": "chars/walk",
+      "count": 144,
+      "mb": 8.71
+    },
+    {
+      "dir": "crops",
+      "count": 96,
+      "mb": 4.31
+    },
+    {
+      "dir": "tiles",
+      "count": 41,
+      "mb": 30.74
+    },
+    {
+      "dir": "_stage",
+      "count": 39,
+      "mb": 87.02
+    },
+    {
+      "dir": "ui",
+      "count": 36,
+      "mb": 17.6
+    },
+    {
+      "dir": "furniture",
+      "count": 32,
+      "mb": 3.63
+    },
+    {
+      "dir": "enemies",
+      "count": 26,
+      "mb": 4.79
+    },
+    {
+      "dir": "buildings",
+      "count": 14,
+      "mb": 31.16
+    },
+    {
+      "dir": "fx",
+      "count": 14,
+      "mb": 4.5
+    },
+    {
+      "dir": "chars",
+      "count": 11,
+      "mb": 17.58
+    },
+    {
+      "dir": "keys",
+      "count": 9,
+      "mb": 24.02
+    },
+    {
+      "dir": "sprites",
+      "count": 9,
+      "mb": 0.0
+    },
+    {
+      "dir": "marketing",
+      "count": 7,
+      "mb": 7.61
+    },
+    {
+      "dir": "animals",
+      "count": 6,
+      "mb": 0.6
+    },
+    {
+      "dir": "cutscenes",
+      "count": 5,
+      "mb": 12.8
+    }
+  ]
+}

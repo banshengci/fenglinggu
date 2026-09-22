@@ -1,0 +1,2 @@
+plate_furniture_crop.png	size (1536, 922)	detected 15
+plate_gifts_crop.png	size (1536, 922)	detected 8

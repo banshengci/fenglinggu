@@ -1,0 +1,8 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/crop_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_berry", "crop_cabbage", "crop_carrot", "crop_onion", "crop_garlic", "crop_radish", "crop_lettuce", "crop_spinach", "crop_pea", "crop_watermelon", "crop_melon", "crop_pepper"],
+    "out_size": 256, "tol": 15, "merge_gap": 0, "min_area_frac": 0.012, "margin_frac": 0.12
+  }
+]

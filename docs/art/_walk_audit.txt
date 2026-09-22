@@ -1,0 +1,211 @@
+=== 行走帧审计  (144 个文件) ===
+
+--- npc_atang ---
+    npc_atang_down_00.png            cov=0.428 153x235 foot=287
+    npc_atang_down_01.png            cov=0.405 152x234 foot=287
+    npc_atang_down_02.png            cov=0.409 152x234 foot=287
+    npc_atang_down_03.png            cov=0.406 152x235 foot=287
+    [down 小计]                        高度极差 0%  脚底极差 0px
+    npc_atang_left_00.png            cov=0.349 149x234 foot=287
+    npc_atang_left_01.png            cov=0.350 149x234 foot=287
+    npc_atang_left_02.png            cov=0.349 150x234 foot=287
+    npc_atang_left_03.png            cov=0.350 146x234 foot=287
+    [left 小计]                        高度极差 0%  脚底极差 0px
+    npc_atang_right_00.png           cov=0.355 149x234 foot=287
+    npc_atang_right_01.png           cov=0.350 146x234 foot=287
+    npc_atang_right_02.png           cov=0.360 150x235 foot=287
+    npc_atang_right_03.png           cov=0.357 149x234 foot=287
+    [right 小计]                       高度极差 0%  脚底极差 0px
+    npc_atang_up_00.png              cov=0.424 146x225 foot=287
+    npc_atang_up_01.png              cov=0.402 147x226 foot=287
+    npc_atang_up_02.png              cov=0.429 149x225 foot=287
+    npc_atang_up_03.png              cov=0.428 149x228 foot=287
+    [up 小计]                          高度极差 1%  脚底极差 0px
+    [方向均值] down=234 left=234 right=234 up=226
+
+--- npc_chapo ---
+    npc_chapo_down_00.png            cov=0.346 129x236 foot=287
+    npc_chapo_down_01.png            cov=0.345 132x236 foot=287
+    npc_chapo_down_02.png            cov=0.344 134x234 foot=287
+    npc_chapo_down_03.png            cov=0.341 134x233 foot=287
+    [down 小计]                        高度极差 1%  脚底极差 0px
+    npc_chapo_left_00.png            cov=0.352 142x247 foot=286
+    npc_chapo_left_01.png            cov=0.348 141x234 foot=286
+    npc_chapo_left_02.png            cov=0.356 145x247 foot=286
+    npc_chapo_left_03.png            cov=0.349 138x234 foot=286
+    [left 小计]                        高度极差 5%  脚底极差 0px
+    npc_chapo_right_00.png           cov=0.352 136x232 foot=287
+    npc_chapo_right_01.png           cov=0.345 137x234 foot=286
+    npc_chapo_right_02.png           cov=0.329 136x233 foot=287
+    npc_chapo_right_03.png           cov=0.343 137x231 foot=286
+    [right 小计]                       高度极差 1%  脚底极差 1px
+    npc_chapo_up_00.png              cov=0.347 131x234 foot=286
+    npc_chapo_up_01.png              cov=0.347 130x234 foot=286
+    npc_chapo_up_02.png              cov=0.353 133x235 foot=286
+    npc_chapo_up_03.png              cov=0.346 129x235 foot=286
+    [up 小计]                          高度极差 0%  脚底极差 0px
+    [方向均值] down=235 left=240 right=232 up=234
+
+--- npc_grandpa_lin ---
+    npc_grandpa_lin_down_00.png      cov=0.430 149x236 foot=287
+    npc_grandpa_lin_down_01.png      cov=0.455 155x235 foot=287
+    npc_grandpa_lin_down_02.png      cov=0.455 149x243 foot=287
+    npc_grandpa_lin_down_03.png      cov=0.426 148x243 foot=287
+    [down 小计]                        高度极差 3%  脚底极差 0px
+    npc_grandpa_lin_left_00.png      cov=0.356 145x231 foot=287
+    npc_grandpa_lin_left_01.png      cov=0.369 148x215 foot=287
+    npc_grandpa_lin_left_02.png      cov=0.360 140x221 foot=287
+    npc_grandpa_lin_left_03.png      cov=0.364 140x223 foot=287
+    [left 小计]                        高度极差 7%  脚底极差 0px
+    npc_grandpa_lin_right_00.png     cov=0.353 141x227 foot=287
+    npc_grandpa_lin_right_01.png     cov=0.337 143x227 foot=287
+    npc_grandpa_lin_right_02.png     cov=0.343 141x216 foot=287
+    npc_grandpa_lin_right_03.png     cov=0.348 135x228 foot=287
+    [right 小计]                       高度极差 5%  脚底极差 0px
+    npc_grandpa_lin_up_00.png        cov=0.386 145x222 foot=287
+    npc_grandpa_lin_up_01.png        cov=0.393 146x223 foot=287
+    npc_grandpa_lin_up_02.png        cov=0.392 147x225 foot=287
+    npc_grandpa_lin_up_03.png        cov=0.391 146x227 foot=287
+    [up 小计]                          高度极差 2%  脚底极差 0px
+    [方向均值] down=239 left=222 right=224 up=224
+
+--- npc_jiangcheng ---
+    npc_jiangcheng_down_00.png       cov=0.361 146x229 foot=287
+    npc_jiangcheng_down_01.png       cov=0.357 142x233 foot=287
+    npc_jiangcheng_down_02.png       cov=0.355 153x226 foot=287
+    npc_jiangcheng_down_03.png       cov=0.354 145x234 foot=287
+    [down 小计]                        高度极差 3%  脚底极差 0px
+    npc_jiangcheng_left_00.png       cov=0.324 149x219 foot=287
+    npc_jiangcheng_left_01.png       cov=0.324 148x220 foot=287
+    npc_jiangcheng_left_02.png       cov=0.314 141x217 foot=287
+    npc_jiangcheng_left_03.png       cov=0.319 141x217 foot=287
+    [left 小计]                        高度极差 1%  脚底极差 0px
+    npc_jiangcheng_right_00.png      cov=0.316 140x215 foot=287
+    npc_jiangcheng_right_01.png      cov=0.315 141x215 foot=287
+    npc_jiangcheng_right_02.png      cov=0.316 145x216 foot=287
+    npc_jiangcheng_right_03.png      cov=0.310 139x215 foot=287
+    [right 小计]                       高度极差 0%  脚底极差 0px
+    npc_jiangcheng_up_00.png         cov=0.312 130x202 foot=287
+    npc_jiangcheng_up_01.png         cov=0.309 130x203 foot=287
+    npc_jiangcheng_up_02.png         cov=0.308 129x207 foot=287
+    npc_jiangcheng_up_03.png         cov=0.312 131x207 foot=287
+    [up 小计]                          高度极差 2%  脚底极差 0px
+    [方向均值] down=230 left=218 right=215 up=205
+
+--- npc_shijiang ---
+    npc_shijiang_down_00.png         cov=0.419 145x228 foot=287
+    npc_shijiang_down_01.png         cov=0.410 146x228 foot=287
+    npc_shijiang_down_02.png         cov=0.397 135x229 foot=287
+    npc_shijiang_down_03.png         cov=0.410 144x228 foot=287
+    [down 小计]                        高度极差 0%  脚底极差 0px
+    npc_shijiang_left_00.png         cov=0.332 139x226 foot=287
+    npc_shijiang_left_01.png         cov=0.325 137x225 foot=287
+    npc_shijiang_left_02.png         cov=0.331 132x227 foot=287
+    npc_shijiang_left_03.png         cov=0.323 136x226 foot=287
+    [left 小计]                        高度极差 1%  脚底极差 0px
+    npc_shijiang_right_00.png        cov=0.349 138x224 foot=287
+    npc_shijiang_right_01.png        cov=0.323 138x225 foot=287
+    npc_shijiang_right_02.png        cov=0.325 132x223 foot=287
+    npc_shijiang_right_03.png        cov=0.341 135x224 foot=287
+    [right 小计]                       高度极差 1%  脚底极差 0px
+    npc_shijiang_up_00.png           cov=0.394 143x209 foot=287
+    npc_shijiang_up_01.png           cov=0.392 146x209 foot=287
+    npc_shijiang_up_02.png           cov=0.384 136x209 foot=287
+    npc_shijiang_up_03.png           cov=0.386 140x209 foot=287
+    [up 小计]                          高度极差 0%  脚底极差 0px
+    [方向均值] down=228 left=226 right=224 up=209
+
+--- npc_xiaoman ---
+    npc_xiaoman_down_00.png          cov=0.344 122x225 foot=287
+    npc_xiaoman_down_01.png          cov=0.335 123x230 foot=287
+    npc_xiaoman_down_02.png          cov=0.315 121x225 foot=287
+    npc_xiaoman_down_03.png          cov=0.317 123x238 foot=287
+    [down 小计]                        高度极差 6%  脚底极差 0px
+    npc_xiaoman_left_00.png          cov=0.318 124x231 foot=287
+    npc_xiaoman_left_01.png          cov=0.307 129x230 foot=287
+    npc_xiaoman_left_02.png          cov=0.312 129x231 foot=287
+    npc_xiaoman_left_03.png          cov=0.320 128x230 foot=287
+    [left 小计]                        高度极差 0%  脚底极差 0px
+    npc_xiaoman_right_00.png         cov=0.309 116x226 foot=287
+    npc_xiaoman_right_01.png         cov=0.306 122x225 foot=287
+    npc_xiaoman_right_02.png         cov=0.332 130x227 foot=287
+    npc_xiaoman_right_03.png         cov=0.303 131x228 foot=287
+    [right 小计]                       高度极差 1%  脚底极差 0px
+    npc_xiaoman_up_00.png            cov=0.303 109x222 foot=287
+    npc_xiaoman_up_01.png            cov=0.311 104x221 foot=287
+    npc_xiaoman_up_02.png            cov=0.317 108x222 foot=287
+    npc_xiaoman_up_03.png            cov=0.318 107x224 foot=287
+    [up 小计]                          高度极差 1%  脚底极差 0px
+    [方向均值] down=230 left=230 right=226 up=222
+
+--- npc_yunzhou ---
+    npc_yunzhou_down_00.png          cov=0.420 148x235 foot=287
+    npc_yunzhou_down_01.png          cov=0.422 155x234 foot=287
+    npc_yunzhou_down_02.png          cov=0.420 154x235 foot=287
+    npc_yunzhou_down_03.png          cov=0.414 154x235 foot=287
+    [down 小计]                        高度极差 0%  脚底极差 0px
+    npc_yunzhou_left_00.png          cov=0.363 149x235 foot=287
+    npc_yunzhou_left_01.png          cov=0.359 148x234 foot=287
+    npc_yunzhou_left_02.png          cov=0.357 147x234 foot=287
+    npc_yunzhou_left_03.png          cov=0.351 149x232 foot=287
+    [left 小计]                        高度极差 1%  脚底极差 0px
+    npc_yunzhou_right_00.png         cov=0.356 149x232 foot=287
+    npc_yunzhou_right_01.png         cov=0.369 148x231 foot=287
+    npc_yunzhou_right_02.png         cov=0.352 148x233 foot=287
+    npc_yunzhou_right_03.png         cov=0.368 150x232 foot=287
+    [right 小计]                       高度极差 1%  脚底极差 0px
+    npc_yunzhou_up_00.png            cov=0.394 149x218 foot=287
+    npc_yunzhou_up_01.png            cov=0.388 148x218 foot=287
+    npc_yunzhou_up_02.png            cov=0.376 147x216 foot=287
+    npc_yunzhou_up_03.png            cov=0.394 147x221 foot=287
+    [up 小计]                          高度极差 2%  脚底极差 0px
+    [方向均值] down=235 left=234 right=232 up=218
+
+--- npc_zhi_tao ---
+    npc_zhi_tao_down_00.png          cov=0.453 162x233 foot=287
+    npc_zhi_tao_down_01.png          cov=0.432 147x217 foot=287
+    npc_zhi_tao_down_02.png          cov=0.438 163x215 foot=287
+    npc_zhi_tao_down_03.png          cov=0.445 158x231 foot=287
+    [down 小计]                        高度极差 8%  脚底极差 0px
+    npc_zhi_tao_left_00.png          cov=0.367 145x202 foot=287
+    npc_zhi_tao_left_01.png          cov=0.370 147x203 foot=287
+    npc_zhi_tao_left_02.png          cov=0.368 144x203 foot=287
+    npc_zhi_tao_left_03.png          cov=0.369 146x202 foot=287
+    [left 小计]                        高度极差 0%  脚底极差 0px
+    npc_zhi_tao_right_00.png         cov=0.407 162x204 foot=287
+    npc_zhi_tao_right_01.png         cov=0.384 161x202 foot=287
+    npc_zhi_tao_right_02.png         cov=0.394 146x217 foot=287
+    npc_zhi_tao_right_03.png         cov=0.389 164x202 foot=287
+    [right 小计]                       高度极差 7%  脚底极差 0px
+    npc_zhi_tao_up_00.png            cov=0.399 143x209 foot=287
+    npc_zhi_tao_up_01.png            cov=0.380 147x186 foot=287
+    npc_zhi_tao_up_02.png            cov=0.397 154x194 foot=287
+    npc_zhi_tao_up_03.png            cov=0.404 150x210 foot=287
+    [up 小计]                          高度极差 12%  脚底极差 0px
+    [方向均值] down=224 left=202 right=206 up=200
+
+--- player ---
+    player_down_00.png               cov=0.364 146x230 foot=287
+    player_down_01.png               cov=0.364 151x230 foot=287
+    player_down_02.png               cov=0.364 150x230 foot=287
+    player_down_03.png               cov=0.362 148x229 foot=287
+    [down 小计]                        高度极差 0%  脚底极差 0px
+    player_left_00.png               cov=0.323 138x231 foot=287
+    player_left_01.png               cov=0.324 138x231 foot=287
+    player_left_02.png               cov=0.321 137x230 foot=287
+    player_left_03.png               cov=0.320 132x230 foot=287
+    [left 小计]                        高度极差 0%  脚底极差 0px
+    player_right_00.png              cov=0.317 138x226 foot=287
+    player_right_01.png              cov=0.310 136x226 foot=287
+    player_right_02.png              cov=0.318 137x227 foot=287
+    player_right_03.png              cov=0.315 134x226 foot=287
+    [right 小计]                       高度极差 0%  脚底极差 0px
+    player_up_00.png                 cov=0.362 136x227 foot=287
+    player_up_01.png                 cov=0.356 136x226 foot=287
+    player_up_02.png                 cov=0.358 137x225 foot=287
+    player_up_03.png                 cov=0.358 136x227 foot=287
+    [up 小计]                          高度极差 1%  脚底极差 0px
+    [方向均值] down=230 left=230 right=226 up=226
+
+=== 问题汇总 (0) ===
+  无

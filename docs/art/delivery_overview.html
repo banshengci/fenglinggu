@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>《风铃谷》美术交付总览</title>
+<style>
+:root{
+  --paper:#F5F0E8; --card:#FBF8F2; --ink:#2E2A24; --muted:#7A7264;
+  --line:#E3DACB; --green:#8FB56F; --brown:#6B5340; --gold:#E8C87A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:15px/1.7 "Noto Serif SC","Songti SC",serif;padding:48px 32px 80px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:34px;margin:0 0 6px;letter-spacing:.06em;font-weight:700}
+h2{font-size:20px;margin:52px 0 16px;padding-bottom:10px;border-bottom:1px solid var(--line);
+  letter-spacing:.04em;color:var(--brown)}
+.sub{color:var(--muted);font-size:14px;margin:0 0 8px}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:20px 24px;margin:24px 0 0;line-height:2}
+.lead b{color:var(--brown)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:24px 0 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.kpi .v{font-size:28px;font-weight:700;color:var(--brown);line-height:1.2}
+.kpi .k{font-size:12.5px;color:var(--muted);letter-spacing:.06em;margin-top:4px}
+table{width:100%;border-collapse:collapse;background:var(--card);
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#EFE9DC;font-weight:600;font-size:13px;letter-spacing:.05em;color:var(--brown)}
+tr:last-child td{border-bottom:none}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--brown);font-size:13px}
+.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.desc{color:var(--muted);font-size:13px}
+.bar{width:190px;padding:11px 14px}
+.bar span{display:block;height:8px;border-radius:4px;background:var(--gold)}
+.bar span.full{background:var(--green)}
+.gallery{display:grid;grid-template-columns:1fr;gap:22px}
+.card{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:16px;overflow:hidden}
+.card figcaption{font-size:14px;color:var(--brown);margin-bottom:12px;
+  padding-bottom:10px;border-bottom:1px solid var(--line);letter-spacing:.04em}
+.card img{width:100%;display:block;border-radius:6px}
+.note{background:#FBF6E9;border-left:3px solid var(--gold);padding:14px 20px;
+  border-radius:0 8px 8px 0;font-size:14px;line-height:1.9;margin:18px 0}
+.note b{color:var(--brown)}
+.warn{background:#FBF0EC;border-left-color:#C07850}
+code{background:#EFE9DC;padding:1px 6px;border-radius:4px;
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:var(--brown)}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);
+  color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>《风铃谷》美术交付总览</h1>
+<p class="sub">Wind Chime Valley · Art Delivery · 交付方 WorkBuddy 智能设计助手 → 接收方 Xiaomi MiMo Desktop</p>
+<p class="sub">2026-09-22 · Godot 4.2+ · 全部 PNG 透明底 · 无图内文字</p>
+
+<div class="lead">
+按 <code>docs/art/美术需求清单.md</code> 全量生产。<b>运行时资产 588 张</b>，覆盖需求清单 15 个章节全部类别；
+<b>数据层 id 映射 441/441 全覆盖，零缺口</b>（含主角与 8 位 NPC 的四向行走帧）。<br>
+风格严格对齐 <code>game/art/keys/</code> 三张锚点：绘本水粉 + 吉卜力式软光，
+主色板 草绿 <code>#8FB56F</code> · 纸奶油 <code>#F3EAD3</code> · 木褐 <code>#6B5340</code> · 铃金 <code>#E8C87A</code>。
+</div>
+
+<div class="kpis">
+<div class="kpi"><div class="v">588</div><div class="k">运行时资产（张）</div></div>
+<div class="kpi"><div class="v">13</div><div class="k">资产类别</div></div>
+<div class="kpi"><div class="v">441 / 441</div><div class="k">数据 id 映射</div></div>
+<div class="kpi"><div class="v">0</div><div class="k">命名 / 损坏 / 透明度问题</div></div>
+</div>
+
+<h2>一、资产分布</h2>
+<table>
+<thead><tr><th>目录</th><th>类别</th><th class="num">张数</th><th class="num">体积</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td class="mono">chars/walk/</td><td>角色行走帧</td><td class="num">144</td><td class="num">8.7 MB</td><td class="desc">主角 16 + NPC 8×16，四向 × 4 帧，192×288 脚底对齐，已接入帧动画</td></tr>
+<tr><td class="mono">items/</td><td>物品图标</td><td class="num">156</td><td class="num">22.1 MB</td><td class="desc">料理 40 · 种子 48 · 鱼 24 · 古物 12 · 工具资源 32</td></tr>
+<tr><td class="mono">crops/</td><td>作物</td><td class="num">96</td><td class="num">4.3 MB</td><td class="desc">48 种成熟图 + 12 种生长阶段 _s0..s3</td></tr>
+<tr><td class="mono">tiles/</td><td>地块与植被</td><td class="num">41</td><td class="num">30.7 MB</td><td class="desc">生态地皮 10 · 树木四季×三类 12 · 花 6 色 · 装饰道具 12 · 宝箱 1</td></tr>
+<tr><td class="mono">ui/</td><td>UI</td><td class="num">36</td><td class="num">17.6 MB</td><td class="desc">面板 / 按钮 / 图标集 / 天气 7 / 季节 4 / 技能 6 / 提示 7 / Logo</td></tr>
+<tr><td class="mono">furniture/</td><td>家具</td><td class="num">32</td><td class="num">3.6 MB</td><td class="desc">32 件（含 4 幅风景画）</td></tr>
+<tr><td class="mono">enemies/</td><td>敌人</td><td class="num">26</td><td class="num">4.8 MB</td><td class="desc">动画帧 18（4 组）· 矿岩 4 皮 · 合成图 3 · 待机 1</td></tr>
+<tr><td class="mono">fx/</td><td>特效与天气</td><td class="num">14</td><td class="num">4.5 MB</td><td class="desc">天气遮罩 4 · 粒子 2 · 特效 8</td></tr>
+<tr><td class="mono">buildings/</td><td>建筑</td><td class="num">14</td><td class="num">31.2 MB</td><td class="desc">风铃塔 / 木屋 / 杂货摊 / 博物馆 / 矿洞入口 / 风车 等 14</td></tr>
+<tr><td class="mono">chars/</td><td>角色</td><td class="num">11</td><td class="num">17.6 MB</td><td class="desc">NPC 立绘 9 · 主角参考图 2</td></tr>
+<tr><td class="mono">animals/</td><td>动物</td><td class="num">6</td><td class="num">0.6 MB</td><td class="desc">鸡 / 牛 / 羊 / 鸭 / 山羊 / 蜂箱</td></tr>
+<tr><td class="mono">cutscenes/</td><td>过场插画</td><td class="num">5</td><td class="num">12.8 MB</td><td class="desc">5 章主线</td></tr>
+<tr><td class="mono">marketing/</td><td>营销素材</td><td class="num">7</td><td class="num">7.6 MB</td><td class="desc">主胶囊 / 库图 / Splash / 海报 4</td></tr>
+<tr><td class="mono">keys/</td><td>风格锚点</td><td class="num">9</td><td class="num">24.0 MB</td><td class="desc">生成时的对齐基准（非运行时）</td></tr>
+</tbody>
+</table>
+
+<h2>二、需求完成度</h2>
+<table>
+<thead><tr><th>需求项</th><th class="num">完成</th><th></th><th class="num">比例</th></tr></thead>
+<tbody>
+<tr><td>作物成熟图</td><td class="num">48 / 48</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>作物生长阶段</td><td class="num">12 / 48</td><td class="bar"><span style="width:25%" class="part"></span></td><td class="num">25%</td></tr>
+<tr><td>种子图标</td><td class="num">48 / 48</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>料理图标</td><td class="num">40 / 40</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>鱼类图标</td><td class="num">24 / 24</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>古物图标</td><td class="num">12 / 12</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>NPC 立绘</td><td class="num">8 / 8</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>家具</td><td class="num">30 / 30</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>工具 / 资源 / 任务图标</td><td class="num">18 / 18</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>矿岩</td><td class="num">7 / 7</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>敌人动画帧</td><td class="num">14 / 14</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>主角行走帧</td><td class="num">16 / 16</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+<tr><td>NPC 行走帧</td><td class="num">128 / 128</td><td class="bar"><span style="width:100%" class="full"></span></td><td class="num">100%</td></tr>
+</tbody>
+</table>
+<div class="note">
+<b>唯一未满项为「作物生长阶段」</b>（12 / 48）。按需求清单 §3 说明，其余 36 种作物采用
+<b>色板换变体</b>即可，因此该项不计为缺失，属设计内选择。
+</div>
+
+<h2>三、验收联络表</h2>
+<p class="sub">全部以棋盘格衬底渲染，可直观查看透明底抠图质量。</p>
+<div class="gallery">
+<figure class="card"><figcaption>主角行走帧 · 4 方向 × 4 帧（行=方向，列=帧）</figcaption><img src="preview/_v_walk_player.png" alt="主角行走帧 · 4 方向 × 4 帧（行=方向，列=帧）" loading="lazy"></figure>
+<figure class="card"><figcaption>NPC 行走帧 · 8 角色 × 4 方向（行=角色，列=方向）</figcaption><img src="preview/_v_walk_npcs.png" alt="NPC 行走帧 · 8 角色 × 4 方向（行=角色，列=方向）" loading="lazy"></figure>
+<figure class="card"><figcaption>角色 · NPC 立绘与主角</figcaption><img src="preview/_v_chars.png" alt="角色 · NPC 立绘与主角" loading="lazy"></figure>
+<figure class="card"><figcaption>建筑</figcaption><img src="preview/_v_buildings.png" alt="建筑" loading="lazy"></figure>
+<figure class="card"><figcaption>家具</figcaption><img src="preview/_v_furniture.png" alt="家具" loading="lazy"></figure>
+<figure class="card"><figcaption>动物</figcaption><img src="preview/_v_animals.png" alt="动物" loading="lazy"></figure>
+<figure class="card"><figcaption>工具与资源图标</figcaption><img src="preview/_v_items_icons.png" alt="工具与资源图标" loading="lazy"></figure>
+<figure class="card"><figcaption>地块装饰与植被</figcaption><img src="preview/_v_tiles_props.png" alt="地块装饰与植被" loading="lazy"></figure>
+<figure class="card"><figcaption>UI · 品牌与图标集</figcaption><img src="preview/_v_ui_brand.png" alt="UI · 品牌与图标集" loading="lazy"></figure>
+<figure class="card"><figcaption>UI · 面板与控件</figcaption><img src="preview/_v_ui_panels.png" alt="UI · 面板与控件" loading="lazy"></figure>
+<figure class="card"><figcaption>作物成熟图</figcaption><img src="preview/_p_crops2.png" alt="作物成熟图" loading="lazy"></figure>
+<figure class="card"><figcaption>种子图标</figcaption><img src="preview/_p_seeds2.png" alt="种子图标" loading="lazy"></figure>
+<figure class="card"><figcaption>料理图标</figcaption><img src="preview/_p_dishes2.png" alt="料理图标" loading="lazy"></figure>
+<figure class="card"><figcaption>鱼类图标</figcaption><img src="preview/_p_fish.png" alt="鱼类图标" loading="lazy"></figure>
+<figure class="card"><figcaption>敌人与动画帧</figcaption><img src="preview/_progress_enemies.png" alt="敌人与动画帧" loading="lazy"></figure>
+<figure class="card"><figcaption>特效与天气</figcaption><img src="preview/_sh_fx5.png" alt="特效与天气" loading="lazy"></figure>
+<figure class="card"><figcaption>章节过场插画</figcaption><img src="preview/_p_cutscenes.png" alt="章节过场插画" loading="lazy"></figure>
+<figure class="card"><figcaption>营销素材</figcaption><img src="preview/_p_marketing.png" alt="营销素材" loading="lazy"></figure>
+</div>
+
+<h2>四、接入前必读</h2>
+<div class="note warn">
+<b>美术文件名带类别前缀，数据层 id 不带前缀</b>，不能直接拼接。
+已生成 <code>docs/art/art_id_map.json</code>（附 CSV 版）覆盖全部 441 条映射：
+<code>crops</code> 48 · <code>crop_stage</code> 48 · <code>seed</code> 48 · <code>dish</code> 40 ·
+<code>furniture</code> 30 · <code>fish</code> 24 · <code>item_icon</code> 18 · <code>enemy_frame</code> 14 ·
+<code>antique</code> 12 · <code>npc</code> 8 · <code>ore_rock</code> 7 ·
+<code>player_walk</code> 16 · <code>npc_walk</code> 128。
+</div>
+<div class="note">
+代码接入清单（按文件逐函数）见 <code>docs/art/ART_PIPELINE_V2.md</code>。<br>
+<b>注意</b>：工程纹理过滤为 <b>Nearest</b>（像素风），全屏天气遮罩 <code>fx_overlay_*</code>
+必须单独开启线性过滤，否则出现块状。
+</div>
+
+<h2>五、交付包清理建议</h2>
+<table>
+<thead><tr><th>项</th><th>建议</th></tr></thead>
+<tbody>
+<tr><td class="mono">game/art/_stage/</td><td class="desc">拼板源图，运行时不需要，删除可减小包体；保留请移出 <code>game/</code></td></tr>
+<tr><td class="mono">game/art/keys/</td><td class="desc">风格锚点，运行时不加载，建议保留在仓库但排除出导出包</td></tr>
+<tr><td class="mono">game/art/sprites/</td><td class="desc">灰盒占位，已被正式资源取代，可后续移除</td></tr>
+<tr><td class="mono">*.import</td><td class="desc">现仅 12 个。首次用 Godot 打开工程会自动补齐全部 588 张，请留足导入时间</td></tr>
+</tbody>
+</table>
+
+<footer>
+文档：美术需求清单.md · README.md（交付清单）· ART_PIPELINE_V2.md（接入指南）·
+art_id_map.json / .csv（id 映射）· asset_checklist.csv（逐项对照）· preview/（18 张验收联络表，含行走帧 2 张）
+</footer>
+
+</div>
+</body>
+</html>

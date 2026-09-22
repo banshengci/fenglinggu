@@ -1,0 +1,15 @@
+[
+  {"source": "D:/xinxiangmu/youxi/generated-images/Turnip_plant_growth_stages__fo_2026-09-22T08-25-48.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_turnip_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Potato_plant_growth_stages__fo_2026-09-22T08-25-48.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_potato_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Tomato_plant_growth_stages__fo_2026-09-22T08-25-49.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_tomato_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Strawberry_plant_growth_stages_2026-09-22T08-25-46.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_strawberry_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Corn_plant_growth_stages__four_2026-09-22T08-25-51.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_corn_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Pumpkin_plant_growth_stages__f_2026-09-22T08-25-46.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_pumpkin_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Grapevine_growth_stages__four__2026-09-22T08-25-48.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_grape_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Rice_paddy_growth_stages__four_2026-09-22T08-25-48.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_rice_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Tea_bush_growth_stages__four_s_2026-09-22T08-25-53.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_tea_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Sunflower_growth_stages__four__2026-09-22T08-25-49.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_sunflower_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Mushroom_growth_stages__four_s_2026-09-22T08-25-51.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_mushroom_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Apple_tree_growth_stages__four_2026-09-22T08-25-47.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_growth_apple_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Three_weather_status_icons_in__2026-09-22T08-25-52.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_weather3_crop.png", "bottom_frac": 0.10}
+]

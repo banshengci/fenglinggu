@@ -1,0 +1,835 @@
+{
+  "turnip": {
+    "id": "turnip",
+    "name": "白萝卜",
+    "seed_item": "seed_turnip",
+    "product_item": "turnip",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 35,
+    "regrow_days": 0,
+    "color": "#F5F0E1",
+    "sprout_color": "#A8C87A",
+    "mature_color": "#F5F0E1",
+    "desc": "清甜爽口的春日根菜。"
+  },
+  "potato": {
+    "id": "potato",
+    "name": "土豆",
+    "seed_item": "seed_potato",
+    "product_item": "potato",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "萌芽春",
+      "蜜酿秋"
+    ],
+    "sell_price": 55,
+    "regrow_days": 0,
+    "color": "#C4A060",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#C4A060",
+    "desc": "扎实管饱，炖汤一绝。"
+  },
+  "tomato": {
+    "id": "tomato",
+    "name": "番茄",
+    "seed_item": "seed_tomato",
+    "product_item": "tomato",
+    "days_to_grow": 5,
+    "stages": 4,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 75,
+    "regrow_days": 3,
+    "color": "#E05555",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#E05555",
+    "desc": "酸甜多汁，可反复采收。"
+  },
+  "berry": {
+    "id": "berry",
+    "name": "山莓",
+    "seed_item": "seed_berry",
+    "product_item": "berry",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "长夏",
+      "蜜酿秋"
+    ],
+    "sell_price": 95,
+    "regrow_days": 2,
+    "color": "#E06090",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#E06090",
+    "desc": "酸甜的野莓，做酱一流。"
+  },
+  "cabbage": {
+    "id": "cabbage",
+    "name": "卷心菜",
+    "seed_item": "seed_cabbage",
+    "product_item": "cabbage",
+    "days_to_grow": 9,
+    "stages": 5,
+    "seasons": [
+      "萌芽春",
+      "静雪冬"
+    ],
+    "sell_price": 65,
+    "regrow_days": 0,
+    "color": "#B8D48A",
+    "sprout_color": "#7FA36A",
+    "mature_color": "#B8D48A",
+    "desc": "扎实的叶菜。"
+  },
+  "carrot": {
+    "id": "carrot",
+    "name": "胡萝卜",
+    "seed_item": "seed_carrot",
+    "product_item": "carrot",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "萌芽春",
+      "蜜酿秋"
+    ],
+    "sell_price": 40,
+    "regrow_days": 0,
+    "color": "#E09040",
+    "sprout_color": "#A8C87A",
+    "mature_color": "#E09040",
+    "desc": "脆甜根菜。"
+  },
+  "onion": {
+    "id": "onion",
+    "name": "洋葱",
+    "seed_item": "seed_onion",
+    "product_item": "onion",
+    "days_to_grow": 9,
+    "stages": 5,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 48,
+    "regrow_days": 0,
+    "color": "#D0A0C0",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#D0A0C0",
+    "desc": "会让人笑着流泪。"
+  },
+  "garlic": {
+    "id": "garlic",
+    "name": "蒜头",
+    "seed_item": "seed_garlic",
+    "product_item": "garlic",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "萌芽春",
+      "静雪冬"
+    ],
+    "sell_price": 52,
+    "regrow_days": 0,
+    "color": "#E8E0C8",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#E8E0C8",
+    "desc": "厨房常备。"
+  },
+  "radish": {
+    "id": "radish",
+    "name": "樱桃萝卜",
+    "seed_item": "seed_radish",
+    "product_item": "radish",
+    "days_to_grow": 2,
+    "stages": 4,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 30,
+    "regrow_days": 0,
+    "color": "#E06080",
+    "sprout_color": "#A8C87A",
+    "mature_color": "#E06080",
+    "desc": "两天就能见着的惊喜。"
+  },
+  "lettuce": {
+    "id": "lettuce",
+    "name": "生菜",
+    "seed_item": "seed_lettuce",
+    "product_item": "lettuce",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "萌芽春",
+      "长夏"
+    ],
+    "sell_price": 38,
+    "regrow_days": 0,
+    "color": "#B8D48A",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#B8D48A",
+    "desc": "沙拉主角。"
+  },
+  "spinach": {
+    "id": "spinach",
+    "name": "菠菜",
+    "seed_item": "seed_spinach",
+    "product_item": "spinach",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 42,
+    "regrow_days": 0,
+    "color": "#4A7A3A",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#4A7A3A",
+    "desc": "补铁小能手。"
+  },
+  "pea": {
+    "id": "pea",
+    "name": "豌豆",
+    "seed_item": "seed_pea",
+    "product_item": "pea",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 50,
+    "regrow_days": 0,
+    "color": "#A8D070",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#A8D070",
+    "desc": "豆荚会笑。"
+  },
+  "strawberry": {
+    "id": "strawberry",
+    "name": "草莓",
+    "seed_item": "seed_strawberry",
+    "product_item": "strawberry",
+    "days_to_grow": 9,
+    "stages": 5,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 120,
+    "regrow_days": 2,
+    "color": "#E05070",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#E05070",
+    "desc": "香甜多汁。"
+  },
+  "corn": {
+    "id": "corn",
+    "name": "玉米",
+    "seed_item": "seed_corn",
+    "product_item": "corn",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "长夏",
+      "蜜酿秋"
+    ],
+    "sell_price": 110,
+    "regrow_days": 2,
+    "color": "#E8C87A",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#E8C87A",
+    "desc": "高高的金棒子。"
+  },
+  "watermelon": {
+    "id": "watermelon",
+    "name": "西瓜",
+    "seed_item": "seed_watermelon",
+    "product_item": "watermelon",
+    "days_to_grow": 5,
+    "stages": 4,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 150,
+    "regrow_days": 2,
+    "color": "#4A8A5A",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#4A8A5A",
+    "desc": "夏天的快乐。"
+  },
+  "melon": {
+    "id": "melon",
+    "name": "蜜瓜",
+    "seed_item": "seed_melon",
+    "product_item": "melon",
+    "days_to_grow": 10,
+    "stages": 5,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 140,
+    "regrow_days": 2,
+    "color": "#D0E080",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#D0E080",
+    "desc": "清甜。"
+  },
+  "pepper": {
+    "id": "pepper",
+    "name": "辣椒",
+    "seed_item": "seed_pepper",
+    "product_item": "pepper",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "长夏",
+      "蜜酿秋"
+    ],
+    "sell_price": 85,
+    "regrow_days": 0,
+    "color": "#E04040",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#E04040",
+    "desc": "热情如火。"
+  },
+  "eggplant": {
+    "id": "eggplant",
+    "name": "茄子",
+    "seed_item": "seed_eggplant",
+    "product_item": "eggplant",
+    "days_to_grow": 9,
+    "stages": 5,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 95,
+    "regrow_days": 2,
+    "color": "#7A5A9A",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#7A5A9A",
+    "desc": "紫衣贵族。"
+  },
+  "cucumber": {
+    "id": "cucumber",
+    "name": "黄瓜",
+    "seed_item": "seed_cucumber",
+    "product_item": "cucumber",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 60,
+    "regrow_days": 0,
+    "color": "#8FC070",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#8FC070",
+    "desc": "清爽。"
+  },
+  "pumpkin": {
+    "id": "pumpkin",
+    "name": "南瓜",
+    "seed_item": "seed_pumpkin",
+    "product_item": "pumpkin",
+    "days_to_grow": 8,
+    "stages": 5,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 180,
+    "regrow_days": 2,
+    "color": "#E09040",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#E09040",
+    "desc": "秋天的灯笼。"
+  },
+  "sweet_potato": {
+    "id": "sweet_potato",
+    "name": "红薯",
+    "seed_item": "seed_sweet_potato",
+    "product_item": "sweet_potato",
+    "days_to_grow": 6,
+    "stages": 4,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 100,
+    "regrow_days": 2,
+    "color": "#C08060",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#C08060",
+    "desc": "烤着吃最香。"
+  },
+  "grape": {
+    "id": "grape",
+    "name": "葡萄",
+    "seed_item": "seed_grape",
+    "product_item": "grape",
+    "days_to_grow": 5,
+    "stages": 4,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 130,
+    "regrow_days": 2,
+    "color": "#8A5A9A",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#8A5A9A",
+    "desc": "可酿酒（料理）。"
+  },
+  "rice": {
+    "id": "rice",
+    "name": "稻米",
+    "seed_item": "seed_rice",
+    "product_item": "rice",
+    "days_to_grow": 10,
+    "stages": 5,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 90,
+    "regrow_days": 2,
+    "color": "#E8E0B0",
+    "sprout_color": "#A8C87A",
+    "mature_color": "#E8E0B0",
+    "desc": "一粒一粒都是日子。"
+  },
+  "wheat": {
+    "id": "wheat",
+    "name": "麦穗",
+    "seed_item": "seed_wheat",
+    "product_item": "wheat",
+    "days_to_grow": 9,
+    "stages": 5,
+    "seasons": [
+      "蜜酿秋",
+      "静雪冬"
+    ],
+    "sell_price": 70,
+    "regrow_days": 0,
+    "color": "#E8D080",
+    "sprout_color": "#A8C87A",
+    "mature_color": "#E8D080",
+    "desc": "磨坊的好朋友。"
+  },
+  "mushroom": {
+    "id": "mushroom",
+    "name": "蘑菇",
+    "seed_item": "mushroom_seed",
+    "product_item": "mushroom",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "蜜酿秋",
+      "静雪冬"
+    ],
+    "sell_price": 88,
+    "regrow_days": 0,
+    "color": "#C0A080",
+    "sprout_color": "#A09080",
+    "mature_color": "#C0A080",
+    "desc": "林间味道。"
+  },
+  "hazelnut": {
+    "id": "hazelnut",
+    "name": "榛果",
+    "seed_item": "seed_hazelnut",
+    "product_item": "hazelnut",
+    "days_to_grow": 10,
+    "stages": 5,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 115,
+    "regrow_days": 2,
+    "color": "#C0A060",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#C0A060",
+    "desc": "小松鼠认证。"
+  },
+  "sunflower": {
+    "id": "sunflower",
+    "name": "向日葵",
+    "seed_item": "seed_sunflower",
+    "product_item": "sunflower",
+    "days_to_grow": 6,
+    "stages": 4,
+    "seasons": [
+      "长夏",
+      "蜜酿秋"
+    ],
+    "sell_price": 100,
+    "regrow_days": 2,
+    "color": "#E8C87A",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#E8C87A",
+    "desc": "永远朝向好天气。"
+  },
+  "lavender": {
+    "id": "lavender",
+    "name": "薰衣草",
+    "seed_item": "seed_lavender",
+    "product_item": "lavender",
+    "days_to_grow": 7,
+    "stages": 5,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 90,
+    "regrow_days": 2,
+    "color": "#A080C0",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#A080C0",
+    "desc": "助眠香气。"
+  },
+  "chrysanthemum": {
+    "id": "chrysanthemum",
+    "name": "秋菊",
+    "seed_item": "seed_chrysanthemum",
+    "product_item": "chrysanthemum",
+    "days_to_grow": 10,
+    "stages": 5,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 85,
+    "regrow_days": 0,
+    "color": "#E0C060",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#E0C060",
+    "desc": "秋日门牌。"
+  },
+  "plum": {
+    "id": "plum",
+    "name": "李子",
+    "seed_item": "seed_plum",
+    "product_item": "plum",
+    "days_to_grow": 10,
+    "stages": 5,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 140,
+    "regrow_days": 2,
+    "color": "#A05080",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#A05080",
+    "desc": "酸甜果子。"
+  },
+  "apple": {
+    "id": "apple",
+    "name": "苹果",
+    "seed_item": "seed_apple",
+    "product_item": "apple",
+    "days_to_grow": 9,
+    "stages": 5,
+    "seasons": [
+      "蜜酿秋",
+      "静雪冬"
+    ],
+    "sell_price": 160,
+    "regrow_days": 2,
+    "color": "#E05050",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#E05050",
+    "desc": "果树代表。"
+  },
+  "pear": {
+    "id": "pear",
+    "name": "梨",
+    "seed_item": "seed_pear",
+    "product_item": "pear",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "蜜酿秋"
+    ],
+    "sell_price": 150,
+    "regrow_days": 2,
+    "color": "#D0E080",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#D0E080",
+    "desc": "多汁。"
+  },
+  "tea": {
+    "id": "tea",
+    "name": "茶叶",
+    "seed_item": "seed_tea",
+    "product_item": "tea",
+    "days_to_grow": 5,
+    "stages": 4,
+    "seasons": [
+      "萌芽春",
+      "长夏"
+    ],
+    "sell_price": 105,
+    "regrow_days": 2,
+    "color": "#4A7A3A",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#4A7A3A",
+    "desc": "山雾里长出来的叶子。"
+  },
+  "herb": {
+    "id": "herb",
+    "name": "香草",
+    "seed_item": "seed_herb",
+    "product_item": "herb",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "萌芽春",
+      "长夏"
+    ],
+    "sell_price": 55,
+    "regrow_days": 0,
+    "color": "#7FA36A",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#7FA36A",
+    "desc": "料理灵魂。"
+  },
+  "cotton": {
+    "id": "cotton",
+    "name": "棉花",
+    "seed_item": "seed_cotton",
+    "product_item": "cotton",
+    "days_to_grow": 10,
+    "stages": 5,
+    "seasons": [
+      "长夏",
+      "蜜酿秋"
+    ],
+    "sell_price": 80,
+    "regrow_days": 0,
+    "color": "#F0F0E8",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#F0F0E8",
+    "desc": "以后做衣服。"
+  },
+  "flax": {
+    "id": "flax",
+    "name": "亚麻",
+    "seed_item": "seed_flax",
+    "product_item": "flax",
+    "days_to_grow": 5,
+    "stages": 4,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 75,
+    "regrow_days": 0,
+    "color": "#C0C0A0",
+    "sprout_color": "#A8C87A",
+    "mature_color": "#C0C0A0",
+    "desc": "织布用。"
+  },
+  "cocoa_seed": {
+    "id": "cocoa_seed",
+    "name": "可可豆",
+    "seed_item": "seed_cocoa_seed",
+    "product_item": "cocoa_seed",
+    "days_to_grow": 5,
+    "stages": 4,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 170,
+    "regrow_days": 2,
+    "color": "#A06040",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#A06040",
+    "desc": "远方的味道。"
+  },
+  "vanilla": {
+    "id": "vanilla",
+    "name": "香草荚",
+    "seed_item": "seed_vanilla",
+    "product_item": "vanilla",
+    "days_to_grow": 8,
+    "stages": 5,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 190,
+    "regrow_days": 2,
+    "color": "#C0A060",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#C0A060",
+    "desc": "甜点之魂。"
+  },
+  "ginger": {
+    "id": "ginger",
+    "name": "姜块",
+    "seed_item": "seed_ginger",
+    "product_item": "ginger",
+    "days_to_grow": 5,
+    "stages": 4,
+    "seasons": [
+      "蜜酿秋",
+      "静雪冬"
+    ],
+    "sell_price": 78,
+    "regrow_days": 0,
+    "color": "#D0A060",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#D0A060",
+    "desc": "暖胃。"
+  },
+  "lotus": {
+    "id": "lotus",
+    "name": "莲藕",
+    "seed_item": "seed_lotus",
+    "product_item": "lotus",
+    "days_to_grow": 7,
+    "stages": 5,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 125,
+    "regrow_days": 2,
+    "color": "#E8D0C0",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#E8D0C0",
+    "desc": "湖边亲戚。"
+  },
+  "bamboo_shoot": {
+    "id": "bamboo_shoot",
+    "name": "竹笋",
+    "seed_item": "seed_bamboo_shoot",
+    "product_item": "bamboo_shoot",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 88,
+    "regrow_days": 0,
+    "color": "#C0D080",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#C0D080",
+    "desc": "雨后特别甜。"
+  },
+  "cocoa_bean": {
+    "id": "cocoa_bean",
+    "name": "咖啡豆",
+    "seed_item": "seed_cocoa_bean",
+    "product_item": "cocoa_bean",
+    "days_to_grow": 3,
+    "stages": 4,
+    "seasons": [
+      "长夏"
+    ],
+    "sell_price": 200,
+    "regrow_days": 2,
+    "color": "#6B5340",
+    "sprout_color": "#5A8A4A",
+    "mature_color": "#6B5340",
+    "desc": "提神。"
+  },
+  "wintermelon": {
+    "id": "wintermelon",
+    "name": "冬瓜",
+    "seed_item": "seed_wintermelon",
+    "product_item": "wintermelon",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "静雪冬"
+    ],
+    "sell_price": 130,
+    "regrow_days": 2,
+    "color": "#B0C8A0",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#B0C8A0",
+    "desc": "耐放。"
+  },
+  "snow_pea": {
+    "id": "snow_pea",
+    "name": "雪豆",
+    "seed_item": "seed_snow_pea",
+    "product_item": "snow_pea",
+    "days_to_grow": 8,
+    "stages": 5,
+    "seasons": [
+      "静雪冬"
+    ],
+    "sell_price": 72,
+    "regrow_days": 0,
+    "color": "#D0E8D0",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#D0E8D0",
+    "desc": "冬天的脆响。"
+  },
+  "holly": {
+    "id": "holly",
+    "name": "冬青果",
+    "seed_item": "seed_holly",
+    "product_item": "holly",
+    "days_to_grow": 9,
+    "stages": 5,
+    "seasons": [
+      "静雪冬"
+    ],
+    "sell_price": 110,
+    "regrow_days": 2,
+    "color": "#E04040",
+    "sprout_color": "#4A7A3A",
+    "mature_color": "#E04040",
+    "desc": "节日点缀。"
+  },
+  "mandarin": {
+    "id": "mandarin",
+    "name": "金橘",
+    "seed_item": "seed_mandarin",
+    "product_item": "mandarin",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "静雪冬"
+    ],
+    "sell_price": 155,
+    "regrow_days": 2,
+    "color": "#E0A040",
+    "sprout_color": "#6B9B4A",
+    "mature_color": "#E0A040",
+    "desc": "冬天的甜。"
+  },
+  "asparagus": {
+    "id": "asparagus",
+    "name": "芦笋",
+    "seed_item": "seed_asparagus",
+    "product_item": "asparagus",
+    "days_to_grow": 4,
+    "stages": 4,
+    "seasons": [
+      "萌芽春"
+    ],
+    "sell_price": 92,
+    "regrow_days": 2,
+    "color": "#7FA36A",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#7FA36A",
+    "desc": "春天贵客。"
+  },
+  "artichoke": {
+    "id": "artichoke",
+    "name": "洋蓟",
+    "seed_item": "seed_artichoke",
+    "product_item": "artichoke",
+    "days_to_grow": 10,
+    "stages": 5,
+    "seasons": [
+      "萌芽春",
+      "长夏"
+    ],
+    "sell_price": 118,
+    "regrow_days": 2,
+    "color": "#A0A890",
+    "sprout_color": "#8FBC6B",
+    "mature_color": "#A0A890",
+    "desc": "造型派。"
+  }
+}

@@ -1,0 +1,25 @@
+== 交付核查（运行时资产，排除 _stage/keys/sprites）==
+检查文件数: 588
+
+1) 命名不规范: 0
+
+2) 打不开/损坏: 0
+
+3) 疑似空白图: 3
+   crops/crop_tea_s0.png cov=0.010
+   crops/crop_tomato_s0.png cov=0.018
+   enemies/enemy_stone_guardian_fall_05.png cov=0.014
+
+4) 画布尺寸分布:
+   256x256       266
+   192x288       144
+   128x128        82
+   1024x922       33
+   1536x922       31
+   512x512        17
+   96x96           6
+   820x738         5
+   1024x1382       3
+   780x702         1
+
+5) 应透明但无 alpha 通道: 0

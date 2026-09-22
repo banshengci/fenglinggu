@@ -1,0 +1,117 @@
+{
+  "shop_id": "general_store",
+  "name": "阿棠杂货",
+  "npc_id": "atang",
+  "stock": [
+    {
+      "item": "seed_turnip",
+      "price": 20,
+      "seasons": [
+        "萌芽春"
+      ]
+    },
+    {
+      "item": "seed_potato",
+      "price": 30,
+      "seasons": [
+        "萌芽春",
+        "蜜酿秋"
+      ]
+    },
+    {
+      "item": "seed_tomato",
+      "price": 40,
+      "seasons": [
+        "长夏"
+      ]
+    },
+    {
+      "item": "seed_berry",
+      "price": 55,
+      "seasons": [
+        "长夏",
+        "蜜酿秋"
+      ]
+    },
+    {
+      "item": "seed_cabbage",
+      "price": 35,
+      "seasons": [
+        "萌芽春",
+        "静雪冬"
+      ]
+    },
+    {
+      "item": "seed_carrot",
+      "price": 25,
+      "seasons": [
+        "萌芽春",
+        "蜜酿秋"
+      ]
+    },
+    {
+      "item": "seed_strawberry",
+      "price": 70,
+      "seasons": [
+        "长夏"
+      ]
+    },
+    {
+      "item": "seed_corn",
+      "price": 60,
+      "seasons": [
+        "长夏",
+        "蜜酿秋"
+      ]
+    },
+    {
+      "item": "seed_pumpkin",
+      "price": 90,
+      "seasons": [
+        "蜜酿秋"
+      ]
+    },
+    {
+      "item": "seed_rice",
+      "price": 55,
+      "seasons": [
+        "蜜酿秋"
+      ]
+    },
+    {
+      "item": "seed_tea",
+      "price": 65,
+      "seasons": [
+        "萌芽春",
+        "长夏"
+      ]
+    },
+    {
+      "item": "seed_mandarin",
+      "price": 85,
+      "seasons": [
+        "静雪冬"
+      ]
+    },
+    {
+      "item": "wood",
+      "price": 8,
+      "seasons": []
+    },
+    {
+      "item": "stone",
+      "price": 7,
+      "seasons": []
+    },
+    {
+      "item": "fiber",
+      "price": 4,
+      "seasons": []
+    },
+    {
+      "item": "turnip_cake",
+      "price": 70,
+      "seasons": []
+    }
+  ]
+}

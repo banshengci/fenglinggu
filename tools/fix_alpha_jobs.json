@@ -1,0 +1,8 @@
+[
+  {"path": "D:/xinxiangmu/youxi/game/art/enemies/prop_treasure_chest.png", "inset": 0.10, "tol": 60},
+  {"path": "D:/xinxiangmu/youxi/game/art/ui/ui_achievement.png", "inset": 0.10, "tol": 60},
+  {"path": "D:/xinxiangmu/youxi/game/art/fx/fx_resonance.png", "inset": 0.12, "tol": 55},
+  {"path": "D:/xinxiangmu/youxi/game/art/fx/fx_rain.png", "inset": 0.10, "tol": 55},
+  {"path": "D:/xinxiangmu/youxi/game/art/fx/fx_snow.png", "inset": 0.10, "tol": 55},
+  {"path": "D:/xinxiangmu/youxi/game/art/fx/fx_harvest.png", "inset": 0.10, "tol": 55}
+]

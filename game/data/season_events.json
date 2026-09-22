@@ -1,0 +1,113 @@
+{
+  "events": [
+    {
+      "id": "kite_day",
+      "season": "萌芽春",
+      "day": 7,
+      "title": "风筝日",
+      "lines": [
+        "广场上飘满了风筝。",
+        "风铃和风筝比赛谁先碰到云。"
+      ],
+      "reward": {
+        "item": "fiber",
+        "count": 3
+      }
+    },
+    {
+      "id": "try_plant",
+      "season": "萌芽春",
+      "day": 14,
+      "title": "迎风试种",
+      "lines": [
+        "大家把第一粒种子交给风。",
+        "你的田也多了一丝勇气。"
+      ],
+      "reward": {
+        "item": "seed_radish",
+        "count": 3
+      }
+    },
+    {
+      "id": "lake_lights",
+      "season": "长夏",
+      "day": 8,
+      "title": "湖灯夜",
+      "lines": [
+        "湖面被灯火点亮。",
+        "像另一条银河。"
+      ],
+      "reward": {
+        "item": "lantern",
+        "count": 1
+      }
+    },
+    {
+      "id": "tea_party",
+      "season": "长夏",
+      "day": 16,
+      "title": "凉茶会",
+      "lines": [
+        "茶婆支起了茶摊。",
+        "一口下去，暑气都低了头。"
+      ],
+      "reward": {
+        "item": "tea_set",
+        "count": 1
+      }
+    },
+    {
+      "id": "harvest_fair",
+      "season": "蜜酿秋",
+      "day": 10,
+      "title": "丰收市集",
+      "lines": [
+        "喇叭和叫卖声混在一起。",
+        "溢价商品今天特别好卖！"
+      ],
+      "reward": {
+        "money": 200
+      }
+    },
+    {
+      "id": "honey_fest",
+      "season": "蜜酿秋",
+      "day": 18,
+      "title": "蜜酿节",
+      "lines": [
+        "甜香飘了三条街。"
+      ],
+      "reward": {
+        "item": "honey",
+        "count": 1
+      }
+    },
+    {
+      "id": "hearth_night",
+      "season": "静雪冬",
+      "day": 9,
+      "title": "围炉夜",
+      "lines": [
+        "壁炉噼啪，故事轮流传。"
+      ],
+      "reward": {
+        "item": "hot_cocoa",
+        "count": 1
+      }
+    },
+    {
+      "id": "snow_bell",
+      "season": "静雪冬",
+      "day": 20,
+      "title": "雪中寻铃",
+      "lines": [
+        "雪地上有一串铃印。",
+        "风在很远的地方练习。"
+      ],
+      "reward": {
+        "item": "wind_shard",
+        "count": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/fx6b.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/fx",
+    "names": ["fx_till_dust", "fx_water_drop", "fx_rock_spark", "fx_chime_ring", "fx_sun_dapple", "fx_breeze_leaf"],
+    "cols": 6, "rows": 1, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  }
+]

@@ -1,0 +1,604 @@
+{
+  "floors": [
+    {
+      "id": 1,
+      "name": "雾晶矿洞 · 01层",
+      "depth_label": "B1",
+      "rock_count": 10,
+      "enemy_count": 2,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 5,
+        "copper_ore": 3,
+        "iron_ore": 2,
+        "wind_shard": 1
+      },
+      "enemy_type": "slime",
+      "bg": "#2A3340",
+      "accent": "#4A5A6A",
+      "desc": "雾晶与岩石的层叠。"
+    },
+    {
+      "id": 2,
+      "name": "雾晶矿洞 · 02层",
+      "depth_label": "B2",
+      "rock_count": 11,
+      "enemy_count": 3,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 5,
+        "copper_ore": 3,
+        "iron_ore": 2,
+        "wind_shard": 1
+      },
+      "enemy_type": "slime",
+      "bg": "#2A3340",
+      "accent": "#4A5A6A",
+      "desc": "雾晶与岩石的层叠。"
+    },
+    {
+      "id": 3,
+      "name": "雾晶矿洞 · 03层",
+      "depth_label": "B3",
+      "rock_count": 12,
+      "enemy_count": 4,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 5,
+        "copper_ore": 3,
+        "iron_ore": 2,
+        "wind_shard": 1
+      },
+      "enemy_type": "slime",
+      "bg": "#2A3340",
+      "accent": "#4A5A6A",
+      "desc": "雾晶与岩石的层叠。"
+    },
+    {
+      "id": 4,
+      "name": "雾晶矿洞 · 04层",
+      "depth_label": "B4",
+      "rock_count": 13,
+      "enemy_count": 5,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 5,
+        "copper_ore": 3,
+        "iron_ore": 2,
+        "wind_shard": 1
+      },
+      "enemy_type": "slime",
+      "bg": "#2A3340",
+      "accent": "#4A5A6A",
+      "desc": "雾晶与岩石的层叠。"
+    },
+    {
+      "id": 5,
+      "name": "雾晶矿洞 · 05层",
+      "depth_label": "B5",
+      "rock_count": 14,
+      "enemy_count": 6,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 5,
+        "copper_ore": 3,
+        "iron_ore": 2,
+        "wind_shard": 1
+      },
+      "enemy_type": "slime",
+      "bg": "#2A3340",
+      "accent": "#4A5A6A",
+      "desc": "雾晶与岩石的层叠。"
+    },
+    {
+      "id": 6,
+      "name": "回声廊 · 06层",
+      "depth_label": "B6",
+      "rock_count": 15,
+      "enemy_count": 7,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 4,
+        "copper_ore": 3,
+        "iron_ore": 3,
+        "wind_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#243040",
+      "accent": "#5A7A8A",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 7,
+      "name": "回声廊 · 07层",
+      "depth_label": "B7",
+      "rock_count": 16,
+      "enemy_count": 2,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 4,
+        "copper_ore": 3,
+        "iron_ore": 3,
+        "wind_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#243040",
+      "accent": "#5A7A8A",
+      "desc": "越深，风声越像歌。",
+      "boss": "slime_king"
+    },
+    {
+      "id": 8,
+      "name": "回声廊 · 08层",
+      "depth_label": "B8",
+      "rock_count": 17,
+      "enemy_count": 3,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 4,
+        "copper_ore": 3,
+        "iron_ore": 3,
+        "wind_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#243040",
+      "accent": "#5A7A8A",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 9,
+      "name": "回声廊 · 09层",
+      "depth_label": "B9",
+      "rock_count": 10,
+      "enemy_count": 4,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 4,
+        "copper_ore": 3,
+        "iron_ore": 3,
+        "wind_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#243040",
+      "accent": "#5A7A8A",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 10,
+      "name": "回声廊 · 10层",
+      "depth_label": "B10",
+      "rock_count": 11,
+      "enemy_count": 5,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 4,
+        "copper_ore": 3,
+        "iron_ore": 3,
+        "wind_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#243040",
+      "accent": "#5A7A8A",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 11,
+      "name": "脉心 · 11层",
+      "depth_label": "B11",
+      "rock_count": 12,
+      "enemy_count": 6,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 3,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 3,
+        "silver_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#1A2430",
+      "accent": "#6A8AAA",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 12,
+      "name": "脉心 · 12层",
+      "depth_label": "B12",
+      "rock_count": 13,
+      "enemy_count": 7,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 3,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 3,
+        "silver_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#1A2430",
+      "accent": "#6A8AAA",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 13,
+      "name": "脉心 · 13层",
+      "depth_label": "B13",
+      "rock_count": 14,
+      "enemy_count": 2,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 3,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 3,
+        "silver_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#1A2430",
+      "accent": "#6A8AAA",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 14,
+      "name": "脉心 · 14层",
+      "depth_label": "B14",
+      "rock_count": 15,
+      "enemy_count": 3,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 3,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 3,
+        "silver_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#1A2430",
+      "accent": "#6A8AAA",
+      "desc": "越深，风声越像歌。",
+      "boss": "slime_king"
+    },
+    {
+      "id": 15,
+      "name": "脉心 · 15层",
+      "depth_label": "B15",
+      "rock_count": 16,
+      "enemy_count": 4,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 3,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 3,
+        "silver_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#1A2430",
+      "accent": "#6A8AAA",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 16,
+      "name": "矿脉深部 · 16层",
+      "depth_label": "B16",
+      "rock_count": 17,
+      "enemy_count": 5,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 2,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#121A24",
+      "accent": "#7A9AB0",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 17,
+      "name": "矿脉深部 · 17层",
+      "depth_label": "B17",
+      "rock_count": 10,
+      "enemy_count": 6,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 2,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#121A24",
+      "accent": "#7A9AB0",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 18,
+      "name": "矿脉深部 · 18层",
+      "depth_label": "B18",
+      "rock_count": 11,
+      "enemy_count": 7,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 2,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#121A24",
+      "accent": "#7A9AB0",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 19,
+      "name": "矿脉深部 · 19层",
+      "depth_label": "B19",
+      "rock_count": 12,
+      "enemy_count": 2,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 2,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#121A24",
+      "accent": "#7A9AB0",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 20,
+      "name": "矿脉深部 · 20层",
+      "depth_label": "B20",
+      "rock_count": 13,
+      "enemy_count": 3,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 2,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#121A24",
+      "accent": "#7A9AB0",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 21,
+      "name": "节拍室 · 21层",
+      "depth_label": "B21",
+      "rock_count": 14,
+      "enemy_count": 4,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 1,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2,
+        "mythril_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#0E141C",
+      "accent": "#8AACB8",
+      "desc": "越深，风声越像歌。",
+      "boss": "slime_king"
+    },
+    {
+      "id": 22,
+      "name": "节拍室 · 22层",
+      "depth_label": "B22",
+      "rock_count": 15,
+      "enemy_count": 5,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 1,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2,
+        "mythril_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#0E141C",
+      "accent": "#8AACB8",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 23,
+      "name": "节拍室 · 23层",
+      "depth_label": "B23",
+      "rock_count": 16,
+      "enemy_count": 6,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 1,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2,
+        "mythril_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#0E141C",
+      "accent": "#8AACB8",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 24,
+      "name": "节拍室 · 24层",
+      "depth_label": "B24",
+      "rock_count": 17,
+      "enemy_count": 7,
+      "chest_count": 3,
+      "ore_weights": {
+        "stone": 1,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2,
+        "mythril_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#0E141C",
+      "accent": "#8AACB8",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 25,
+      "name": "节拍室 · 25层",
+      "depth_label": "B25",
+      "rock_count": 10,
+      "enemy_count": 2,
+      "chest_count": 1,
+      "ore_weights": {
+        "stone": 1,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2,
+        "mythril_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#0E141C",
+      "accent": "#8AACB8",
+      "desc": "越深，风声越像歌。"
+    },
+    {
+      "id": 26,
+      "name": "节拍室 · 26层",
+      "depth_label": "B26",
+      "rock_count": 11,
+      "enemy_count": 3,
+      "chest_count": 2,
+      "ore_weights": {
+        "stone": 1,
+        "copper_ore": 3,
+        "iron_ore": 4,
+        "wind_shard": 4,
+        "silver_ore": 2,
+        "gold_ore": 2,
+        "mythril_shard": 2
+      },
+      "enemy_type": "bat",
+      "bg": "#0E141C",
+      "accent": "#8AACB8",
+      "desc": "越深，风声越像歌。"
+    }
+  ],
+  "enemy_types": {
+    "slime": {
+      "name": "晶蚀史莱姆",
+      "hp": 3,
+      "touch_damage": 1,
+      "speed": 40,
+      "color": "#7BC96F",
+      "size": 14,
+      "loot": {
+        "stone": 1
+      }
+    },
+    "bat": {
+      "name": "雾蝠",
+      "hp": 2,
+      "touch_damage": 1,
+      "speed": 70,
+      "color": "#8A7AAA",
+      "size": 12,
+      "loot": {
+        "fiber": 1
+      }
+    },
+    "slime_king": {
+      "name": "岩心守卫",
+      "hp": 12,
+      "touch_damage": 1,
+      "speed": 35,
+      "color": "#C9A227",
+      "size": 28,
+      "loot": {
+        "wind_shard": 2,
+        "iron_ore": 2
+      }
+    }
+  },
+  "chest_table": [
+    {
+      "weight": 3,
+      "drops": {
+        "copper_ore": 2,
+        "stone": 3
+      }
+    },
+    {
+      "weight": 3,
+      "drops": {
+        "iron_ore": 1,
+        "copper_ore": 1
+      }
+    },
+    {
+      "weight": 2,
+      "drops": {
+        "wind_shard": 1,
+        "stone": 2
+      }
+    },
+    {
+      "weight": 1,
+      "drops": {
+        "seed_tomato": 2,
+        "turnip": 1
+      }
+    },
+    {
+      "weight": 1,
+      "drops": {
+        "wind_shard": 2
+      }
+    },
+    {
+      "weight": 1,
+      "drops": {
+        "silver_ore": 1
+      }
+    },
+    {
+      "weight": 1,
+      "drops": {
+        "gold_ore": 1
+      }
+    },
+    {
+      "weight": 1,
+      "drops": {
+        "clay_bell": 1
+      }
+    },
+    {
+      "weight": 1,
+      "drops": {
+        "glass_marble": 1
+      }
+    }
+  ]
+}

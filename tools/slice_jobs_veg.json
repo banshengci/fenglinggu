@@ -1,0 +1,9 @@
+[
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_spring_crop.png", "out_dir": "D:/xinxiangmu/youxi/game/art/tiles", "names": ["tree_spring_broadleaf", "tree_spring_fruit", "tree_spring_conifer"], "cols": 3, "out_size": 256, "tol": 25, "margin_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_summer_crop.png", "out_dir": "D:/xinxiangmu/youxi/game/art/tiles", "names": ["tree_summer_broadleaf", "tree_summer_fruit", "tree_summer_conifer"], "cols": 3, "out_size": 256, "tol": 25, "margin_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_autumn_crop.png", "out_dir": "D:/xinxiangmu/youxi/game/art/tiles", "names": ["tree_autumn_broadleaf", "tree_autumn_fruit", "tree_autumn_conifer"], "cols": 3, "out_size": 256, "tol": 25, "margin_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_winter_crop.png", "out_dir": "D:/xinxiangmu/youxi/game/art/tiles", "names": ["tree_winter_broadleaf", "tree_winter_fruit", "tree_winter_conifer"], "cols": 3, "out_size": 256, "tol": 25, "margin_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/plate_props_nature_crop.png", "out_dir": "D:/xinxiangmu/youxi/game/art/tiles", "names": ["prop_bush", "prop_grass_tuft", "prop_small_flower", "prop_reed", "prop_bamboo", "prop_stump"], "cols": 6, "out_size": 128, "tol": 25, "margin_frac": 0.12},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/plate_flowers_crop.png", "out_dir": "D:/xinxiangmu/youxi/game/art/tiles", "names": ["flower_red", "flower_orange", "flower_yellow", "flower_pink", "flower_blue", "flower_white"], "cols": 6, "out_size": 96, "tol": 25, "margin_frac": 0.12},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/plate_props_ground_crop.png", "out_dir": "D:/xinxiangmu/youxi/game/art/tiles", "names": ["prop_stone_cluster", "prop_rock_pile", "prop_fence_corner", "prop_footprints"], "cols": 4, "out_size": 128, "tol": 25, "margin_frac": 0.12}
+]

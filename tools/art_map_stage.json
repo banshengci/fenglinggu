@@ -1,0 +1,12 @@
+[
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/Deep_inside_a_crystal_mine__a__2026-09-22T08-10-08.png", "target": "D:/xinxiangmu/youxi/game/art/tiles/tile_mine_deep.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_misty_deep_forest__a_wide_st_2026-09-22T08-10-06.png", "target": "D:/xinxiangmu/youxi/game/art/tiles/tile_misty_forest.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_sunny_forest_clearing_with_a_2026-09-22T08-10-05.png", "target": "D:/xinxiangmu/youxi/game/art/tiles/tile_forest_windmill.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_windy_cliff_top_with_a_sea_o_2026-09-22T08-10-07.png", "target": "D:/xinxiangmu/youxi/game/art/tiles/tile_cliff_top.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_weather_effect_sprite_refere_2026-09-22T08-10-04.png", "target": "D:/xinxiangmu/youxi/game/art/fx/fx_rain.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_snow_weather_effect_sprite_r_2026-09-22T08-10-05.png", "target": "D:/xinxiangmu/youxi/game/art/fx/fx_snow.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_harvest_sparkle_effect_sprit_2026-09-22T08-10-08.png", "target": "D:/xinxiangmu/youxi/game/art/fx/fx_harvest.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_resonance_sound_effect_sprit_2026-09-22T08-10-06.png", "target": "D:/xinxiangmu/youxi/game/art/fx/fx_resonance.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/Fifteen_cozy_farmhouse_furnitu_2026-09-22T08-10-07.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_furniture_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/Eight_small_gift_and_keepsake__2026-09-22T08-10-11.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_gifts_crop.png", "bottom_frac": 0.10}
+]

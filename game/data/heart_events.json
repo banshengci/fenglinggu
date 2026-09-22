@@ -1,0 +1,369 @@
+{
+  "events": [
+    {
+      "id": "grandpa_lin_2",
+      "npc_id": "grandpa_lin",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "grandpa_lin 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "grandpa_lin_4",
+      "npc_id": "grandpa_lin",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "grandpa_lin 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "grandpa_lin_6",
+      "npc_id": "grandpa_lin",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "grandpa_lin：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    },
+    {
+      "id": "xiaoman_2",
+      "npc_id": "xiaoman",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "xiaoman 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "xiaoman_4",
+      "npc_id": "xiaoman",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "xiaoman 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "xiaoman_6",
+      "npc_id": "xiaoman",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "xiaoman：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    },
+    {
+      "id": "zhi_tao_2",
+      "npc_id": "zhi_tao",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "zhi_tao 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "zhi_tao_4",
+      "npc_id": "zhi_tao",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "zhi_tao 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "zhi_tao_6",
+      "npc_id": "zhi_tao",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "zhi_tao：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    },
+    {
+      "id": "atang_2",
+      "npc_id": "atang",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "atang 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "atang_4",
+      "npc_id": "atang",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "atang 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "atang_6",
+      "npc_id": "atang",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "atang：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    },
+    {
+      "id": "jiangcheng_2",
+      "npc_id": "jiangcheng",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "jiangcheng 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "jiangcheng_4",
+      "npc_id": "jiangcheng",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "jiangcheng 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "jiangcheng_6",
+      "npc_id": "jiangcheng",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "jiangcheng：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    },
+    {
+      "id": "yunzhou_2",
+      "npc_id": "yunzhou",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "yunzhou 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "yunzhou_4",
+      "npc_id": "yunzhou",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "yunzhou 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "yunzhou_6",
+      "npc_id": "yunzhou",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "yunzhou：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    },
+    {
+      "id": "shijiang_2",
+      "npc_id": "shijiang",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "shijiang 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "shijiang_4",
+      "npc_id": "shijiang",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "shijiang 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "shijiang_6",
+      "npc_id": "shijiang",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "shijiang：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    },
+    {
+      "id": "chapo_2",
+      "npc_id": "chapo",
+      "heart": 2,
+      "title": "小事一桩",
+      "lines": [
+        "chapo 和你分享了一段往事。",
+        "好感升温。"
+      ],
+      "reward": {
+        "friendship": 7,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "chapo_4",
+      "npc_id": "chapo",
+      "heart": 4,
+      "title": "心意",
+      "lines": [
+        "chapo 把一件小礼物塞进你手里。",
+        "你们更亲近了。"
+      ],
+      "reward": {
+        "friendship": 9,
+        "item": "herb",
+        "count": 1
+      }
+    },
+    {
+      "id": "chapo_6",
+      "npc_id": "chapo",
+      "heart": 6,
+      "title": "约定",
+      "lines": [
+        "chapo：往后的风铃节，都要一起听铃啊。",
+        "羁绊已达深处。"
+      ],
+      "reward": {
+        "friendship": 11,
+        "item": "wind_shard",
+        "count": 1
+      }
+    }
+  ],
+  "heart_thresholds": {
+    "2": 20,
+    "4": 50,
+    "6": 90
+  }
+}

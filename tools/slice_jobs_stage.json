@@ -1,0 +1,22 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/plate_furniture_crop.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/furniture",
+    "names": [
+      "furniture_fence", "furniture_pot", "furniture_lantern", "furniture_bench",
+      "furniture_sign", "furniture_well", "furniture_birdhouse", "furniture_windmill_toy",
+      "furniture_crystal_lamp", "furniture_rug", "furniture_curtain", "furniture_bookshelf",
+      "furniture_tea_table", "furniture_painting", "furniture_bell_hanging"
+    ],
+    "out_size": 256, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.14
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/plate_gifts_crop.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": [
+      "icon_gift_windchime", "icon_gift_sweets", "icon_gift_ore", "icon_gift_jam",
+      "icon_gift_coin", "icon_gift_fish", "icon_gift_scroll_tea", "icon_gift_teapot"
+    ],
+    "out_size": 256, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.14
+  }
+]

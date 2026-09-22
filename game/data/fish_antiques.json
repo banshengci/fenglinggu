@@ -1,0 +1,313 @@
+{
+  "fish": [
+    {
+      "id": "carp_spring",
+      "name": "溪鲤",
+      "seasons": [
+        "萌芽春"
+      ],
+      "sell_price": 40,
+      "color": "#C8B090",
+      "difficulty": 1
+    },
+    {
+      "id": "crucian",
+      "name": "银鲫",
+      "seasons": [
+        "萌芽春"
+      ],
+      "sell_price": 48,
+      "color": "#D0D0C0",
+      "difficulty": 1
+    },
+    {
+      "id": "loach",
+      "name": "泥鳅",
+      "seasons": [
+        "萌芽春",
+        "长夏"
+      ],
+      "sell_price": 35,
+      "color": "#A08060",
+      "difficulty": 1
+    },
+    {
+      "id": "dace",
+      "name": "雅罗",
+      "seasons": [
+        "萌芽春"
+      ],
+      "sell_price": 52,
+      "color": "#B0C0A0",
+      "difficulty": 2
+    },
+    {
+      "id": "bluegill",
+      "name": "蓝鳃太阳鱼",
+      "seasons": [
+        "长夏"
+      ],
+      "sell_price": 55,
+      "color": "#7EB8D0",
+      "difficulty": 1
+    },
+    {
+      "id": "bass",
+      "name": "河鲈",
+      "seasons": [
+        "长夏"
+      ],
+      "sell_price": 70,
+      "color": "#90A8B0",
+      "difficulty": 2
+    },
+    {
+      "id": "catfish",
+      "name": "鲶鱼",
+      "seasons": [
+        "长夏"
+      ],
+      "sell_price": 80,
+      "color": "#6B5340",
+      "difficulty": 2
+    },
+    {
+      "id": "puffer",
+      "name": "河豚",
+      "seasons": [
+        "长夏"
+      ],
+      "sell_price": 95,
+      "color": "#E8D080",
+      "difficulty": 3
+    },
+    {
+      "id": "mackerel",
+      "name": "鲭鱼",
+      "seasons": [
+        "长夏",
+        "蜜酿秋"
+      ],
+      "sell_price": 88,
+      "color": "#80A0C0",
+      "difficulty": 2
+    },
+    {
+      "id": "salmon",
+      "name": "溯河鲑",
+      "seasons": [
+        "蜜酿秋"
+      ],
+      "sell_price": 120,
+      "color": "#E09080",
+      "difficulty": 3
+    },
+    {
+      "id": "carp_mirror",
+      "name": "镜鲤",
+      "seasons": [
+        "蜜酿秋"
+      ],
+      "sell_price": 100,
+      "color": "#D0B080",
+      "difficulty": 2
+    },
+    {
+      "id": "night_eel",
+      "name": "夜鳗",
+      "seasons": [
+        "蜜酿秋"
+      ],
+      "sell_price": 90,
+      "color": "#6A5A8A",
+      "difficulty": 3
+    },
+    {
+      "id": "eel",
+      "name": "黄鳝",
+      "seasons": [
+        "蜜酿秋",
+        "长夏"
+      ],
+      "sell_price": 75,
+      "color": "#A09050",
+      "difficulty": 2
+    },
+    {
+      "id": "gudgeon",
+      "name": "吻鮈",
+      "seasons": [
+        "蜜酿秋"
+      ],
+      "sell_price": 42,
+      "color": "#C0B090",
+      "difficulty": 1
+    },
+    {
+      "id": "ice_trout",
+      "name": "冰晶鳟",
+      "seasons": [
+        "静雪冬"
+      ],
+      "sell_price": 110,
+      "color": "#B0D8E8",
+      "difficulty": 2
+    },
+    {
+      "id": "whitefish",
+      "name": "白鲑",
+      "seasons": [
+        "静雪冬"
+      ],
+      "sell_price": 98,
+      "color": "#E0E8E8",
+      "difficulty": 2
+    },
+    {
+      "id": "smelt",
+      "name": "胡瓜鱼",
+      "seasons": [
+        "静雪冬"
+      ],
+      "sell_price": 60,
+      "color": "#C0D0B0",
+      "difficulty": 1
+    },
+    {
+      "id": "pike",
+      "name": "狗鱼",
+      "seasons": [
+        "静雪冬"
+      ],
+      "sell_price": 130,
+      "color": "#8A9A70",
+      "difficulty": 3
+    },
+    {
+      "id": "moon_koi",
+      "name": "月光锦鲤",
+      "seasons": [],
+      "sell_price": 200,
+      "color": "#E8C87A",
+      "difficulty": 3,
+      "rare": true
+    },
+    {
+      "id": "ghost_fish",
+      "name": "幽灵鱼",
+      "seasons": [],
+      "sell_price": 180,
+      "color": "#C0C8D8",
+      "difficulty": 3,
+      "rare": true
+    },
+    {
+      "id": "crystal_shrimp",
+      "name": "雾晶虾",
+      "seasons": [],
+      "sell_price": 70,
+      "color": "#A8D8E8",
+      "difficulty": 1
+    },
+    {
+      "id": "stone_loach",
+      "name": "石鳅",
+      "seasons": [],
+      "sell_price": 50,
+      "color": "#A0A0A0",
+      "difficulty": 1
+    },
+    {
+      "id": "pond_turtle",
+      "name": "池龟",
+      "seasons": [],
+      "sell_price": 150,
+      "color": "#6B8F5A",
+      "difficulty": 3,
+      "rare": true
+    },
+    {
+      "id": "legend_fish",
+      "name": "传说之鱼",
+      "seasons": [],
+      "sell_price": 500,
+      "color": "#E8A0E8",
+      "difficulty": 3,
+      "rare": true
+    }
+  ],
+  "antiques": [
+    {
+      "id": "clay_bell",
+      "name": "陶铃残片",
+      "sell_price": 30,
+      "color": "#D0A070"
+    },
+    {
+      "id": "glass_marble",
+      "name": "雾晶弹珠",
+      "sell_price": 45,
+      "color": "#A8D8E8"
+    },
+    {
+      "id": "old_letter",
+      "name": "风干的信",
+      "sell_price": 25,
+      "color": "#E8DCC0"
+    },
+    {
+      "id": "gear_toy",
+      "name": "齿轮玩具",
+      "sell_price": 55,
+      "color": "#A0A8B0"
+    },
+    {
+      "id": "porcelain_shard",
+      "name": "青瓷片",
+      "sell_price": 40,
+      "color": "#A0C0C0"
+    },
+    {
+      "id": "bronze_coin",
+      "name": "青铜钱",
+      "sell_price": 35,
+      "color": "#C0A060"
+    },
+    {
+      "id": "wooden_comb",
+      "name": "木梳",
+      "sell_price": 28,
+      "color": "#B8956C"
+    },
+    {
+      "id": "stone_bead",
+      "name": "石珠",
+      "sell_price": 32,
+      "color": "#9A9A9A"
+    },
+    {
+      "id": "glass_bottle",
+      "name": "雾玻璃瓶",
+      "sell_price": 38,
+      "color": "#C0E0E0"
+    },
+    {
+      "id": "iron_key",
+      "name": "旧铁钥",
+      "sell_price": 50,
+      "color": "#A0A8B0"
+    },
+    {
+      "id": "bone_flake",
+      "name": "骨哨残片",
+      "sell_price": 33,
+      "color": "#E8E0D0"
+    },
+    {
+      "id": "pocket_watch",
+      "name": "怀表（停了）",
+      "sell_price": 80,
+      "color": "#E8C87A"
+    }
+  ]
+}

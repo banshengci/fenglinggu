@@ -1,0 +1,76 @@
+{
+  "list": [
+    {
+      "id": "first_harvest",
+      "name": "第一筐",
+      "desc": "完成第一次收获",
+      "check": "harvest_count>=1"
+    },
+    {
+      "id": "green_thumb",
+      "name": "绿手指",
+      "desc": "收获 50 次",
+      "check": "harvest_count>=50"
+    },
+    {
+      "id": "flash_fruit",
+      "name": "闪光时刻",
+      "desc": "获得闪光果",
+      "check": "flash_count>=1"
+    },
+    {
+      "id": "miner",
+      "name": "下矿去",
+      "desc": "开采 30 次矿岩",
+      "check": "mine_count>=30"
+    },
+    {
+      "id": "deep_dive",
+      "name": "地心来客",
+      "desc": "抵达 B10",
+      "check": "max_floor>=10"
+    },
+    {
+      "id": "social",
+      "name": "谷里有人缘",
+      "desc": "与 5 人成为朋友",
+      "check": "friends>=5"
+    },
+    {
+      "id": "bell1",
+      "name": "风起了",
+      "desc": "修好第 1 枚风铃",
+      "check": "bells>=1"
+    },
+    {
+      "id": "bell5",
+      "name": "风之祭",
+      "desc": "五铃齐鸣",
+      "check": "bells>=5"
+    },
+    {
+      "id": "rich",
+      "name": "小富即安",
+      "desc": "持有 5000 谷币",
+      "check": "money>=5000"
+    },
+    {
+      "id": "museum",
+      "name": "博物之友",
+      "desc": "捐赠 10 件藏品",
+      "check": "donate>=10"
+    },
+    {
+      "id": "cook",
+      "name": "厨房主理人",
+      "desc": "合成 20 次料理",
+      "check": "cook_count>=20"
+    },
+    {
+      "id": "legend_fish",
+      "name": "传说之钓",
+      "desc": "钓到传说之鱼",
+      "check": "legend_fish>=1"
+    }
+  ]
+}

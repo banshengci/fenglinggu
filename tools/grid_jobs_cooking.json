@@ -1,0 +1,50 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/cook_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["dish_turnip_cake", "dish_berry_jam", "dish_veg_soup", "dish_pumpkin_pie", "dish_feast", "dish_rice_ball", "dish_fried_rice", "dish_porridge", "dish_tea", "dish_ginger_tea"],
+    "cols": 5, "rows": 2, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/cook_p2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["dish_apple_pie", "dish_bread", "dish_cake", "dish_cookie", "dish_salad", "dish_pickle", "dish_grilled_fish", "dish_fish_soup", "dish_omelette", "dish_cheese"],
+    "cols": 5, "rows": 2, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/cook_p3.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["dish_butter", "dish_honey_toast", "dish_grape_wine", "dish_hot_cocoa", "dish_ice_cream", "dish_pudding", "dish_dumpling", "dish_noodles", "dish_pancake", "dish_popcorn"],
+    "cols": 5, "rows": 2, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/cook_p4.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["dish_corn_soup", "dish_tomato_pasta", "dish_veg_stew", "dish_mushroom_pot", "dish_baked_sweet_potato", "dish_jam_bun", "dish_honey_cake", "dish_mixed_plate", "dish_herbal_soup", "dish_festival_bento"],
+    "cols": 5, "rows": 2, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_berry", "seed_cabbage", "seed_carrot", "seed_onion", "seed_garlic", "seed_radish", "seed_lettuce", "seed_spinach", "seed_pea", "seed_watermelon", "seed_melon", "seed_pepper"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_eggplant", "seed_cucumber", "seed_sweet_potato", "seed_wheat", "seed_hazelnut", "seed_lavender", "seed_chrysanthemum", "seed_plum", "seed_pear", "seed_herb", "seed_cotton", "seed_flax"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p3.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_cocoa_seed", "seed_vanilla", "seed_ginger", "seed_lotus", "seed_bamboo_shoot", "seed_cocoa_bean", "seed_wintermelon", "seed_snow_pea", "seed_holly", "seed_mandarin", "seed_asparagus", "seed_artichoke"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p4.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_turnip", "seed_potato", "seed_tomato", "seed_strawberry", "seed_corn", "seed_pumpkin", "seed_grape", "seed_rice", "mushroom_seed", "seed_sunflower", "seed_apple", "seed_tea"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  }
+]

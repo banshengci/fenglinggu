@@ -1,0 +1,17 @@
+# Godot 4
+game/.godot/
+
+# 本地导出
+dist/
+
+# 中间产物
+docs/art/_raw_scratch/
+tools/*.report.txt
+_out*.txt
+_sheet.txt
+
+# 系统
+.DS_Store
+Thumbs.db
+__pycache__/
+node_modules/

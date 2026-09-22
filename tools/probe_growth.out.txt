@@ -1,0 +1,13 @@
+plate_growth_apple_crop.png	detected 1
+plate_growth_corn_crop.png	detected 1
+plate_growth_grape_crop.png	detected 1
+plate_growth_mushroom_crop.png	detected 3
+plate_growth_potato_crop.png	detected 4
+plate_growth_pumpkin_crop.png	detected 2
+plate_growth_rice_crop.png	detected 2
+plate_growth_strawberry_crop.png	detected 2
+plate_growth_sunflower_crop.png	detected 2
+plate_growth_tea_crop.png	detected 4
+plate_growth_tomato_crop.png	detected 4
+plate_growth_turnip_crop.png	detected 4
+plate_weather3_crop.png	detected 4

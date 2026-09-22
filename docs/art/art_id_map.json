@@ -1,0 +1,2663 @@
+{
+ "generated_from": [
+  "game/data/items.json",
+  "game/data/crops.json",
+  "game/data/recipes.json",
+  "game/data/fish_antiques.json",
+  "game/data/mine.json",
+  "game/data/npcs.json",
+  "game/art/chars/walk/ (行走帧，按实际落盘文件扫描)"
+ ],
+ "total": 441,
+ "mapped": 441,
+ "missing": 0,
+ "map": [
+  {
+   "kind": "crop",
+   "id": "turnip",
+   "file": "game/art/crops/crop_turnip.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "turnip:s0",
+   "file": "game/art/crops/crop_turnip_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "turnip:s1",
+   "file": "game/art/crops/crop_turnip_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "turnip:s2",
+   "file": "game/art/crops/crop_turnip_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "turnip:s3",
+   "file": "game/art/crops/crop_turnip_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "potato",
+   "file": "game/art/crops/crop_potato.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "potato:s0",
+   "file": "game/art/crops/crop_potato_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "potato:s1",
+   "file": "game/art/crops/crop_potato_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "potato:s2",
+   "file": "game/art/crops/crop_potato_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "potato:s3",
+   "file": "game/art/crops/crop_potato_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "tomato",
+   "file": "game/art/crops/crop_tomato.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tomato:s0",
+   "file": "game/art/crops/crop_tomato_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tomato:s1",
+   "file": "game/art/crops/crop_tomato_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tomato:s2",
+   "file": "game/art/crops/crop_tomato_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tomato:s3",
+   "file": "game/art/crops/crop_tomato_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "berry",
+   "file": "game/art/crops/crop_berry.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "cabbage",
+   "file": "game/art/crops/crop_cabbage.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "carrot",
+   "file": "game/art/crops/crop_carrot.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "onion",
+   "file": "game/art/crops/crop_onion.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "garlic",
+   "file": "game/art/crops/crop_garlic.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "radish",
+   "file": "game/art/crops/crop_radish.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "lettuce",
+   "file": "game/art/crops/crop_lettuce.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "spinach",
+   "file": "game/art/crops/crop_spinach.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "pea",
+   "file": "game/art/crops/crop_pea.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "strawberry",
+   "file": "game/art/crops/crop_strawberry.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "strawberry:s0",
+   "file": "game/art/crops/crop_strawberry_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "strawberry:s1",
+   "file": "game/art/crops/crop_strawberry_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "strawberry:s2",
+   "file": "game/art/crops/crop_strawberry_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "strawberry:s3",
+   "file": "game/art/crops/crop_strawberry_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "corn",
+   "file": "game/art/crops/crop_corn.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "corn:s0",
+   "file": "game/art/crops/crop_corn_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "corn:s1",
+   "file": "game/art/crops/crop_corn_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "corn:s2",
+   "file": "game/art/crops/crop_corn_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "corn:s3",
+   "file": "game/art/crops/crop_corn_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "watermelon",
+   "file": "game/art/crops/crop_watermelon.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "melon",
+   "file": "game/art/crops/crop_melon.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "pepper",
+   "file": "game/art/crops/crop_pepper.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "eggplant",
+   "file": "game/art/crops/crop_eggplant.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "cucumber",
+   "file": "game/art/crops/crop_cucumber.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "pumpkin",
+   "file": "game/art/crops/crop_pumpkin.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "pumpkin:s0",
+   "file": "game/art/crops/crop_pumpkin_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "pumpkin:s1",
+   "file": "game/art/crops/crop_pumpkin_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "pumpkin:s2",
+   "file": "game/art/crops/crop_pumpkin_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "pumpkin:s3",
+   "file": "game/art/crops/crop_pumpkin_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "sweet_potato",
+   "file": "game/art/crops/crop_sweet_potato.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "grape",
+   "file": "game/art/crops/crop_grape.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "grape:s0",
+   "file": "game/art/crops/crop_grape_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "grape:s1",
+   "file": "game/art/crops/crop_grape_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "grape:s2",
+   "file": "game/art/crops/crop_grape_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "grape:s3",
+   "file": "game/art/crops/crop_grape_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "rice",
+   "file": "game/art/crops/crop_rice.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "rice:s0",
+   "file": "game/art/crops/crop_rice_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "rice:s1",
+   "file": "game/art/crops/crop_rice_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "rice:s2",
+   "file": "game/art/crops/crop_rice_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "rice:s3",
+   "file": "game/art/crops/crop_rice_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "wheat",
+   "file": "game/art/crops/crop_wheat.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "mushroom",
+   "file": "game/art/crops/crop_mushroom.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "mushroom:s0",
+   "file": "game/art/crops/crop_mushroom_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "mushroom:s1",
+   "file": "game/art/crops/crop_mushroom_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "mushroom:s2",
+   "file": "game/art/crops/crop_mushroom_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "mushroom:s3",
+   "file": "game/art/crops/crop_mushroom_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "hazelnut",
+   "file": "game/art/crops/crop_hazelnut.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "sunflower",
+   "file": "game/art/crops/crop_sunflower.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "sunflower:s0",
+   "file": "game/art/crops/crop_sunflower_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "sunflower:s1",
+   "file": "game/art/crops/crop_sunflower_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "sunflower:s2",
+   "file": "game/art/crops/crop_sunflower_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "sunflower:s3",
+   "file": "game/art/crops/crop_sunflower_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "lavender",
+   "file": "game/art/crops/crop_lavender.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "chrysanthemum",
+   "file": "game/art/crops/crop_chrysanthemum.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "plum",
+   "file": "game/art/crops/crop_plum.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "apple",
+   "file": "game/art/crops/crop_apple.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "apple:s0",
+   "file": "game/art/crops/crop_apple_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "apple:s1",
+   "file": "game/art/crops/crop_apple_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "apple:s2",
+   "file": "game/art/crops/crop_apple_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "apple:s3",
+   "file": "game/art/crops/crop_apple_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "pear",
+   "file": "game/art/crops/crop_pear.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "tea",
+   "file": "game/art/crops/crop_tea.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tea:s0",
+   "file": "game/art/crops/crop_tea_s0.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tea:s1",
+   "file": "game/art/crops/crop_tea_s1.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tea:s2",
+   "file": "game/art/crops/crop_tea_s2.png",
+   "note": ""
+  },
+  {
+   "kind": "crop_stage",
+   "id": "tea:s3",
+   "file": "game/art/crops/crop_tea_s3.png",
+   "note": ""
+  },
+  {
+   "kind": "crop",
+   "id": "herb",
+   "file": "game/art/crops/crop_herb.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "cotton",
+   "file": "game/art/crops/crop_cotton.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "flax",
+   "file": "game/art/crops/crop_flax.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "cocoa_seed",
+   "file": "game/art/crops/crop_cocoa_seed.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "vanilla",
+   "file": "game/art/crops/crop_vanilla.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "ginger",
+   "file": "game/art/crops/crop_ginger.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "lotus",
+   "file": "game/art/crops/crop_lotus.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "bamboo_shoot",
+   "file": "game/art/crops/crop_bamboo_shoot.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "cocoa_bean",
+   "file": "game/art/crops/crop_cocoa_bean.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "wintermelon",
+   "file": "game/art/crops/crop_wintermelon.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "snow_pea",
+   "file": "game/art/crops/crop_snow_pea.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "holly",
+   "file": "game/art/crops/crop_holly.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "mandarin",
+   "file": "game/art/crops/crop_mandarin.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "asparagus",
+   "file": "game/art/crops/crop_asparagus.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "crop",
+   "id": "artichoke",
+   "file": "game/art/crops/crop_artichoke.png",
+   "note": "成熟图"
+  },
+  {
+   "kind": "seed",
+   "id": "seed_turnip",
+   "file": "game/art/items/seed_turnip.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_potato",
+   "file": "game/art/items/seed_potato.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_tomato",
+   "file": "game/art/items/seed_tomato.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_berry",
+   "file": "game/art/items/seed_berry.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_cabbage",
+   "file": "game/art/items/seed_cabbage.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_carrot",
+   "file": "game/art/items/seed_carrot.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_onion",
+   "file": "game/art/items/seed_onion.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_garlic",
+   "file": "game/art/items/seed_garlic.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_radish",
+   "file": "game/art/items/seed_radish.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_lettuce",
+   "file": "game/art/items/seed_lettuce.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_spinach",
+   "file": "game/art/items/seed_spinach.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_pea",
+   "file": "game/art/items/seed_pea.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_strawberry",
+   "file": "game/art/items/seed_strawberry.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_corn",
+   "file": "game/art/items/seed_corn.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_watermelon",
+   "file": "game/art/items/seed_watermelon.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_melon",
+   "file": "game/art/items/seed_melon.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_pepper",
+   "file": "game/art/items/seed_pepper.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_eggplant",
+   "file": "game/art/items/seed_eggplant.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_cucumber",
+   "file": "game/art/items/seed_cucumber.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_pumpkin",
+   "file": "game/art/items/seed_pumpkin.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_sweet_potato",
+   "file": "game/art/items/seed_sweet_potato.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_grape",
+   "file": "game/art/items/seed_grape.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_rice",
+   "file": "game/art/items/seed_rice.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_wheat",
+   "file": "game/art/items/seed_wheat.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "mushroom_seed",
+   "file": "game/art/items/seed_mushroom.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_hazelnut",
+   "file": "game/art/items/seed_hazelnut.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_sunflower",
+   "file": "game/art/items/seed_sunflower.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_lavender",
+   "file": "game/art/items/seed_lavender.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_chrysanthemum",
+   "file": "game/art/items/seed_chrysanthemum.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_plum",
+   "file": "game/art/items/seed_plum.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_apple",
+   "file": "game/art/items/seed_apple.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_pear",
+   "file": "game/art/items/seed_pear.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_tea",
+   "file": "game/art/items/seed_tea.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_herb",
+   "file": "game/art/items/seed_herb.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_cotton",
+   "file": "game/art/items/seed_cotton.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_flax",
+   "file": "game/art/items/seed_flax.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_cocoa_seed",
+   "file": "game/art/items/seed_cocoa_seed.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_vanilla",
+   "file": "game/art/items/seed_vanilla.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_ginger",
+   "file": "game/art/items/seed_ginger.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_lotus",
+   "file": "game/art/items/seed_lotus.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_bamboo_shoot",
+   "file": "game/art/items/seed_bamboo_shoot.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_cocoa_bean",
+   "file": "game/art/items/seed_cocoa_bean.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_wintermelon",
+   "file": "game/art/items/seed_wintermelon.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_snow_pea",
+   "file": "game/art/items/seed_snow_pea.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_holly",
+   "file": "game/art/items/seed_holly.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_mandarin",
+   "file": "game/art/items/seed_mandarin.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_asparagus",
+   "file": "game/art/items/seed_asparagus.png",
+   "note": ""
+  },
+  {
+   "kind": "seed",
+   "id": "seed_artichoke",
+   "file": "game/art/items/seed_artichoke.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "turnip_cake",
+   "file": "game/art/items/dish_turnip_cake.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "berry_jam",
+   "file": "game/art/items/dish_berry_jam.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "tomato_soup",
+   "file": "game/art/items/dish_veg_soup.png",
+   "note": "语义近似：veg_soup"
+  },
+  {
+   "kind": "dish",
+   "id": "potato_stew",
+   "file": "game/art/items/dish_veg_stew.png",
+   "note": "语义近似：veg_stew"
+  },
+  {
+   "kind": "dish",
+   "id": "salad",
+   "file": "game/art/items/dish_salad.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "veggie_skewer",
+   "file": "game/art/items/dish_mixed_plate.png",
+   "note": "语义近似：mixed_plate"
+  },
+  {
+   "kind": "dish",
+   "id": "fish_grill",
+   "file": "game/art/items/dish_grilled_fish.png",
+   "note": "语义近似：grilled_fish"
+  },
+  {
+   "kind": "dish",
+   "id": "fish_stew",
+   "file": "game/art/items/dish_fish_soup.png",
+   "note": "语义近似：fish_soup"
+  },
+  {
+   "kind": "dish",
+   "id": "berry_pie",
+   "file": "game/art/items/dish_pumpkin_pie.png",
+   "note": "语义近似：pumpkin_pie"
+  },
+  {
+   "kind": "dish",
+   "id": "apple_pie",
+   "file": "game/art/items/dish_apple_pie.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "corn_bread",
+   "file": "game/art/items/dish_bread.png",
+   "note": "语义近似：bread"
+  },
+  {
+   "kind": "dish",
+   "id": "pumpkin_soup",
+   "file": "game/art/items/dish_corn_soup.png",
+   "note": "语义近似：corn_soup"
+  },
+  {
+   "kind": "dish",
+   "id": "mushroom_risotto",
+   "file": "game/art/items/dish_mushroom_pot.png",
+   "note": "语义近似：mushroom_pot"
+  },
+  {
+   "kind": "dish",
+   "id": "honey_toast",
+   "file": "game/art/items/dish_honey_toast.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "tea_set",
+   "file": "game/art/items/dish_tea.png",
+   "note": "语义近似：tea"
+  },
+  {
+   "kind": "dish",
+   "id": "coffee",
+   "file": "game/art/items/dish_hot_cocoa.png",
+   "note": "语义近似：hot_cocoa"
+  },
+  {
+   "kind": "dish",
+   "id": "hot_cocoa",
+   "file": "game/art/items/dish_hot_cocoa.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "wine_grape",
+   "file": "game/art/items/dish_grape_wine.png",
+   "note": "语义近似：grape_wine"
+  },
+  {
+   "kind": "dish",
+   "id": "sushi",
+   "file": "game/art/items/dish_rice_ball.png",
+   "note": "语义近似：rice_ball"
+  },
+  {
+   "kind": "dish",
+   "id": "rice_bowl",
+   "file": "game/art/items/dish_fried_rice.png",
+   "note": "语义近似：fried_rice"
+  },
+  {
+   "kind": "dish",
+   "id": "noodle",
+   "file": "game/art/items/dish_noodles.png",
+   "note": "语义近似：noodles"
+  },
+  {
+   "kind": "dish",
+   "id": "dumpling",
+   "file": "game/art/items/dish_dumpling.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "hotpot",
+   "file": "game/art/items/dish_mushroom_pot.png",
+   "note": "语义近似：mushroom_pot"
+  },
+  {
+   "kind": "dish",
+   "id": "cheese",
+   "file": "game/art/items/dish_cheese.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "butter_toast",
+   "file": "game/art/items/dish_honey_toast.png",
+   "note": "语义近似：honey_toast"
+  },
+  {
+   "kind": "dish",
+   "id": "jam_toast",
+   "file": "game/art/items/dish_jam_bun.png",
+   "note": "语义近似：jam_bun"
+  },
+  {
+   "kind": "dish",
+   "id": "pickles",
+   "file": "game/art/items/dish_pickle.png",
+   "note": "语义近似：pickle"
+  },
+  {
+   "kind": "dish",
+   "id": "kimchi",
+   "file": "game/art/items/dish_pickle.png",
+   "note": "语义近似：pickle"
+  },
+  {
+   "kind": "dish",
+   "id": "smoked_eel",
+   "file": "game/art/items/dish_grilled_fish.png",
+   "note": "语义近似：grilled_fish"
+  },
+  {
+   "kind": "dish",
+   "id": "honey",
+   "file": "game/art/items/dish_honey_cake.png",
+   "note": "语义近似：honey_cake"
+  },
+  {
+   "kind": "dish",
+   "id": "candy",
+   "file": "game/art/items/dish_cookie.png",
+   "note": "语义近似：cookie"
+  },
+  {
+   "kind": "dish",
+   "id": "chocolate",
+   "file": "game/art/items/dish_cake.png",
+   "note": "语义近似：cake"
+  },
+  {
+   "kind": "dish",
+   "id": "cake",
+   "file": "game/art/items/dish_cake.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "pudding",
+   "file": "game/art/items/dish_pudding.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "ice",
+   "file": "game/art/items/dish_ice_cream.png",
+   "note": "语义近似：ice_cream"
+  },
+  {
+   "kind": "dish",
+   "id": "sun_cake",
+   "file": "game/art/items/dish_pancake.png",
+   "note": "语义近似：pancake"
+  },
+  {
+   "kind": "dish",
+   "id": "herb_salt",
+   "file": "game/art/items/dish_herbal_soup.png",
+   "note": "语义近似：herbal_soup"
+  },
+  {
+   "kind": "dish",
+   "id": "ginger_tea",
+   "file": "game/art/items/dish_ginger_tea.png",
+   "note": ""
+  },
+  {
+   "kind": "dish",
+   "id": "mixed_juice",
+   "file": "game/art/items/dish_mixed_plate.png",
+   "note": "语义近似：mixed_plate"
+  },
+  {
+   "kind": "dish",
+   "id": "legend_feast",
+   "file": "game/art/items/dish_feast.png",
+   "note": "语义近似：feast"
+  },
+  {
+   "kind": "fish",
+   "id": "carp_spring",
+   "file": "game/art/items/fish_brook_carp.png",
+   "note": "溪鲤（近似：brook_carp）"
+  },
+  {
+   "kind": "fish",
+   "id": "crucian",
+   "file": "game/art/items/fish_crucian.png",
+   "note": "银鲫"
+  },
+  {
+   "kind": "fish",
+   "id": "loach",
+   "file": "game/art/items/fish_loach.png",
+   "note": "泥鳅"
+  },
+  {
+   "kind": "fish",
+   "id": "dace",
+   "file": "game/art/items/fish_medaka.png",
+   "note": "雅罗（近似：medaka）"
+  },
+  {
+   "kind": "fish",
+   "id": "bluegill",
+   "file": "game/art/items/fish_mandarin.png",
+   "note": "蓝鳃太阳鱼（近似：mandarin）"
+  },
+  {
+   "kind": "fish",
+   "id": "bass",
+   "file": "game/art/items/fish_river_perch.png",
+   "note": "河鲈（近似：river_perch）"
+  },
+  {
+   "kind": "fish",
+   "id": "catfish",
+   "file": "game/art/items/fish_catfish.png",
+   "note": "鲶鱼"
+  },
+  {
+   "kind": "fish",
+   "id": "puffer",
+   "file": "game/art/items/fish_stone_grouper.png",
+   "note": "河豚（近似：stone_grouper）"
+  },
+  {
+   "kind": "fish",
+   "id": "mackerel",
+   "file": "game/art/items/fish_silver_crucian.png",
+   "note": "鲭鱼（近似：silver_crucian）"
+  },
+  {
+   "kind": "fish",
+   "id": "salmon",
+   "file": "game/art/items/fish_rainbow_trout.png",
+   "note": "溯河鲑（近似：rainbow_trout）"
+  },
+  {
+   "kind": "fish",
+   "id": "carp_mirror",
+   "file": "game/art/items/fish_grass_carp.png",
+   "note": "镜鲤（近似：grass_carp）"
+  },
+  {
+   "kind": "fish",
+   "id": "night_eel",
+   "file": "game/art/items/fish_eel.png",
+   "note": "夜鳗（近似：eel）"
+  },
+  {
+   "kind": "fish",
+   "id": "eel",
+   "file": "game/art/items/fish_eel.png",
+   "note": "黄鳝"
+  },
+  {
+   "kind": "fish",
+   "id": "gudgeon",
+   "file": "game/art/items/fish_sweetfish.png",
+   "note": "吻鮈（近似：sweetfish）"
+  },
+  {
+   "kind": "fish",
+   "id": "ice_trout",
+   "file": "game/art/items/fish_crystal_fish.png",
+   "note": "冰晶鳟（近似：crystal_fish）"
+  },
+  {
+   "kind": "fish",
+   "id": "whitefish",
+   "file": "game/art/items/fish_moonfish.png",
+   "note": "白鲑（近似：moonfish）"
+  },
+  {
+   "kind": "fish",
+   "id": "smelt",
+   "file": "game/art/items/fish_lanternfish.png",
+   "note": "胡瓜鱼（近似：lanternfish）"
+  },
+  {
+   "kind": "fish",
+   "id": "pike",
+   "file": "game/art/items/fish_snakehead.png",
+   "note": "狗鱼（近似：snakehead）"
+  },
+  {
+   "kind": "fish",
+   "id": "moon_koi",
+   "file": "game/art/items/fish_koi.png",
+   "note": "月光锦鲤（近似：koi）"
+  },
+  {
+   "kind": "fish",
+   "id": "ghost_fish",
+   "file": "game/art/items/fish_mist_fish.png",
+   "note": "幽灵鱼（近似：mist_fish）"
+  },
+  {
+   "kind": "fish",
+   "id": "crystal_shrimp",
+   "file": "game/art/items/fish_star_bass.png",
+   "note": "雾晶虾（近似：star_bass）"
+  },
+  {
+   "kind": "fish",
+   "id": "stone_loach",
+   "file": "game/art/items/fish_lake_sturgeon.png",
+   "note": "石鳅（近似：lake_sturgeon）"
+  },
+  {
+   "kind": "fish",
+   "id": "pond_turtle",
+   "file": "game/art/items/fish_bronze_carp.png",
+   "note": "池龟（近似：bronze_carp）"
+  },
+  {
+   "kind": "fish",
+   "id": "legend_fish",
+   "file": "game/art/items/fish_legendary.png",
+   "note": "传说之鱼（近似：legendary）"
+  },
+  {
+   "kind": "antique",
+   "id": "clay_bell",
+   "file": "game/art/items/relic_clay_bell_shard.png",
+   "note": "陶铃残片（近似：clay_bell_shard）"
+  },
+  {
+   "kind": "antique",
+   "id": "glass_marble",
+   "file": "game/art/items/relic_mist_marble.png",
+   "note": "雾晶弹珠（近似：mist_marble）"
+  },
+  {
+   "kind": "antique",
+   "id": "old_letter",
+   "file": "game/art/items/relic_old_letter.png",
+   "note": "风干的信"
+  },
+  {
+   "kind": "antique",
+   "id": "gear_toy",
+   "file": "game/art/items/relic_gear_toy.png",
+   "note": "齿轮玩具"
+  },
+  {
+   "kind": "antique",
+   "id": "porcelain_shard",
+   "file": "game/art/items/relic_celadon_shard.png",
+   "note": "青瓷片（近似：celadon_shard）"
+  },
+  {
+   "kind": "antique",
+   "id": "bronze_coin",
+   "file": "game/art/items/relic_bronze_coin.png",
+   "note": "青铜钱"
+  },
+  {
+   "kind": "antique",
+   "id": "wooden_comb",
+   "file": "game/art/items/relic_wood_mask.png",
+   "note": "木梳（近似：wood_mask）"
+  },
+  {
+   "kind": "antique",
+   "id": "stone_bead",
+   "file": "game/art/items/relic_stone_tablet.png",
+   "note": "石珠（近似：stone_tablet）"
+  },
+  {
+   "kind": "antique",
+   "id": "glass_bottle",
+   "file": "game/art/items/relic_clay_jug.png",
+   "note": "雾玻璃瓶（近似：clay_jug）"
+  },
+  {
+   "kind": "antique",
+   "id": "iron_key",
+   "file": "game/art/items/relic_compass.png",
+   "note": "旧铁钥（近似：compass）"
+  },
+  {
+   "kind": "antique",
+   "id": "bone_flake",
+   "file": "game/art/items/relic_ring_fragment.png",
+   "note": "骨哨残片（近似：ring_fragment）"
+  },
+  {
+   "kind": "antique",
+   "id": "pocket_watch",
+   "file": "game/art/items/relic_star_map.png",
+   "note": "怀表（停了）（近似：star_map）"
+  },
+  {
+   "kind": "item_icon",
+   "id": "hoe",
+   "file": "game/art/items/icon_hoe.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "watering_can",
+   "file": "game/art/items/icon_watering_can.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "wood_axe",
+   "file": "game/art/items/icon_axe.png",
+   "note": "别名：axe"
+  },
+  {
+   "kind": "item_icon",
+   "id": "stone_pick",
+   "file": "game/art/items/icon_pickaxe.png",
+   "note": "别名：pickaxe"
+  },
+  {
+   "kind": "item_icon",
+   "id": "wood",
+   "file": "game/art/items/icon_wood.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "stone",
+   "file": "game/art/items/icon_stone.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "fiber",
+   "file": "game/art/items/icon_fiber.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "wind_shard",
+   "file": "game/art/items/icon_windchime_shard.png",
+   "note": "别名：windchime_shard"
+  },
+  {
+   "kind": "item_icon",
+   "id": "copper_ore",
+   "file": "game/art/items/icon_copper.png",
+   "note": "别名：copper"
+  },
+  {
+   "kind": "item_icon",
+   "id": "iron_ore",
+   "file": "game/art/items/icon_iron.png",
+   "note": "别名：iron"
+  },
+  {
+   "kind": "item_icon",
+   "id": "silver_ore",
+   "file": "game/art/items/icon_silver.png",
+   "note": "别名：silver"
+  },
+  {
+   "kind": "item_icon",
+   "id": "gold_ore",
+   "file": "game/art/items/icon_gold.png",
+   "note": "别名：gold"
+  },
+  {
+   "kind": "item_icon",
+   "id": "mythril_shard",
+   "file": "game/art/items/icon_star_crystal.png",
+   "note": "别名：star_crystal"
+  },
+  {
+   "kind": "item_icon",
+   "id": "egg",
+   "file": "game/art/items/icon_egg.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "milk",
+   "file": "game/art/items/icon_milk.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "wool",
+   "file": "game/art/items/icon_wool.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "duck_egg",
+   "file": "game/art/items/icon_duck_egg.png",
+   "note": ""
+  },
+  {
+   "kind": "item_icon",
+   "id": "goat_milk",
+   "file": "game/art/items/icon_goat_milk.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "field_marker",
+   "file": "game/art/furniture/furniture_field_marker.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "tiny_bell",
+   "file": "game/art/furniture/furniture_wind_chime.png",
+   "note": "别名：wind_chime"
+  },
+  {
+   "kind": "furniture",
+   "id": "wood_fence",
+   "file": "game/art/furniture/furniture_fence.png",
+   "note": "别名：fence"
+  },
+  {
+   "kind": "furniture",
+   "id": "stone_path",
+   "file": "game/art/furniture/furniture_stone_tile.png",
+   "note": "别名：stone_tile"
+  },
+  {
+   "kind": "furniture",
+   "id": "flower_pot",
+   "file": "game/art/furniture/furniture_pot.png",
+   "note": "别名：pot"
+  },
+  {
+   "kind": "furniture",
+   "id": "lantern",
+   "file": "game/art/furniture/furniture_lantern.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "bench",
+   "file": "game/art/furniture/furniture_bench.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "sign_post",
+   "file": "game/art/furniture/furniture_sign.png",
+   "note": "别名：sign"
+  },
+  {
+   "kind": "furniture",
+   "id": "well",
+   "file": "game/art/furniture/furniture_well.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "birdhouse",
+   "file": "game/art/furniture/furniture_birdhouse.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "windmill_toy",
+   "file": "game/art/furniture/furniture_windmill_toy.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "crystal_lamp",
+   "file": "game/art/furniture/furniture_crystal_lamp.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "rug",
+   "file": "game/art/furniture/furniture_rug.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "curtain",
+   "file": "game/art/furniture/furniture_curtain.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "bookshelf",
+   "file": "game/art/furniture/furniture_bookshelf.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "tea_table",
+   "file": "game/art/furniture/furniture_tea_table.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "painting_hills",
+   "file": "game/art/furniture/furniture_painting_valley.png",
+   "note": "别名：painting_valley"
+  },
+  {
+   "kind": "furniture",
+   "id": "painting_lake",
+   "file": "game/art/furniture/furniture_painting_lake.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "painting_mine",
+   "file": "game/art/furniture/furniture_painting_cave.png",
+   "note": "别名：painting_cave"
+  },
+  {
+   "kind": "furniture",
+   "id": "bell_mobile",
+   "file": "game/art/furniture/furniture_bell_hanging.png",
+   "note": "别名：bell_hanging"
+  },
+  {
+   "kind": "furniture",
+   "id": "festival_banner",
+   "file": "game/art/furniture/furniture_banner.png",
+   "note": "别名：banner"
+  },
+  {
+   "kind": "furniture",
+   "id": "photo_frame",
+   "file": "game/art/furniture/furniture_frame.png",
+   "note": "别名：frame"
+  },
+  {
+   "kind": "furniture",
+   "id": "trophy_cup",
+   "file": "game/art/furniture/furniture_frame.png",
+   "note": "别名：frame"
+  },
+  {
+   "kind": "furniture",
+   "id": "music_box",
+   "file": "game/art/furniture/furniture_music_box.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "potted_tree",
+   "file": "game/art/furniture/furniture_potted_tree.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "stone_lantern",
+   "file": "game/art/furniture/furniture_stone_lantern.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "hanging_bells",
+   "file": "game/art/furniture/furniture_eave_chime.png",
+   "note": "别名：eave_chime"
+  },
+  {
+   "kind": "furniture",
+   "id": "picnic_set",
+   "file": "game/art/furniture/furniture_picnic_basket.png",
+   "note": "别名：picnic_basket"
+  },
+  {
+   "kind": "furniture",
+   "id": "cat_bed",
+   "file": "game/art/furniture/furniture_cat_bed.png",
+   "note": ""
+  },
+  {
+   "kind": "furniture",
+   "id": "telescope",
+   "file": "game/art/furniture/furniture_telescope.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "grandpa_lin",
+   "file": "game/art/chars/npc_grandpa_lin.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "xiaoman",
+   "file": "game/art/chars/npc_xiaoman.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "zhi_tao",
+   "file": "game/art/chars/npc_zhi_tao.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "atang",
+   "file": "game/art/chars/npc_atang.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "jiangcheng",
+   "file": "game/art/chars/npc_jiangcheng.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "yunzhou",
+   "file": "game/art/chars/npc_yunzhou.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "shijiang",
+   "file": "game/art/chars/npc_shijiang.png",
+   "note": ""
+  },
+  {
+   "kind": "npc",
+   "id": "chapo",
+   "file": "game/art/chars/npc_chapo.png",
+   "note": ""
+  },
+  {
+   "kind": "ore_rock",
+   "id": "copper_ore",
+   "file": "game/art/enemies/enemy_ore_rock_copper.png",
+   "note": "复用 copper + 色相 "
+  },
+  {
+   "kind": "ore_rock",
+   "id": "gold_ore",
+   "file": "game/art/enemies/enemy_ore_rock_stone.png",
+   "note": "复用 stone + 色相 #E8C87A"
+  },
+  {
+   "kind": "ore_rock",
+   "id": "iron_ore",
+   "file": "game/art/enemies/enemy_ore_rock_iron.png",
+   "note": "复用 iron + 色相 "
+  },
+  {
+   "kind": "ore_rock",
+   "id": "mythril_shard",
+   "file": "game/art/enemies/enemy_ore_rock_crystal.png",
+   "note": "复用 crystal + 色相 #8FD8E8"
+  },
+  {
+   "kind": "ore_rock",
+   "id": "silver_ore",
+   "file": "game/art/enemies/enemy_ore_rock_stone.png",
+   "note": "复用 stone + 色相 #D9E0F0"
+  },
+  {
+   "kind": "ore_rock",
+   "id": "stone",
+   "file": "game/art/enemies/enemy_ore_rock_stone.png",
+   "note": "原图"
+  },
+  {
+   "kind": "ore_rock",
+   "id": "wind_shard",
+   "file": "game/art/enemies/enemy_ore_rock_crystal.png",
+   "note": "复用 crystal + 色相 "
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime:walk:00",
+   "file": "game/art/enemies/enemy_slime_walk_00.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime:walk:01",
+   "file": "game/art/enemies/enemy_slime_walk_01.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime:walk:02",
+   "file": "game/art/enemies/enemy_slime_walk_02.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime:walk:03",
+   "file": "game/art/enemies/enemy_slime_walk_03.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "bat:fly:00",
+   "file": "game/art/enemies/enemy_mist_bat_fly_00.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "bat:fly:01",
+   "file": "game/art/enemies/enemy_mist_bat_fly_01.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "bat:fly:02",
+   "file": "game/art/enemies/enemy_mist_bat_fly_02.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "bat:fly:03",
+   "file": "game/art/enemies/enemy_mist_bat_fly_03.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime_king:fall:00",
+   "file": "game/art/enemies/enemy_stone_guardian_fall_00.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime_king:fall:01",
+   "file": "game/art/enemies/enemy_stone_guardian_fall_01.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime_king:fall:02",
+   "file": "game/art/enemies/enemy_stone_guardian_fall_02.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime_king:fall:03",
+   "file": "game/art/enemies/enemy_stone_guardian_fall_03.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime_king:fall:04",
+   "file": "game/art/enemies/enemy_stone_guardian_fall_04.png",
+   "note": ""
+  },
+  {
+   "kind": "enemy_frame",
+   "id": "slime_king:fall:05",
+   "file": "game/art/enemies/enemy_stone_guardian_fall_05.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "down:00",
+   "file": "game/art/chars/walk/player_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "down:01",
+   "file": "game/art/chars/walk/player_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "down:02",
+   "file": "game/art/chars/walk/player_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "down:03",
+   "file": "game/art/chars/walk/player_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "left:00",
+   "file": "game/art/chars/walk/player_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "left:01",
+   "file": "game/art/chars/walk/player_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "left:02",
+   "file": "game/art/chars/walk/player_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "left:03",
+   "file": "game/art/chars/walk/player_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "right:00",
+   "file": "game/art/chars/walk/player_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "right:01",
+   "file": "game/art/chars/walk/player_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "right:02",
+   "file": "game/art/chars/walk/player_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "right:03",
+   "file": "game/art/chars/walk/player_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "up:00",
+   "file": "game/art/chars/walk/player_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "up:01",
+   "file": "game/art/chars/walk/player_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "up:02",
+   "file": "game/art/chars/walk/player_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "player_walk",
+   "id": "up:03",
+   "file": "game/art/chars/walk/player_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:down:00",
+   "file": "game/art/chars/walk/npc_grandpa_lin_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:down:01",
+   "file": "game/art/chars/walk/npc_grandpa_lin_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:down:02",
+   "file": "game/art/chars/walk/npc_grandpa_lin_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:down:03",
+   "file": "game/art/chars/walk/npc_grandpa_lin_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:left:00",
+   "file": "game/art/chars/walk/npc_grandpa_lin_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:left:01",
+   "file": "game/art/chars/walk/npc_grandpa_lin_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:left:02",
+   "file": "game/art/chars/walk/npc_grandpa_lin_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:left:03",
+   "file": "game/art/chars/walk/npc_grandpa_lin_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:right:00",
+   "file": "game/art/chars/walk/npc_grandpa_lin_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:right:01",
+   "file": "game/art/chars/walk/npc_grandpa_lin_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:right:02",
+   "file": "game/art/chars/walk/npc_grandpa_lin_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:right:03",
+   "file": "game/art/chars/walk/npc_grandpa_lin_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:up:00",
+   "file": "game/art/chars/walk/npc_grandpa_lin_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:up:01",
+   "file": "game/art/chars/walk/npc_grandpa_lin_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:up:02",
+   "file": "game/art/chars/walk/npc_grandpa_lin_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "grandpa_lin:up:03",
+   "file": "game/art/chars/walk/npc_grandpa_lin_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:down:00",
+   "file": "game/art/chars/walk/npc_xiaoman_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:down:01",
+   "file": "game/art/chars/walk/npc_xiaoman_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:down:02",
+   "file": "game/art/chars/walk/npc_xiaoman_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:down:03",
+   "file": "game/art/chars/walk/npc_xiaoman_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:left:00",
+   "file": "game/art/chars/walk/npc_xiaoman_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:left:01",
+   "file": "game/art/chars/walk/npc_xiaoman_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:left:02",
+   "file": "game/art/chars/walk/npc_xiaoman_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:left:03",
+   "file": "game/art/chars/walk/npc_xiaoman_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:right:00",
+   "file": "game/art/chars/walk/npc_xiaoman_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:right:01",
+   "file": "game/art/chars/walk/npc_xiaoman_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:right:02",
+   "file": "game/art/chars/walk/npc_xiaoman_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:right:03",
+   "file": "game/art/chars/walk/npc_xiaoman_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:up:00",
+   "file": "game/art/chars/walk/npc_xiaoman_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:up:01",
+   "file": "game/art/chars/walk/npc_xiaoman_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:up:02",
+   "file": "game/art/chars/walk/npc_xiaoman_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "xiaoman:up:03",
+   "file": "game/art/chars/walk/npc_xiaoman_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:down:00",
+   "file": "game/art/chars/walk/npc_zhi_tao_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:down:01",
+   "file": "game/art/chars/walk/npc_zhi_tao_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:down:02",
+   "file": "game/art/chars/walk/npc_zhi_tao_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:down:03",
+   "file": "game/art/chars/walk/npc_zhi_tao_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:left:00",
+   "file": "game/art/chars/walk/npc_zhi_tao_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:left:01",
+   "file": "game/art/chars/walk/npc_zhi_tao_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:left:02",
+   "file": "game/art/chars/walk/npc_zhi_tao_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:left:03",
+   "file": "game/art/chars/walk/npc_zhi_tao_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:right:00",
+   "file": "game/art/chars/walk/npc_zhi_tao_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:right:01",
+   "file": "game/art/chars/walk/npc_zhi_tao_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:right:02",
+   "file": "game/art/chars/walk/npc_zhi_tao_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:right:03",
+   "file": "game/art/chars/walk/npc_zhi_tao_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:up:00",
+   "file": "game/art/chars/walk/npc_zhi_tao_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:up:01",
+   "file": "game/art/chars/walk/npc_zhi_tao_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:up:02",
+   "file": "game/art/chars/walk/npc_zhi_tao_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "zhi_tao:up:03",
+   "file": "game/art/chars/walk/npc_zhi_tao_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:down:00",
+   "file": "game/art/chars/walk/npc_atang_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:down:01",
+   "file": "game/art/chars/walk/npc_atang_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:down:02",
+   "file": "game/art/chars/walk/npc_atang_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:down:03",
+   "file": "game/art/chars/walk/npc_atang_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:left:00",
+   "file": "game/art/chars/walk/npc_atang_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:left:01",
+   "file": "game/art/chars/walk/npc_atang_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:left:02",
+   "file": "game/art/chars/walk/npc_atang_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:left:03",
+   "file": "game/art/chars/walk/npc_atang_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:right:00",
+   "file": "game/art/chars/walk/npc_atang_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:right:01",
+   "file": "game/art/chars/walk/npc_atang_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:right:02",
+   "file": "game/art/chars/walk/npc_atang_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:right:03",
+   "file": "game/art/chars/walk/npc_atang_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:up:00",
+   "file": "game/art/chars/walk/npc_atang_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:up:01",
+   "file": "game/art/chars/walk/npc_atang_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:up:02",
+   "file": "game/art/chars/walk/npc_atang_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "atang:up:03",
+   "file": "game/art/chars/walk/npc_atang_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:down:00",
+   "file": "game/art/chars/walk/npc_jiangcheng_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:down:01",
+   "file": "game/art/chars/walk/npc_jiangcheng_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:down:02",
+   "file": "game/art/chars/walk/npc_jiangcheng_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:down:03",
+   "file": "game/art/chars/walk/npc_jiangcheng_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:left:00",
+   "file": "game/art/chars/walk/npc_jiangcheng_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:left:01",
+   "file": "game/art/chars/walk/npc_jiangcheng_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:left:02",
+   "file": "game/art/chars/walk/npc_jiangcheng_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:left:03",
+   "file": "game/art/chars/walk/npc_jiangcheng_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:right:00",
+   "file": "game/art/chars/walk/npc_jiangcheng_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:right:01",
+   "file": "game/art/chars/walk/npc_jiangcheng_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:right:02",
+   "file": "game/art/chars/walk/npc_jiangcheng_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:right:03",
+   "file": "game/art/chars/walk/npc_jiangcheng_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:up:00",
+   "file": "game/art/chars/walk/npc_jiangcheng_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:up:01",
+   "file": "game/art/chars/walk/npc_jiangcheng_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:up:02",
+   "file": "game/art/chars/walk/npc_jiangcheng_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "jiangcheng:up:03",
+   "file": "game/art/chars/walk/npc_jiangcheng_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:down:00",
+   "file": "game/art/chars/walk/npc_yunzhou_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:down:01",
+   "file": "game/art/chars/walk/npc_yunzhou_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:down:02",
+   "file": "game/art/chars/walk/npc_yunzhou_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:down:03",
+   "file": "game/art/chars/walk/npc_yunzhou_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:left:00",
+   "file": "game/art/chars/walk/npc_yunzhou_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:left:01",
+   "file": "game/art/chars/walk/npc_yunzhou_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:left:02",
+   "file": "game/art/chars/walk/npc_yunzhou_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:left:03",
+   "file": "game/art/chars/walk/npc_yunzhou_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:right:00",
+   "file": "game/art/chars/walk/npc_yunzhou_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:right:01",
+   "file": "game/art/chars/walk/npc_yunzhou_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:right:02",
+   "file": "game/art/chars/walk/npc_yunzhou_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:right:03",
+   "file": "game/art/chars/walk/npc_yunzhou_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:up:00",
+   "file": "game/art/chars/walk/npc_yunzhou_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:up:01",
+   "file": "game/art/chars/walk/npc_yunzhou_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:up:02",
+   "file": "game/art/chars/walk/npc_yunzhou_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "yunzhou:up:03",
+   "file": "game/art/chars/walk/npc_yunzhou_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:down:00",
+   "file": "game/art/chars/walk/npc_shijiang_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:down:01",
+   "file": "game/art/chars/walk/npc_shijiang_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:down:02",
+   "file": "game/art/chars/walk/npc_shijiang_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:down:03",
+   "file": "game/art/chars/walk/npc_shijiang_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:left:00",
+   "file": "game/art/chars/walk/npc_shijiang_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:left:01",
+   "file": "game/art/chars/walk/npc_shijiang_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:left:02",
+   "file": "game/art/chars/walk/npc_shijiang_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:left:03",
+   "file": "game/art/chars/walk/npc_shijiang_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:right:00",
+   "file": "game/art/chars/walk/npc_shijiang_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:right:01",
+   "file": "game/art/chars/walk/npc_shijiang_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:right:02",
+   "file": "game/art/chars/walk/npc_shijiang_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:right:03",
+   "file": "game/art/chars/walk/npc_shijiang_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:up:00",
+   "file": "game/art/chars/walk/npc_shijiang_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:up:01",
+   "file": "game/art/chars/walk/npc_shijiang_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:up:02",
+   "file": "game/art/chars/walk/npc_shijiang_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "shijiang:up:03",
+   "file": "game/art/chars/walk/npc_shijiang_up_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:down:00",
+   "file": "game/art/chars/walk/npc_chapo_down_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:down:01",
+   "file": "game/art/chars/walk/npc_chapo_down_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:down:02",
+   "file": "game/art/chars/walk/npc_chapo_down_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:down:03",
+   "file": "game/art/chars/walk/npc_chapo_down_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:left:00",
+   "file": "game/art/chars/walk/npc_chapo_left_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:left:01",
+   "file": "game/art/chars/walk/npc_chapo_left_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:left:02",
+   "file": "game/art/chars/walk/npc_chapo_left_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:left:03",
+   "file": "game/art/chars/walk/npc_chapo_left_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:right:00",
+   "file": "game/art/chars/walk/npc_chapo_right_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:right:01",
+   "file": "game/art/chars/walk/npc_chapo_right_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:right:02",
+   "file": "game/art/chars/walk/npc_chapo_right_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:right:03",
+   "file": "game/art/chars/walk/npc_chapo_right_03.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:up:00",
+   "file": "game/art/chars/walk/npc_chapo_up_00.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:up:01",
+   "file": "game/art/chars/walk/npc_chapo_up_01.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:up:02",
+   "file": "game/art/chars/walk/npc_chapo_up_02.png",
+   "note": ""
+  },
+  {
+   "kind": "npc_walk",
+   "id": "chapo:up:03",
+   "file": "game/art/chars/walk/npc_chapo_up_03.png",
+   "note": ""
+  }
+ ],
+ "missing_list": []
+}

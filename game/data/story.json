@@ -1,0 +1,96 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title": "门廊的风",
+      "bell_name": "门廊铃",
+      "shards_needed": 3,
+      "wood_needed": 3,
+      "stone_needed": 0,
+      "unlock_area": "mine",
+      "unlock_label": "雾晶矿洞浅层",
+      "intro": [
+        "林爷爷：第一枚铃挂在门廊。风一停，连门口的花都低着头。",
+        "去找 3 枚风铃碎片吧——矿洞浅层、野外石缝，都可能有。"
+      ],
+      "complete": [
+        "叮铃——！",
+        "门廊铃重新响了。风像认得回家的路。",
+        "林爷爷：好孩子……矿洞的门，也该开了。"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "湖面的回音",
+      "bell_name": "湖心铃",
+      "shards_needed": 4,
+      "wood_needed": 4,
+      "stone_needed": 2,
+      "unlock_area": "lakeside",
+      "unlock_label": "湖畔栈道与小船",
+      "intro": [
+        "湖面上飘着第二枚铃的回音。",
+        "把材料备齐，我们去湖边看看。"
+      ],
+      "complete": [
+        "湖心铃入水般轻轻一颤，涟漪把天光揉碎。",
+        "小船的缆绳，自己松开了半截。"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "林间的旧约",
+      "bell_name": "林间铃",
+      "shards_needed": 5,
+      "wood_needed": 6,
+      "stone_needed": 3,
+      "unlock_area": "forest",
+      "unlock_label": "旧风车林",
+      "intro": [
+        "桃枝：风车林里有一枚很老很老的铃，答应过要为镇子守夜。",
+        "带上材料，我们去赴约。"
+      ],
+      "complete": [
+        "风车吱呀转动，像在数很久以前的日子。",
+        "林间铃挂上枝头，树叶集体鼓了一次掌。"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "地心的节拍",
+      "bell_name": "地心铃",
+      "shards_needed": 6,
+      "wood_needed": 5,
+      "stone_needed": 5,
+      "unlock_area": "deep_mine",
+      "unlock_label": "矿脉深部",
+      "intro": [
+        "小满：最深那层有个大家伙守着铃！不过别怕，它只是太寂寞了。",
+        "带上你最好的镐子。"
+      ],
+      "complete": [
+        "岩心守卫安静下来，把铃轻轻推到你脚边。",
+        "地底传来闷闷的、像心跳的回响——它在笑。"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "风之祭",
+      "bell_name": "主铃",
+      "shards_needed": 8,
+      "wood_needed": 8,
+      "stone_needed": 8,
+      "unlock_area": "festival",
+      "unlock_label": "全镇风铃齐鸣",
+      "intro": [
+        "林爷爷：就差最后一枚了。主铃一响，我们就把风铃节办回来。",
+        "整个谷都在等你。"
+      ],
+      "complete": [
+        "五铃齐鸣。",
+        "风穿过小镇、湖面、林间与矿脉，把所有沉默过的名字都叫了一遍。",
+        "风铃节回来了。往后的日子，想怎么过就怎么过吧。"
+      ]
+    }
+  ]
+}

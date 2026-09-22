@@ -1,0 +1,604 @@
+{
+  "board": [
+    {
+      "id": "q_auto_00",
+      "text": "林爷爷的委托：turnip ×1",
+      "item": "turnip",
+      "count": 1,
+      "reward_money": 40,
+      "reward_item": "copper_ore",
+      "reward_count": 1,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_01",
+      "text": "小满的委托：potato ×2",
+      "item": "potato",
+      "count": 2,
+      "reward_money": 55,
+      "reward_item": "iron_ore",
+      "reward_count": 2,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_02",
+      "text": "桃枝的委托：tomato ×3",
+      "item": "tomato",
+      "count": 3,
+      "reward_money": 70,
+      "reward_item": "carrot",
+      "reward_count": 1,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_03",
+      "text": "阿棠的委托：berry ×4",
+      "item": "berry",
+      "count": 4,
+      "reward_money": 85,
+      "reward_item": "cabbage",
+      "reward_count": 2,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_04",
+      "text": "江澄的委托：wood ×1",
+      "item": "wood",
+      "count": 1,
+      "reward_money": 100,
+      "reward_item": "corn",
+      "reward_count": 1,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_05",
+      "text": "云舟的委托：stone ×2",
+      "item": "stone",
+      "count": 2,
+      "reward_money": 115,
+      "reward_item": "pumpkin",
+      "reward_count": 2,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_06",
+      "text": "石匠的委托：fiber ×3",
+      "item": "fiber",
+      "count": 3,
+      "reward_money": 130,
+      "reward_item": "mushroom",
+      "reward_count": 1,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_07",
+      "text": "茶婆的委托：copper_ore ×4",
+      "item": "copper_ore",
+      "count": 4,
+      "reward_money": 145,
+      "reward_item": "tea",
+      "reward_count": 2,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_08",
+      "text": "集市的委托：iron_ore ×1",
+      "item": "iron_ore",
+      "count": 1,
+      "reward_money": 160,
+      "reward_item": "carp_spring",
+      "reward_count": 1,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_09",
+      "text": "守林人的委托：carrot ×2",
+      "item": "carrot",
+      "count": 2,
+      "reward_money": 175,
+      "reward_item": "bluegill",
+      "reward_count": 2,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_10",
+      "text": "厨娘的委托：cabbage ×3",
+      "item": "cabbage",
+      "count": 3,
+      "reward_money": 40,
+      "reward_item": "wind_shard",
+      "reward_count": 1,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_11",
+      "text": "旅人的委托：corn ×4",
+      "item": "corn",
+      "count": 4,
+      "reward_money": 55,
+      "reward_item": "turnip_cake",
+      "reward_count": 2,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_12",
+      "text": "林爷爷的委托：pumpkin ×1",
+      "item": "pumpkin",
+      "count": 1,
+      "reward_money": 70,
+      "reward_item": "berry_jam",
+      "reward_count": 1,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_13",
+      "text": "小满的委托：mushroom ×2",
+      "item": "mushroom",
+      "count": 2,
+      "reward_money": 85,
+      "reward_item": "salad",
+      "reward_count": 2,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_14",
+      "text": "桃枝的委托：tea ×3",
+      "item": "tea",
+      "count": 3,
+      "reward_money": 100,
+      "reward_item": "honey",
+      "reward_count": 1,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_15",
+      "text": "阿棠的委托：carp_spring ×4",
+      "item": "carp_spring",
+      "count": 4,
+      "reward_money": 115,
+      "reward_item": "cotton",
+      "reward_count": 2,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_16",
+      "text": "江澄的委托：bluegill ×1",
+      "item": "bluegill",
+      "count": 1,
+      "reward_money": 130,
+      "reward_item": "grape",
+      "reward_count": 1,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_17",
+      "text": "云舟的委托：wind_shard ×2",
+      "item": "wind_shard",
+      "count": 2,
+      "reward_money": 145,
+      "reward_item": "turnip",
+      "reward_count": 2,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_18",
+      "text": "石匠的委托：turnip_cake ×3",
+      "item": "turnip_cake",
+      "count": 3,
+      "reward_money": 160,
+      "reward_item": "potato",
+      "reward_count": 1,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_19",
+      "text": "茶婆的委托：berry_jam ×4",
+      "item": "berry_jam",
+      "count": 4,
+      "reward_money": 175,
+      "reward_item": "tomato",
+      "reward_count": 2,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_20",
+      "text": "集市的委托：salad ×1",
+      "item": "salad",
+      "count": 1,
+      "reward_money": 40,
+      "reward_item": "berry",
+      "reward_count": 1,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_21",
+      "text": "守林人的委托：honey ×2",
+      "item": "honey",
+      "count": 2,
+      "reward_money": 55,
+      "reward_item": "wood",
+      "reward_count": 2,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_22",
+      "text": "厨娘的委托：cotton ×3",
+      "item": "cotton",
+      "count": 3,
+      "reward_money": 70,
+      "reward_item": "stone",
+      "reward_count": 1,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_23",
+      "text": "旅人的委托：grape ×4",
+      "item": "grape",
+      "count": 4,
+      "reward_money": 85,
+      "reward_item": "fiber",
+      "reward_count": 2,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_24",
+      "text": "林爷爷的委托：turnip ×1",
+      "item": "turnip",
+      "count": 1,
+      "reward_money": 100,
+      "reward_item": "copper_ore",
+      "reward_count": 1,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_25",
+      "text": "小满的委托：potato ×2",
+      "item": "potato",
+      "count": 2,
+      "reward_money": 115,
+      "reward_item": "iron_ore",
+      "reward_count": 2,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_26",
+      "text": "桃枝的委托：tomato ×3",
+      "item": "tomato",
+      "count": 3,
+      "reward_money": 130,
+      "reward_item": "carrot",
+      "reward_count": 1,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_27",
+      "text": "阿棠的委托：berry ×4",
+      "item": "berry",
+      "count": 4,
+      "reward_money": 145,
+      "reward_item": "cabbage",
+      "reward_count": 2,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_28",
+      "text": "江澄的委托：wood ×1",
+      "item": "wood",
+      "count": 1,
+      "reward_money": 160,
+      "reward_item": "corn",
+      "reward_count": 1,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_29",
+      "text": "云舟的委托：stone ×2",
+      "item": "stone",
+      "count": 2,
+      "reward_money": 175,
+      "reward_item": "pumpkin",
+      "reward_count": 2,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_30",
+      "text": "石匠的委托：fiber ×3",
+      "item": "fiber",
+      "count": 3,
+      "reward_money": 40,
+      "reward_item": "mushroom",
+      "reward_count": 1,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_31",
+      "text": "茶婆的委托：copper_ore ×4",
+      "item": "copper_ore",
+      "count": 4,
+      "reward_money": 55,
+      "reward_item": "tea",
+      "reward_count": 2,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_32",
+      "text": "集市的委托：iron_ore ×1",
+      "item": "iron_ore",
+      "count": 1,
+      "reward_money": 70,
+      "reward_item": "carp_spring",
+      "reward_count": 1,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_33",
+      "text": "守林人的委托：carrot ×2",
+      "item": "carrot",
+      "count": 2,
+      "reward_money": 85,
+      "reward_item": "bluegill",
+      "reward_count": 2,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_34",
+      "text": "厨娘的委托：cabbage ×3",
+      "item": "cabbage",
+      "count": 3,
+      "reward_money": 100,
+      "reward_item": "wind_shard",
+      "reward_count": 1,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_35",
+      "text": "旅人的委托：corn ×4",
+      "item": "corn",
+      "count": 4,
+      "reward_money": 115,
+      "reward_item": "turnip_cake",
+      "reward_count": 2,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_36",
+      "text": "林爷爷的委托：pumpkin ×1",
+      "item": "pumpkin",
+      "count": 1,
+      "reward_money": 130,
+      "reward_item": "berry_jam",
+      "reward_count": 1,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_37",
+      "text": "小满的委托：mushroom ×2",
+      "item": "mushroom",
+      "count": 2,
+      "reward_money": 145,
+      "reward_item": "salad",
+      "reward_count": 2,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_38",
+      "text": "桃枝的委托：tea ×3",
+      "item": "tea",
+      "count": 3,
+      "reward_money": 160,
+      "reward_item": "honey",
+      "reward_count": 1,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_39",
+      "text": "阿棠的委托：carp_spring ×4",
+      "item": "carp_spring",
+      "count": 4,
+      "reward_money": 175,
+      "reward_item": "cotton",
+      "reward_count": 2,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_40",
+      "text": "江澄的委托：bluegill ×1",
+      "item": "bluegill",
+      "count": 1,
+      "reward_money": 40,
+      "reward_item": "grape",
+      "reward_count": 1,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_41",
+      "text": "云舟的委托：wind_shard ×2",
+      "item": "wind_shard",
+      "count": 2,
+      "reward_money": 55,
+      "reward_item": "turnip",
+      "reward_count": 2,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_42",
+      "text": "石匠的委托：turnip_cake ×3",
+      "item": "turnip_cake",
+      "count": 3,
+      "reward_money": 70,
+      "reward_item": "potato",
+      "reward_count": 1,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_43",
+      "text": "茶婆的委托：berry_jam ×4",
+      "item": "berry_jam",
+      "count": 4,
+      "reward_money": 85,
+      "reward_item": "tomato",
+      "reward_count": 2,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_44",
+      "text": "集市的委托：salad ×1",
+      "item": "salad",
+      "count": 1,
+      "reward_money": 100,
+      "reward_item": "berry",
+      "reward_count": 1,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_45",
+      "text": "守林人的委托：honey ×2",
+      "item": "honey",
+      "count": 2,
+      "reward_money": 115,
+      "reward_item": "wood",
+      "reward_count": 2,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_46",
+      "text": "厨娘的委托：cotton ×3",
+      "item": "cotton",
+      "count": 3,
+      "reward_money": 130,
+      "reward_item": "stone",
+      "reward_count": 1,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_47",
+      "text": "旅人的委托：grape ×4",
+      "item": "grape",
+      "count": 4,
+      "reward_money": 145,
+      "reward_item": "fiber",
+      "reward_count": 2,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_48",
+      "text": "林爷爷的委托：turnip ×1",
+      "item": "turnip",
+      "count": 1,
+      "reward_money": 160,
+      "reward_item": "copper_ore",
+      "reward_count": 1,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_49",
+      "text": "小满的委托：potato ×2",
+      "item": "potato",
+      "count": 2,
+      "reward_money": 175,
+      "reward_item": "iron_ore",
+      "reward_count": 2,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_50",
+      "text": "桃枝的委托：tomato ×3",
+      "item": "tomato",
+      "count": 3,
+      "reward_money": 40,
+      "reward_item": "carrot",
+      "reward_count": 1,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_51",
+      "text": "阿棠的委托：berry ×4",
+      "item": "berry",
+      "count": 4,
+      "reward_money": 55,
+      "reward_item": "cabbage",
+      "reward_count": 2,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_52",
+      "text": "江澄的委托：wood ×1",
+      "item": "wood",
+      "count": 1,
+      "reward_money": 70,
+      "reward_item": "corn",
+      "reward_count": 1,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_53",
+      "text": "云舟的委托：stone ×2",
+      "item": "stone",
+      "count": 2,
+      "reward_money": 85,
+      "reward_item": "pumpkin",
+      "reward_count": 2,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_54",
+      "text": "石匠的委托：fiber ×3",
+      "item": "fiber",
+      "count": 3,
+      "reward_money": 100,
+      "reward_item": "mushroom",
+      "reward_count": 1,
+      "day_mod": 6
+    },
+    {
+      "id": "q_auto_55",
+      "text": "茶婆的委托：copper_ore ×4",
+      "item": "copper_ore",
+      "count": 4,
+      "reward_money": 115,
+      "reward_item": "tea",
+      "reward_count": 2,
+      "day_mod": 2
+    },
+    {
+      "id": "q_auto_56",
+      "text": "集市的委托：iron_ore ×1",
+      "item": "iron_ore",
+      "count": 1,
+      "reward_money": 130,
+      "reward_item": "carp_spring",
+      "reward_count": 1,
+      "day_mod": 3
+    },
+    {
+      "id": "q_auto_57",
+      "text": "守林人的委托：carrot ×2",
+      "item": "carrot",
+      "count": 2,
+      "reward_money": 145,
+      "reward_item": "bluegill",
+      "reward_count": 2,
+      "day_mod": 4
+    },
+    {
+      "id": "q_auto_58",
+      "text": "厨娘的委托：cabbage ×3",
+      "item": "cabbage",
+      "count": 3,
+      "reward_money": 160,
+      "reward_item": "wind_shard",
+      "reward_count": 1,
+      "day_mod": 5
+    },
+    {
+      "id": "q_auto_59",
+      "text": "旅人的委托：corn ×4",
+      "item": "corn",
+      "count": 4,
+      "reward_money": 175,
+      "reward_item": "turnip_cake",
+      "reward_count": 2,
+      "day_mod": 6
+    }
+  ]
+}

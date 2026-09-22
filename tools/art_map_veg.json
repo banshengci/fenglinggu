@@ -1,0 +1,12 @@
+[
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_gentle_riverside_meadow_biom_2026-09-22T08-29-23.png", "target": "D:/xinxiangmu/youxi/game/art/tiles/tile_meadow.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_calm_lake_biome_tile_sheet___2026-09-22T08-29-26.png", "target": "D:/xinxiangmu/youxi/game/art/tiles/tile_lake.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_rolling_south_slope_pasture__2026-09-22T08-29-24.png", "target": "D:/xinxiangmu/youxi/game/art/tiles/tile_pasture.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Spring_tree_set__three_trees_i_2026-09-22T08-29-22.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_spring_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Summer_tree_set__three_trees_i_2026-09-22T08-29-27.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_summer_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Autumn_tree_set__three_trees_i_2026-09-22T08-29-21.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_autumn_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Winter_tree_set__three_trees_i_2026-09-22T08-29-26.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_trees_winter_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Six_small_nature_props_in_a_ro_2026-09-22T08-29-28.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_props_nature_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/Six_colorful_wildflowers_in_a__2026-09-22T08-29-29.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_flowers_crop.png", "bottom_frac": 0.10},
+  {"source": "D:/xinxiangmu/youxi/generated-images/A_set_of_ground_decoration_pro_2026-09-22T08-29-26.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/plate_props_ground_crop.png", "bottom_frac": 0.10}
+]

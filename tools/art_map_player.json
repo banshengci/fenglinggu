@@ -1,0 +1,22 @@
+[
+  {
+    "source": "D:\\xinxiangmu\\youxi\\game\\art\\chars\\player_refsheet.png",
+    "out_dir": "D:\\xinxiangmu\\youxi\\game\\art\\_stage\\_tmp_player",
+    "names": ["p0", "p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9", "p10", "p11"],
+    "out_size": 256,
+    "tol": 22,
+    "merge_gap": 30,
+    "min_area_frac": 0.004,
+    "margin_frac": 0.12
+  },
+  {
+    "source": "D:\\xinxiangmu\\youxi\\game\\art\\chars\\player_variants.png",
+    "out_dir": "D:\\xinxiangmu\\youxi\\game\\art\\_stage\\_tmp_playerv",
+    "names": ["v0", "v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9", "v10", "v11"],
+    "out_size": 256,
+    "tol": 22,
+    "merge_gap": 30,
+    "min_area_frac": 0.004,
+    "margin_frac": 0.12
+  }
+]

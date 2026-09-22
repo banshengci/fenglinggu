@@ -1,0 +1,8 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/decor8.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/furniture",
+    "names": ["furniture_wind_chime", "furniture_stone_tile", "furniture_banner", "furniture_frame", "furniture_cup", "furniture_music_box", "furniture_potted_tree", "furniture_stone_lantern"],
+    "cols": 4, "rows": 2, "out_size": 256, "tol": 25, "margin_frac": 0.14
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/npc_fix2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/chars",
+    "names": ["npc_grandpa_lin", "npc_zhi_tao"],
+    "out_size": 512,
+    "tol": 22,
+    "merge_gap": 40,
+    "min_area_frac": 0.02,
+    "margin_frac": 0.08
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/misc_fix2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/_stage/_tmp_misc",
+    "names": ["seed_mushroom", "furniture_field_marker"],
+    "out_size": 512,
+    "tol": 22,
+    "merge_gap": 40,
+    "min_area_frac": 0.02,
+    "margin_frac": 0.08
+  }
+]

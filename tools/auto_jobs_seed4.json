@@ -1,0 +1,8 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p4.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_turnip", "seed_potato", "seed_tomato", "seed_strawberry", "seed_corn", "seed_pumpkin", "seed_grape", "seed_rice", "mushroom_seed", "seed_sunflower", "seed_apple", "seed_tea"],
+    "out_size": 256, "tol": 52, "merge_gap": 10, "min_area_frac": 0.012, "margin_frac": 0.14
+  }
+]

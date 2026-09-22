@@ -1,0 +1,1070 @@
+{
+  "turnip_cake": {
+    "id": "turnip_cake",
+    "name": "料理·turnip_cake",
+    "station": "kitchen",
+    "output": "turnip_cake",
+    "output_count": 1,
+    "inputs": {
+      "turnip": 2,
+      "wood": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "berry_jam": {
+    "id": "berry_jam",
+    "name": "料理·berry_jam",
+    "station": "kitchen",
+    "output": "berry_jam",
+    "output_count": 1,
+    "inputs": {
+      "berry": 3,
+      "wood": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "tomato_soup": {
+    "id": "tomato_soup",
+    "name": "料理·tomato_soup",
+    "station": "kitchen",
+    "output": "tomato_soup",
+    "output_count": 1,
+    "inputs": {
+      "tomato": 2,
+      "herb": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "potato_stew": {
+    "id": "potato_stew",
+    "name": "料理·potato_stew",
+    "station": "kitchen",
+    "output": "potato_stew",
+    "output_count": 1,
+    "inputs": {
+      "potato": 2,
+      "carrot": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "salad": {
+    "id": "salad",
+    "name": "料理·salad",
+    "station": "kitchen",
+    "output": "salad",
+    "output_count": 1,
+    "inputs": {
+      "lettuce": 2,
+      "tomato": 1,
+      "herb": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "veggie_skewer": {
+    "id": "veggie_skewer",
+    "name": "料理·veggie_skewer",
+    "station": "kitchen",
+    "output": "veggie_skewer",
+    "output_count": 1,
+    "inputs": {
+      "pepper": 1,
+      "eggplant": 1,
+      "wood": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "fish_grill": {
+    "id": "fish_grill",
+    "name": "料理·fish_grill",
+    "station": "kitchen",
+    "output": "fish_grill",
+    "output_count": 1,
+    "inputs": {
+      "carp_spring": 1,
+      "wood": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "fish_stew": {
+    "id": "fish_stew",
+    "name": "料理·fish_stew",
+    "station": "kitchen",
+    "output": "fish_stew",
+    "output_count": 1,
+    "inputs": {
+      "bluegill": 1,
+      "potato": 1,
+      "herb": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "berry_pie": {
+    "id": "berry_pie",
+    "name": "料理·berry_pie",
+    "station": "kitchen",
+    "output": "berry_pie",
+    "output_count": 1,
+    "inputs": {
+      "berry": 3,
+      "wheat": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "apple_pie": {
+    "id": "apple_pie",
+    "name": "料理·apple_pie",
+    "station": "kitchen",
+    "output": "apple_pie",
+    "output_count": 1,
+    "inputs": {
+      "apple": 2,
+      "wheat": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "corn_bread": {
+    "id": "corn_bread",
+    "name": "料理·corn_bread",
+    "station": "kitchen",
+    "output": "corn_bread",
+    "output_count": 1,
+    "inputs": {
+      "corn": 2,
+      "wheat": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "pumpkin_soup": {
+    "id": "pumpkin_soup",
+    "name": "料理·pumpkin_soup",
+    "station": "kitchen",
+    "output": "pumpkin_soup",
+    "output_count": 1,
+    "inputs": {
+      "pumpkin": 1,
+      "herb": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "mushroom_risotto": {
+    "id": "mushroom_risotto",
+    "name": "料理·mushroom_risotto",
+    "station": "kitchen",
+    "output": "mushroom_risotto",
+    "output_count": 1,
+    "inputs": {
+      "mushroom": 2,
+      "rice": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "honey_toast": {
+    "id": "honey_toast",
+    "name": "料理·honey_toast",
+    "station": "kitchen",
+    "output": "honey_toast",
+    "output_count": 1,
+    "inputs": {
+      "wheat": 1,
+      "sunflower": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "tea_set": {
+    "id": "tea_set",
+    "name": "料理·tea_set",
+    "station": "kitchen",
+    "output": "tea_set",
+    "output_count": 1,
+    "inputs": {
+      "tea": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "coffee": {
+    "id": "coffee",
+    "name": "料理·coffee",
+    "station": "kitchen",
+    "output": "coffee",
+    "output_count": 1,
+    "inputs": {
+      "cocoa_bean": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "hot_cocoa": {
+    "id": "hot_cocoa",
+    "name": "料理·hot_cocoa",
+    "station": "kitchen",
+    "output": "hot_cocoa",
+    "output_count": 1,
+    "inputs": {
+      "cocoa_bean": 1,
+      "wheat": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "wine_grape": {
+    "id": "wine_grape",
+    "name": "料理·wine_grape",
+    "station": "kitchen",
+    "output": "wine_grape",
+    "output_count": 1,
+    "inputs": {
+      "grape": 3,
+      "wood": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "sushi": {
+    "id": "sushi",
+    "name": "料理·sushi",
+    "station": "kitchen",
+    "output": "sushi",
+    "output_count": 1,
+    "inputs": {
+      "carp_spring": 1,
+      "rice": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "rice_bowl": {
+    "id": "rice_bowl",
+    "name": "料理·rice_bowl",
+    "station": "kitchen",
+    "output": "rice_bowl",
+    "output_count": 1,
+    "inputs": {
+      "rice": 2,
+      "eggplant": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "noodle": {
+    "id": "noodle",
+    "name": "料理·noodle",
+    "station": "kitchen",
+    "output": "noodle",
+    "output_count": 1,
+    "inputs": {
+      "wheat": 2,
+      "herb": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "dumpling": {
+    "id": "dumpling",
+    "name": "料理·dumpling",
+    "station": "kitchen",
+    "output": "dumpling",
+    "output_count": 1,
+    "inputs": {
+      "cabbage": 1,
+      "carrot": 1,
+      "wheat": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "hotpot": {
+    "id": "hotpot",
+    "name": "料理·hotpot",
+    "station": "kitchen",
+    "output": "hotpot",
+    "output_count": 1,
+    "inputs": {
+      "cabbage": 1,
+      "mushroom": 1,
+      "pepper": 1,
+      "fish_grill": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "cheese": {
+    "id": "cheese",
+    "name": "料理·cheese",
+    "station": "kitchen",
+    "output": "cheese",
+    "output_count": 1,
+    "inputs": {
+      "corn": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "butter_toast": {
+    "id": "butter_toast",
+    "name": "料理·butter_toast",
+    "station": "kitchen",
+    "output": "butter_toast",
+    "output_count": 1,
+    "inputs": {
+      "wheat": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "jam_toast": {
+    "id": "jam_toast",
+    "name": "料理·jam_toast",
+    "station": "kitchen",
+    "output": "jam_toast",
+    "output_count": 1,
+    "inputs": {
+      "wheat": 1,
+      "berry_jam": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "pickles": {
+    "id": "pickles",
+    "name": "料理·pickles",
+    "station": "kitchen",
+    "output": "pickles",
+    "output_count": 1,
+    "inputs": {
+      "cucumber": 3,
+      "garlic": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "kimchi": {
+    "id": "kimchi",
+    "name": "料理·kimchi",
+    "station": "kitchen",
+    "output": "kimchi",
+    "output_count": 1,
+    "inputs": {
+      "cabbage": 2,
+      "pepper": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "smoked_eel": {
+    "id": "smoked_eel",
+    "name": "料理·smoked_eel",
+    "station": "kitchen",
+    "output": "smoked_eel",
+    "output_count": 1,
+    "inputs": {
+      "night_eel": 1,
+      "wood": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "honey": {
+    "id": "honey",
+    "name": "料理·honey",
+    "station": "kitchen",
+    "output": "honey",
+    "output_count": 1,
+    "inputs": {
+      "sunflower": 2,
+      "lavender": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "candy": {
+    "id": "candy",
+    "name": "料理·candy",
+    "station": "kitchen",
+    "output": "candy",
+    "output_count": 1,
+    "inputs": {
+      "berry": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "chocolate": {
+    "id": "chocolate",
+    "name": "料理·chocolate",
+    "station": "kitchen",
+    "output": "chocolate",
+    "output_count": 1,
+    "inputs": {
+      "cocoa_bean": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "cake": {
+    "id": "cake",
+    "name": "料理·cake",
+    "station": "kitchen",
+    "output": "cake",
+    "output_count": 1,
+    "inputs": {
+      "wheat": 2,
+      "strawberry": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "pudding": {
+    "id": "pudding",
+    "name": "料理·pudding",
+    "station": "kitchen",
+    "output": "pudding",
+    "output_count": 1,
+    "inputs": {
+      "corn": 1,
+      "sunflower": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "ice": {
+    "id": "ice",
+    "name": "料理·ice",
+    "station": "kitchen",
+    "output": "ice",
+    "output_count": 1,
+    "inputs": {
+      "berry": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "sun_cake": {
+    "id": "sun_cake",
+    "name": "料理·sun_cake",
+    "station": "kitchen",
+    "output": "sun_cake",
+    "output_count": 1,
+    "inputs": {
+      "sunflower": 2,
+      "wheat": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "herb_salt": {
+    "id": "herb_salt",
+    "name": "料理·herb_salt",
+    "station": "kitchen",
+    "output": "herb_salt",
+    "output_count": 1,
+    "inputs": {
+      "herb": 2
+    },
+    "desc": "厨房出品。"
+  },
+  "ginger_tea": {
+    "id": "ginger_tea",
+    "name": "料理·ginger_tea",
+    "station": "kitchen",
+    "output": "ginger_tea",
+    "output_count": 1,
+    "inputs": {
+      "ginger": 2,
+      "tea": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "mixed_juice": {
+    "id": "mixed_juice",
+    "name": "料理·mixed_juice",
+    "station": "kitchen",
+    "output": "mixed_juice",
+    "output_count": 1,
+    "inputs": {
+      "strawberry": 1,
+      "melon": 1,
+      "grape": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "legend_feast": {
+    "id": "legend_feast",
+    "name": "料理·legend_feast",
+    "station": "kitchen",
+    "output": "legend_feast",
+    "output_count": 1,
+    "inputs": {
+      "legend_fish": 1,
+      "apple": 1,
+      "mushroom": 1,
+      "gold_ore": 1
+    },
+    "desc": "厨房出品。"
+  },
+  "field_marker": {
+    "id": "field_marker",
+    "name": "field_marker",
+    "station": "carpentry",
+    "output": "field_marker",
+    "output_count": 1,
+    "inputs": {
+      "wood": 3,
+      "fiber": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "tiny_bell": {
+    "id": "tiny_bell",
+    "name": "tiny_bell",
+    "station": "crystal_atelier",
+    "output": "tiny_bell",
+    "output_count": 1,
+    "inputs": {
+      "stone": 2,
+      "wind_shard": 1,
+      "wood": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "wood_from_fiber": {
+    "id": "wood_from_fiber",
+    "name": "wood_from_fiber",
+    "station": "workbench",
+    "output": "wood",
+    "output_count": 1,
+    "inputs": {
+      "fiber": 4
+    },
+    "desc": "工作台合成。"
+  },
+  "wood_fence": {
+    "id": "wood_fence",
+    "name": "wood_fence",
+    "station": "carpentry",
+    "output": "wood_fence",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "stone_path": {
+    "id": "stone_path",
+    "name": "stone_path",
+    "station": "workbench",
+    "output": "stone_path",
+    "output_count": 1,
+    "inputs": {
+      "stone": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "flower_pot": {
+    "id": "flower_pot",
+    "name": "flower_pot",
+    "station": "workbench",
+    "output": "flower_pot",
+    "output_count": 1,
+    "inputs": {
+      "stone": 2,
+      "fiber": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "lantern": {
+    "id": "lantern",
+    "name": "lantern",
+    "station": "crystal_atelier",
+    "output": "lantern",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2,
+      "wind_shard": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "bench": {
+    "id": "bench",
+    "name": "bench",
+    "station": "carpentry",
+    "output": "bench",
+    "output_count": 1,
+    "inputs": {
+      "wood": 4,
+      "stone": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "sign_post": {
+    "id": "sign_post",
+    "name": "sign_post",
+    "station": "carpentry",
+    "output": "sign_post",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2,
+      "fiber": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "well": {
+    "id": "well",
+    "name": "well",
+    "station": "forge",
+    "output": "well",
+    "output_count": 1,
+    "inputs": {
+      "stone": 5,
+      "wood": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "birdhouse": {
+    "id": "birdhouse",
+    "name": "birdhouse",
+    "station": "carpentry",
+    "output": "birdhouse",
+    "output_count": 1,
+    "inputs": {
+      "wood": 4
+    },
+    "desc": "工作台合成。"
+  },
+  "windmill_toy": {
+    "id": "windmill_toy",
+    "name": "windmill_toy",
+    "station": "forge",
+    "output": "windmill_toy",
+    "output_count": 1,
+    "inputs": {
+      "wood": 3,
+      "iron_ore": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "crystal_lamp": {
+    "id": "crystal_lamp",
+    "name": "crystal_lamp",
+    "station": "crystal_atelier",
+    "output": "crystal_lamp",
+    "output_count": 1,
+    "inputs": {
+      "stone": 2,
+      "wind_shard": 2,
+      "copper_ore": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "rug": {
+    "id": "rug",
+    "name": "rug",
+    "station": "carpentry",
+    "output": "rug",
+    "output_count": 1,
+    "inputs": {
+      "fiber": 5
+    },
+    "desc": "工作台合成。"
+  },
+  "curtain": {
+    "id": "curtain",
+    "name": "curtain",
+    "station": "carpentry",
+    "output": "curtain",
+    "output_count": 1,
+    "inputs": {
+      "fiber": 4
+    },
+    "desc": "工作台合成。"
+  },
+  "bookshelf": {
+    "id": "bookshelf",
+    "name": "bookshelf",
+    "station": "carpentry",
+    "output": "bookshelf",
+    "output_count": 1,
+    "inputs": {
+      "wood": 6,
+      "fiber": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "tea_table": {
+    "id": "tea_table",
+    "name": "tea_table",
+    "station": "carpentry",
+    "output": "tea_table",
+    "output_count": 1,
+    "inputs": {
+      "wood": 4
+    },
+    "desc": "工作台合成。"
+  },
+  "painting_hills": {
+    "id": "painting_hills",
+    "name": "painting_hills",
+    "station": "carpentry",
+    "output": "painting_hills",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2,
+      "fiber": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "painting_lake": {
+    "id": "painting_lake",
+    "name": "painting_lake",
+    "station": "carpentry",
+    "output": "painting_lake",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2,
+      "fiber": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "painting_mine": {
+    "id": "painting_mine",
+    "name": "painting_mine",
+    "station": "carpentry",
+    "output": "painting_mine",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2,
+      "iron_ore": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "bell_mobile": {
+    "id": "bell_mobile",
+    "name": "bell_mobile",
+    "station": "crystal_atelier",
+    "output": "bell_mobile",
+    "output_count": 1,
+    "inputs": {
+      "tiny_bell": 1,
+      "wood": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "festival_banner": {
+    "id": "festival_banner",
+    "name": "festival_banner",
+    "station": "forge",
+    "output": "festival_banner",
+    "output_count": 1,
+    "inputs": {
+      "fiber": 4,
+      "pepper": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "photo_frame": {
+    "id": "photo_frame",
+    "name": "photo_frame",
+    "station": "carpentry",
+    "output": "photo_frame",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "trophy_cup": {
+    "id": "trophy_cup",
+    "name": "trophy_cup",
+    "station": "forge",
+    "output": "trophy_cup",
+    "output_count": 1,
+    "inputs": {
+      "gold_ore": 1,
+      "stone": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "music_box": {
+    "id": "music_box",
+    "name": "music_box",
+    "station": "forge",
+    "output": "music_box",
+    "output_count": 1,
+    "inputs": {
+      "wood": 3,
+      "iron_ore": 1,
+      "wind_shard": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "potted_tree": {
+    "id": "potted_tree",
+    "name": "potted_tree",
+    "station": "carpentry",
+    "output": "potted_tree",
+    "output_count": 1,
+    "inputs": {
+      "wood": 3,
+      "fiber": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "stone_lantern": {
+    "id": "stone_lantern",
+    "name": "stone_lantern",
+    "station": "crystal_atelier",
+    "output": "stone_lantern",
+    "output_count": 1,
+    "inputs": {
+      "stone": 4,
+      "wind_shard": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "hanging_bells": {
+    "id": "hanging_bells",
+    "name": "hanging_bells",
+    "station": "crystal_atelier",
+    "output": "hanging_bells",
+    "output_count": 1,
+    "inputs": {
+      "tiny_bell": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "picnic_set": {
+    "id": "picnic_set",
+    "name": "picnic_set",
+    "station": "carpentry",
+    "output": "picnic_set",
+    "output_count": 1,
+    "inputs": {
+      "wood": 2,
+      "fiber": 2
+    },
+    "desc": "工作台合成。"
+  },
+  "cat_bed": {
+    "id": "cat_bed",
+    "name": "cat_bed",
+    "station": "carpentry",
+    "output": "cat_bed",
+    "output_count": 1,
+    "inputs": {
+      "fiber": 4,
+      "wood": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "telescope": {
+    "id": "telescope",
+    "name": "telescope",
+    "station": "forge",
+    "output": "telescope",
+    "output_count": 1,
+    "inputs": {
+      "iron_ore": 3,
+      "copper_ore": 2,
+      "mythril_shard": 1
+    },
+    "desc": "工作台合成。"
+  },
+  "copper_wire": {
+    "id": "copper_wire",
+    "name": "铜件",
+    "station": "workbench",
+    "output": "copper_wire",
+    "output_count": 1,
+    "inputs": {
+      "copper_ore": 1,
+      "wood": 1
+    },
+    "desc": "加固。"
+  },
+  "upgrade_hoe_copper": {
+    "id": "upgrade_hoe_copper",
+    "name": "升级→hoe_copper",
+    "station": "forge",
+    "output": "hoe_copper",
+    "output_count": 1,
+    "inputs": {
+      "hoe": 1,
+      "copper_ore": 5,
+      "wood": 3
+    },
+    "desc": "工具升级至 2 阶。"
+  },
+  "upgrade_hoe_iron": {
+    "id": "upgrade_hoe_iron",
+    "name": "升级→hoe_iron",
+    "station": "forge",
+    "output": "hoe_iron",
+    "output_count": 1,
+    "inputs": {
+      "hoe_copper": 1,
+      "iron_ore": 5,
+      "copper_wire": 1
+    },
+    "desc": "工具升级至 3 阶。"
+  },
+  "upgrade_hoe_silver": {
+    "id": "upgrade_hoe_silver",
+    "name": "升级→hoe_silver",
+    "station": "forge",
+    "output": "hoe_silver",
+    "output_count": 1,
+    "inputs": {
+      "hoe_iron": 1,
+      "silver_ore": 4,
+      "wind_shard": 1
+    },
+    "desc": "工具升级至 4 阶。"
+  },
+  "upgrade_hoe_star": {
+    "id": "upgrade_hoe_star",
+    "name": "升级→hoe_star",
+    "station": "forge",
+    "output": "hoe_star",
+    "output_count": 1,
+    "inputs": {
+      "hoe_silver": 1,
+      "mythril_shard": 3,
+      "gold_ore": 2
+    },
+    "desc": "工具升级至 5 阶。"
+  },
+  "upgrade_watering_can_copper": {
+    "id": "upgrade_watering_can_copper",
+    "name": "升级→watering_can_copper",
+    "station": "forge",
+    "output": "watering_can_copper",
+    "output_count": 1,
+    "inputs": {
+      "watering_can": 1,
+      "copper_ore": 5,
+      "wood": 3
+    },
+    "desc": "工具升级至 2 阶。"
+  },
+  "upgrade_watering_can_iron": {
+    "id": "upgrade_watering_can_iron",
+    "name": "升级→watering_can_iron",
+    "station": "forge",
+    "output": "watering_can_iron",
+    "output_count": 1,
+    "inputs": {
+      "watering_can_copper": 1,
+      "iron_ore": 5,
+      "copper_wire": 1
+    },
+    "desc": "工具升级至 3 阶。"
+  },
+  "upgrade_watering_can_silver": {
+    "id": "upgrade_watering_can_silver",
+    "name": "升级→watering_can_silver",
+    "station": "forge",
+    "output": "watering_can_silver",
+    "output_count": 1,
+    "inputs": {
+      "watering_can_iron": 1,
+      "silver_ore": 4,
+      "wind_shard": 1
+    },
+    "desc": "工具升级至 4 阶。"
+  },
+  "upgrade_watering_can_star": {
+    "id": "upgrade_watering_can_star",
+    "name": "升级→watering_can_star",
+    "station": "forge",
+    "output": "watering_can_star",
+    "output_count": 1,
+    "inputs": {
+      "watering_can_silver": 1,
+      "mythril_shard": 3,
+      "gold_ore": 2
+    },
+    "desc": "工具升级至 5 阶。"
+  },
+  "upgrade_wood_axe_copper": {
+    "id": "upgrade_wood_axe_copper",
+    "name": "升级→wood_axe_copper",
+    "station": "forge",
+    "output": "wood_axe_copper",
+    "output_count": 1,
+    "inputs": {
+      "wood_axe": 1,
+      "copper_ore": 5,
+      "wood": 3
+    },
+    "desc": "工具升级至 2 阶。"
+  },
+  "upgrade_wood_axe_iron": {
+    "id": "upgrade_wood_axe_iron",
+    "name": "升级→wood_axe_iron",
+    "station": "forge",
+    "output": "wood_axe_iron",
+    "output_count": 1,
+    "inputs": {
+      "wood_axe_copper": 1,
+      "iron_ore": 5,
+      "copper_wire": 1
+    },
+    "desc": "工具升级至 3 阶。"
+  },
+  "upgrade_wood_axe_silver": {
+    "id": "upgrade_wood_axe_silver",
+    "name": "升级→wood_axe_silver",
+    "station": "forge",
+    "output": "wood_axe_silver",
+    "output_count": 1,
+    "inputs": {
+      "wood_axe_iron": 1,
+      "silver_ore": 4,
+      "wind_shard": 1
+    },
+    "desc": "工具升级至 4 阶。"
+  },
+  "upgrade_wood_axe_star": {
+    "id": "upgrade_wood_axe_star",
+    "name": "升级→wood_axe_star",
+    "station": "forge",
+    "output": "wood_axe_star",
+    "output_count": 1,
+    "inputs": {
+      "wood_axe_silver": 1,
+      "mythril_shard": 3,
+      "gold_ore": 2
+    },
+    "desc": "工具升级至 5 阶。"
+  },
+  "upgrade_stone_pick_copper": {
+    "id": "upgrade_stone_pick_copper",
+    "name": "升级→stone_pick_copper",
+    "station": "forge",
+    "output": "stone_pick_copper",
+    "output_count": 1,
+    "inputs": {
+      "stone_pick": 1,
+      "copper_ore": 5,
+      "wood": 3
+    },
+    "desc": "工具升级至 2 阶。"
+  },
+  "upgrade_stone_pick_iron": {
+    "id": "upgrade_stone_pick_iron",
+    "name": "升级→stone_pick_iron",
+    "station": "forge",
+    "output": "stone_pick_iron",
+    "output_count": 1,
+    "inputs": {
+      "stone_pick_copper": 1,
+      "iron_ore": 5,
+      "copper_wire": 1
+    },
+    "desc": "工具升级至 3 阶。"
+  },
+  "upgrade_stone_pick_silver": {
+    "id": "upgrade_stone_pick_silver",
+    "name": "升级→stone_pick_silver",
+    "station": "forge",
+    "output": "stone_pick_silver",
+    "output_count": 1,
+    "inputs": {
+      "stone_pick_iron": 1,
+      "silver_ore": 4,
+      "wind_shard": 1
+    },
+    "desc": "工具升级至 4 阶。"
+  },
+  "upgrade_stone_pick_star": {
+    "id": "upgrade_stone_pick_star",
+    "name": "升级→stone_pick_star",
+    "station": "forge",
+    "output": "stone_pick_star",
+    "output_count": 1,
+    "inputs": {
+      "stone_pick_silver": 1,
+      "mythril_shard": 3,
+      "gold_ore": 2
+    },
+    "desc": "工具升级至 5 阶。"
+  }
+}

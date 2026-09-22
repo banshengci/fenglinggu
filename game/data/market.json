@@ -1,0 +1,13 @@
+{
+  "premium_weekdays": {
+    "0": ["turnip", "berry"],
+    "1": ["potato", "tomato"],
+    "2": ["wood", "stone"],
+    "3": ["turnip_cake", "berry_jam"],
+    "4": ["tomato", "berry"],
+    "5": ["copper_ore", "iron_ore"],
+    "6": ["wind_shard", "turnip"]
+  },
+  "premium_multiplier": 1.35,
+  "hint": "集市日：本周溢价品类会在出货箱旁的小黑板提示"
+}

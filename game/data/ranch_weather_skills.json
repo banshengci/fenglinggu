@@ -1,0 +1,34 @@
+{
+  "animals": [
+    {"id": "chicken", "name": "芦花鸡", "buy_price": 800, "product": "egg", "product_days": 1, "color": "#E8D0B0", "size": 12},
+    {"id": "cow", "name": "娟姗牛", "buy_price": 2500, "product": "milk", "product_days": 2, "color": "#D0B090", "size": 20},
+    {"id": "sheep", "name": "绒羊", "buy_price": 1800, "product": "wool", "product_days": 3, "color": "#F0F0E8", "size": 16},
+    {"id": "duck", "name": "青头鸭", "buy_price": 1200, "product": "duck_egg", "product_days": 2, "color": "#A0C0A0", "size": 12},
+    {"id": "goat", "name": "岩羊", "buy_price": 2000, "product": "goat_milk", "product_days": 2, "color": "#C0A080", "size": 15},
+    {"id": "bee_box", "name": "蜂箱", "buy_price": 1500, "product": "honey", "product_days": 3, "color": "#E8C87A", "size": 14}
+  ],
+  "weather_types": ["晴朗", "微风", "多云", "细雨", "雾", "小雪", "风暴前夜"],
+  "weather_effects": {
+    "晴朗": {"grow_bonus": 0.0, "fish_bonus": 0.0, "forage_bonus": 0.0},
+    "微风": {"grow_bonus": 0.1, "fish_bonus": 0.0, "forage_bonus": 0.1},
+    "多云": {"grow_bonus": 0.0, "fish_bonus": 0.1, "forage_bonus": 0.0},
+    "细雨": {"grow_bonus": 0.2, "fish_bonus": 0.2, "forage_bonus": 0.1},
+    "雾": {"grow_bonus": 0.0, "fish_bonus": 0.1, "forage_bonus": 0.3},
+    "小雪": {"grow_bonus": -0.1, "fish_bonus": 0.0, "forage_bonus": 0.1},
+    "风暴前夜": {"grow_bonus": 0.0, "fish_bonus": 0.3, "forage_bonus": 0.2}
+  },
+  "skills": [
+    {"id": "farming", "name": "农耕", "desc": "收获与闪光概率"},
+    {"id": "fishing", "name": "垂钓", "desc": "稀有鱼与咬钩率"},
+    {"id": "foraging", "name": "采集", "desc": "野外采集产量"},
+    {"id": "mining", "name": "采矿", "desc": "矿脉伤害与掉率"},
+    {"id": "cooking", "name": "烹饪", "desc": "料理品质与售价"},
+    {"id": "ranching", "name": "牧歌", "desc": "动物产出与心情"}
+  ],
+  "activities": [
+    {"id": "fishing_contest", "name": "钓鱼大赛", "season": "长夏", "day": 12},
+    {"id": "cook_off", "name": "厨艺大赛", "season": "蜜酿秋", "day": 22},
+    {"id": "pet_show", "name": "萌宠展", "season": "萌芽春", "day": 18},
+    {"id": "stargazing", "name": "风脊观星", "season": "静雪冬", "day": 15}
+  ]
+}

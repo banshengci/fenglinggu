@@ -1,0 +1,2031 @@
+{
+  "hoe": {
+    "id": "hoe",
+    "name": "锄头",
+    "type": "tool",
+    "tool_action": "till",
+    "color": "#8B7355",
+    "desc": "翻开土地，准备播种。",
+    "tool_tier": 0,
+    "tool_base": "hoe"
+  },
+  "watering_can": {
+    "id": "watering_can",
+    "name": "水壶",
+    "type": "tool",
+    "tool_action": "water",
+    "color": "#5B8FA8",
+    "desc": "给作物浇水。漏浇会减产，但不会枯死。",
+    "tool_tier": 0,
+    "tool_base": "watering_can"
+  },
+  "wood_axe": {
+    "id": "wood_axe",
+    "name": "斧头",
+    "type": "tool",
+    "tool_action": "chop",
+    "color": "#A67C52",
+    "desc": "收集木材。",
+    "tool_tier": 0,
+    "tool_base": "wood_axe"
+  },
+  "stone_pick": {
+    "id": "stone_pick",
+    "name": "镐子",
+    "type": "tool",
+    "tool_action": "mine",
+    "color": "#7A8B99",
+    "desc": "开采石块与矿石。",
+    "tool_tier": 0,
+    "tool_base": "stone_pick"
+  },
+  "seed_turnip": {
+    "id": "seed_turnip",
+    "name": "白萝卜种子",
+    "type": "seed",
+    "crop_id": "turnip",
+    "buy_price": 20,
+    "color": "#D4E8C4",
+    "desc": "萌芽春作物，3 天成熟。"
+  },
+  "seed_potato": {
+    "id": "seed_potato",
+    "name": "土豆种子",
+    "type": "seed",
+    "crop_id": "potato",
+    "buy_price": 30,
+    "color": "#E0C8A0",
+    "desc": "萌芽春作物，4 天成熟。"
+  },
+  "seed_tomato": {
+    "id": "seed_tomato",
+    "name": "番茄种子",
+    "type": "seed",
+    "crop_id": "tomato",
+    "buy_price": 40,
+    "color": "#E8A090",
+    "desc": "长夏作物，5 天成熟，可再收。"
+  },
+  "turnip": {
+    "id": "turnip",
+    "name": "白萝卜",
+    "type": "crop",
+    "sell_price": 35,
+    "color": "#E8F0D0",
+    "desc": "清甜爽口的春日根菜。"
+  },
+  "potato": {
+    "id": "potato",
+    "name": "土豆",
+    "type": "crop",
+    "sell_price": 55,
+    "color": "#D2B48C",
+    "desc": "扎实管饱，炖汤一绝。"
+  },
+  "tomato": {
+    "id": "tomato",
+    "name": "番茄",
+    "type": "crop",
+    "sell_price": 75,
+    "color": "#E05555",
+    "desc": "酸甜多汁，可反复采收。"
+  },
+  "wood": {
+    "id": "wood",
+    "name": "木材",
+    "type": "resource",
+    "sell_price": 5,
+    "color": "#B8956C",
+    "desc": "建造与合成的基础材料。"
+  },
+  "stone": {
+    "id": "stone",
+    "name": "石块",
+    "type": "resource",
+    "sell_price": 4,
+    "color": "#9A9A9A",
+    "desc": "坚硬的建材。"
+  },
+  "fiber": {
+    "id": "fiber",
+    "name": "纤维",
+    "type": "resource",
+    "sell_price": 2,
+    "color": "#8FBC6B",
+    "desc": "从杂草中收集的植物纤维。"
+  },
+  "wind_shard": {
+    "id": "wind_shard",
+    "name": "风铃碎片",
+    "type": "quest",
+    "sell_price": 0,
+    "color": "#A8D8E8",
+    "desc": "闪烁着微光的风铃残片，似乎仍有声音。"
+  },
+  "turnip_cake": {
+    "id": "turnip_cake",
+    "name": "萝卜糕",
+    "type": "cooked",
+    "sell_price": 90,
+    "color": "#F0E6C8",
+    "desc": "外酥里糯，桃枝最爱的点心。"
+  },
+  "field_marker": {
+    "id": "field_marker",
+    "name": "田界牌",
+    "type": "furniture",
+    "sell_price": 15,
+    "color": "#C4A574",
+    "desc": "简易木牌，可放在菜园装饰。"
+  },
+  "tiny_bell": {
+    "id": "tiny_bell",
+    "name": "微型风铃",
+    "type": "furniture",
+    "sell_price": 80,
+    "color": "#E8C87A",
+    "placeable": true,
+    "desc": "共鸣摆件。放置后，附近作物有概率结出闪光果。"
+  },
+  "copper_ore": {
+    "id": "copper_ore",
+    "name": "铜矿",
+    "type": "resource",
+    "sell_price": 18,
+    "color": "#C07840",
+    "desc": "常见的金属矿，可合成或出货。"
+  },
+  "iron_ore": {
+    "id": "iron_ore",
+    "name": "铁矿",
+    "type": "resource",
+    "sell_price": 32,
+    "color": "#A0A8B0",
+    "desc": "更坚硬的金属，锻造好帮手。"
+  },
+  "seed_berry": {
+    "id": "seed_berry",
+    "name": "浆果种子",
+    "type": "seed",
+    "crop_id": "berry",
+    "buy_price": 55,
+    "color": "#C4A0C0",
+    "desc": "夏秋可种，4 天结果，可再收。"
+  },
+  "berry": {
+    "id": "berry",
+    "name": "山莓",
+    "type": "crop",
+    "sell_price": 95,
+    "color": "#E06090",
+    "desc": "酸甜的野莓，做酱一流。"
+  },
+  "berry_jam": {
+    "id": "berry_jam",
+    "name": "山莓酱",
+    "type": "cooked",
+    "sell_price": 220,
+    "color": "#C04060",
+    "desc": "熬了一下午的果酱，香气能飘到广场。"
+  },
+  "seed_cabbage": {
+    "id": "seed_cabbage",
+    "name": "卷心菜种子",
+    "type": "seed",
+    "crop_id": "cabbage",
+    "buy_price": 32,
+    "color": "#7FA36A",
+    "desc": "扎实的叶菜。"
+  },
+  "cabbage": {
+    "id": "cabbage",
+    "name": "卷心菜",
+    "type": "crop",
+    "sell_price": 65,
+    "color": "#B8D48A",
+    "desc": "扎实的叶菜。"
+  },
+  "seed_carrot": {
+    "id": "seed_carrot",
+    "name": "胡萝卜种子",
+    "type": "seed",
+    "crop_id": "carrot",
+    "buy_price": 20,
+    "color": "#A8C87A",
+    "desc": "脆甜根菜。"
+  },
+  "carrot": {
+    "id": "carrot",
+    "name": "胡萝卜",
+    "type": "crop",
+    "sell_price": 40,
+    "color": "#E09040",
+    "desc": "脆甜根菜。"
+  },
+  "seed_onion": {
+    "id": "seed_onion",
+    "name": "洋葱种子",
+    "type": "seed",
+    "crop_id": "onion",
+    "buy_price": 24,
+    "color": "#8FBC6B",
+    "desc": "会让人笑着流泪。"
+  },
+  "onion": {
+    "id": "onion",
+    "name": "洋葱",
+    "type": "crop",
+    "sell_price": 48,
+    "color": "#D0A0C0",
+    "desc": "会让人笑着流泪。"
+  },
+  "seed_garlic": {
+    "id": "seed_garlic",
+    "name": "蒜头种子",
+    "type": "seed",
+    "crop_id": "garlic",
+    "buy_price": 26,
+    "color": "#8FBC6B",
+    "desc": "厨房常备。"
+  },
+  "garlic": {
+    "id": "garlic",
+    "name": "蒜头",
+    "type": "crop",
+    "sell_price": 52,
+    "color": "#E8E0C8",
+    "desc": "厨房常备。"
+  },
+  "seed_radish": {
+    "id": "seed_radish",
+    "name": "樱桃萝卜种子",
+    "type": "seed",
+    "crop_id": "radish",
+    "buy_price": 15,
+    "color": "#A8C87A",
+    "desc": "两天就能见着的惊喜。"
+  },
+  "radish": {
+    "id": "radish",
+    "name": "樱桃萝卜",
+    "type": "crop",
+    "sell_price": 30,
+    "color": "#E06080",
+    "desc": "两天就能见着的惊喜。"
+  },
+  "seed_lettuce": {
+    "id": "seed_lettuce",
+    "name": "生菜种子",
+    "type": "seed",
+    "crop_id": "lettuce",
+    "buy_price": 19,
+    "color": "#8FBC6B",
+    "desc": "沙拉主角。"
+  },
+  "lettuce": {
+    "id": "lettuce",
+    "name": "生菜",
+    "type": "crop",
+    "sell_price": 38,
+    "color": "#B8D48A",
+    "desc": "沙拉主角。"
+  },
+  "seed_spinach": {
+    "id": "seed_spinach",
+    "name": "菠菜种子",
+    "type": "seed",
+    "crop_id": "spinach",
+    "buy_price": 21,
+    "color": "#5A8A4A",
+    "desc": "补铁小能手。"
+  },
+  "spinach": {
+    "id": "spinach",
+    "name": "菠菜",
+    "type": "crop",
+    "sell_price": 42,
+    "color": "#4A7A3A",
+    "desc": "补铁小能手。"
+  },
+  "seed_pea": {
+    "id": "seed_pea",
+    "name": "豌豆种子",
+    "type": "seed",
+    "crop_id": "pea",
+    "buy_price": 25,
+    "color": "#8FBC6B",
+    "desc": "豆荚会笑。"
+  },
+  "pea": {
+    "id": "pea",
+    "name": "豌豆",
+    "type": "crop",
+    "sell_price": 50,
+    "color": "#A8D070",
+    "desc": "豆荚会笑。"
+  },
+  "seed_strawberry": {
+    "id": "seed_strawberry",
+    "name": "草莓种子",
+    "type": "seed",
+    "crop_id": "strawberry",
+    "buy_price": 60,
+    "color": "#6B9B4A",
+    "desc": "香甜多汁。"
+  },
+  "strawberry": {
+    "id": "strawberry",
+    "name": "草莓",
+    "type": "crop",
+    "sell_price": 120,
+    "color": "#E05070",
+    "desc": "香甜多汁。"
+  },
+  "seed_corn": {
+    "id": "seed_corn",
+    "name": "玉米种子",
+    "type": "seed",
+    "crop_id": "corn",
+    "buy_price": 55,
+    "color": "#8FBC6B",
+    "desc": "高高的金棒子。"
+  },
+  "corn": {
+    "id": "corn",
+    "name": "玉米",
+    "type": "crop",
+    "sell_price": 110,
+    "color": "#E8C87A",
+    "desc": "高高的金棒子。"
+  },
+  "seed_watermelon": {
+    "id": "seed_watermelon",
+    "name": "西瓜种子",
+    "type": "seed",
+    "crop_id": "watermelon",
+    "buy_price": 75,
+    "color": "#5A8A4A",
+    "desc": "夏天的快乐。"
+  },
+  "watermelon": {
+    "id": "watermelon",
+    "name": "西瓜",
+    "type": "crop",
+    "sell_price": 150,
+    "color": "#4A8A5A",
+    "desc": "夏天的快乐。"
+  },
+  "seed_melon": {
+    "id": "seed_melon",
+    "name": "蜜瓜种子",
+    "type": "seed",
+    "crop_id": "melon",
+    "buy_price": 70,
+    "color": "#8FBC6B",
+    "desc": "清甜。"
+  },
+  "melon": {
+    "id": "melon",
+    "name": "蜜瓜",
+    "type": "crop",
+    "sell_price": 140,
+    "color": "#D0E080",
+    "desc": "清甜。"
+  },
+  "seed_pepper": {
+    "id": "seed_pepper",
+    "name": "辣椒种子",
+    "type": "seed",
+    "crop_id": "pepper",
+    "buy_price": 42,
+    "color": "#6B9B4A",
+    "desc": "热情如火。"
+  },
+  "pepper": {
+    "id": "pepper",
+    "name": "辣椒",
+    "type": "crop",
+    "sell_price": 85,
+    "color": "#E04040",
+    "desc": "热情如火。"
+  },
+  "seed_eggplant": {
+    "id": "seed_eggplant",
+    "name": "茄子种子",
+    "type": "seed",
+    "crop_id": "eggplant",
+    "buy_price": 47,
+    "color": "#6B9B4A",
+    "desc": "紫衣贵族。"
+  },
+  "eggplant": {
+    "id": "eggplant",
+    "name": "茄子",
+    "type": "crop",
+    "sell_price": 95,
+    "color": "#7A5A9A",
+    "desc": "紫衣贵族。"
+  },
+  "seed_cucumber": {
+    "id": "seed_cucumber",
+    "name": "黄瓜种子",
+    "type": "seed",
+    "crop_id": "cucumber",
+    "buy_price": 30,
+    "color": "#8FBC6B",
+    "desc": "清爽。"
+  },
+  "cucumber": {
+    "id": "cucumber",
+    "name": "黄瓜",
+    "type": "crop",
+    "sell_price": 60,
+    "color": "#8FC070",
+    "desc": "清爽。"
+  },
+  "seed_pumpkin": {
+    "id": "seed_pumpkin",
+    "name": "南瓜种子",
+    "type": "seed",
+    "crop_id": "pumpkin",
+    "buy_price": 90,
+    "color": "#8FBC6B",
+    "desc": "秋天的灯笼。"
+  },
+  "pumpkin": {
+    "id": "pumpkin",
+    "name": "南瓜",
+    "type": "crop",
+    "sell_price": 180,
+    "color": "#E09040",
+    "desc": "秋天的灯笼。"
+  },
+  "seed_sweet_potato": {
+    "id": "seed_sweet_potato",
+    "name": "红薯种子",
+    "type": "seed",
+    "crop_id": "sweet_potato",
+    "buy_price": 50,
+    "color": "#8FBC6B",
+    "desc": "烤着吃最香。"
+  },
+  "sweet_potato": {
+    "id": "sweet_potato",
+    "name": "红薯",
+    "type": "crop",
+    "sell_price": 100,
+    "color": "#C08060",
+    "desc": "烤着吃最香。"
+  },
+  "seed_grape": {
+    "id": "seed_grape",
+    "name": "葡萄种子",
+    "type": "seed",
+    "crop_id": "grape",
+    "buy_price": 65,
+    "color": "#6B9B4A",
+    "desc": "可酿酒（料理）。"
+  },
+  "grape": {
+    "id": "grape",
+    "name": "葡萄",
+    "type": "crop",
+    "sell_price": 130,
+    "color": "#8A5A9A",
+    "desc": "可酿酒（料理）。"
+  },
+  "seed_rice": {
+    "id": "seed_rice",
+    "name": "稻种",
+    "type": "seed",
+    "crop_id": "rice",
+    "buy_price": 45,
+    "color": "#A8C87A",
+    "desc": "一粒一粒都是日子。"
+  },
+  "rice": {
+    "id": "rice",
+    "name": "稻米",
+    "type": "crop",
+    "sell_price": 90,
+    "color": "#E8E0B0",
+    "desc": "一粒一粒都是日子。"
+  },
+  "seed_wheat": {
+    "id": "seed_wheat",
+    "name": "麦种",
+    "type": "seed",
+    "crop_id": "wheat",
+    "buy_price": 35,
+    "color": "#A8C87A",
+    "desc": "磨坊的好朋友。"
+  },
+  "wheat": {
+    "id": "wheat",
+    "name": "麦穗",
+    "type": "crop",
+    "sell_price": 70,
+    "color": "#E8D080",
+    "desc": "磨坊的好朋友。"
+  },
+  "mushroom_seed": {
+    "id": "mushroom_seed",
+    "name": "菌棒",
+    "type": "seed",
+    "crop_id": "mushroom",
+    "buy_price": 44,
+    "color": "#A09080",
+    "desc": "林间味道。"
+  },
+  "mushroom": {
+    "id": "mushroom",
+    "name": "蘑菇",
+    "type": "crop",
+    "sell_price": 88,
+    "color": "#C0A080",
+    "desc": "林间味道。"
+  },
+  "seed_hazelnut": {
+    "id": "seed_hazelnut",
+    "name": "榛果苗",
+    "type": "seed",
+    "crop_id": "hazelnut",
+    "buy_price": 57,
+    "color": "#8FBC6B",
+    "desc": "小松鼠认证。"
+  },
+  "hazelnut": {
+    "id": "hazelnut",
+    "name": "榛果",
+    "type": "crop",
+    "sell_price": 115,
+    "color": "#C0A060",
+    "desc": "小松鼠认证。"
+  },
+  "seed_sunflower": {
+    "id": "seed_sunflower",
+    "name": "向日葵种子",
+    "type": "seed",
+    "crop_id": "sunflower",
+    "buy_price": 50,
+    "color": "#8FBC6B",
+    "desc": "永远朝向好天气。"
+  },
+  "sunflower": {
+    "id": "sunflower",
+    "name": "向日葵",
+    "type": "crop",
+    "sell_price": 100,
+    "color": "#E8C87A",
+    "desc": "永远朝向好天气。"
+  },
+  "seed_lavender": {
+    "id": "seed_lavender",
+    "name": "薰衣草种子",
+    "type": "seed",
+    "crop_id": "lavender",
+    "buy_price": 45,
+    "color": "#8FBC6B",
+    "desc": "助眠香气。"
+  },
+  "lavender": {
+    "id": "lavender",
+    "name": "薰衣草",
+    "type": "crop",
+    "sell_price": 90,
+    "color": "#A080C0",
+    "desc": "助眠香气。"
+  },
+  "seed_chrysanthemum": {
+    "id": "seed_chrysanthemum",
+    "name": "菊苗",
+    "type": "seed",
+    "crop_id": "chrysanthemum",
+    "buy_price": 42,
+    "color": "#8FBC6B",
+    "desc": "秋日门牌。"
+  },
+  "chrysanthemum": {
+    "id": "chrysanthemum",
+    "name": "秋菊",
+    "type": "crop",
+    "sell_price": 85,
+    "color": "#E0C060",
+    "desc": "秋日门牌。"
+  },
+  "seed_plum": {
+    "id": "seed_plum",
+    "name": "李树苗",
+    "type": "seed",
+    "crop_id": "plum",
+    "buy_price": 70,
+    "color": "#6B9B4A",
+    "desc": "酸甜果子。"
+  },
+  "plum": {
+    "id": "plum",
+    "name": "李子",
+    "type": "crop",
+    "sell_price": 140,
+    "color": "#A05080",
+    "desc": "酸甜果子。"
+  },
+  "seed_apple": {
+    "id": "seed_apple",
+    "name": "苹果苗",
+    "type": "seed",
+    "crop_id": "apple",
+    "buy_price": 80,
+    "color": "#6B9B4A",
+    "desc": "果树代表。"
+  },
+  "apple": {
+    "id": "apple",
+    "name": "苹果",
+    "type": "crop",
+    "sell_price": 160,
+    "color": "#E05050",
+    "desc": "果树代表。"
+  },
+  "seed_pear": {
+    "id": "seed_pear",
+    "name": "梨树苗",
+    "type": "seed",
+    "crop_id": "pear",
+    "buy_price": 75,
+    "color": "#6B9B4A",
+    "desc": "多汁。"
+  },
+  "pear": {
+    "id": "pear",
+    "name": "梨",
+    "type": "crop",
+    "sell_price": 150,
+    "color": "#D0E080",
+    "desc": "多汁。"
+  },
+  "seed_tea": {
+    "id": "seed_tea",
+    "name": "茶苗",
+    "type": "seed",
+    "crop_id": "tea",
+    "buy_price": 52,
+    "color": "#5A8A4A",
+    "desc": "山雾里长出来的叶子。"
+  },
+  "tea": {
+    "id": "tea",
+    "name": "茶叶",
+    "type": "crop",
+    "sell_price": 105,
+    "color": "#4A7A3A",
+    "desc": "山雾里长出来的叶子。"
+  },
+  "seed_herb": {
+    "id": "seed_herb",
+    "name": "香草种子",
+    "type": "seed",
+    "crop_id": "herb",
+    "buy_price": 27,
+    "color": "#8FBC6B",
+    "desc": "料理灵魂。"
+  },
+  "herb": {
+    "id": "herb",
+    "name": "香草",
+    "type": "crop",
+    "sell_price": 55,
+    "color": "#7FA36A",
+    "desc": "料理灵魂。"
+  },
+  "seed_cotton": {
+    "id": "seed_cotton",
+    "name": "棉种",
+    "type": "seed",
+    "crop_id": "cotton",
+    "buy_price": 40,
+    "color": "#8FBC6B",
+    "desc": "以后做衣服。"
+  },
+  "cotton": {
+    "id": "cotton",
+    "name": "棉花",
+    "type": "crop",
+    "sell_price": 80,
+    "color": "#F0F0E8",
+    "desc": "以后做衣服。"
+  },
+  "seed_flax": {
+    "id": "seed_flax",
+    "name": "亚麻种",
+    "type": "seed",
+    "crop_id": "flax",
+    "buy_price": 37,
+    "color": "#A8C87A",
+    "desc": "织布用。"
+  },
+  "flax": {
+    "id": "flax",
+    "name": "亚麻",
+    "type": "crop",
+    "sell_price": 75,
+    "color": "#C0C0A0",
+    "desc": "织布用。"
+  },
+  "seed_cocoa_seed": {
+    "id": "seed_cocoa_seed",
+    "name": "可可苗",
+    "type": "seed",
+    "crop_id": "cocoa_seed",
+    "buy_price": 85,
+    "color": "#5A8A4A",
+    "desc": "远方的味道。"
+  },
+  "cocoa_seed": {
+    "id": "cocoa_seed",
+    "name": "可可豆",
+    "type": "crop",
+    "sell_price": 170,
+    "color": "#A06040",
+    "desc": "远方的味道。"
+  },
+  "seed_vanilla": {
+    "id": "seed_vanilla",
+    "name": "香草兰苗",
+    "type": "seed",
+    "crop_id": "vanilla",
+    "buy_price": 95,
+    "color": "#5A8A4A",
+    "desc": "甜点之魂。"
+  },
+  "vanilla": {
+    "id": "vanilla",
+    "name": "香草荚",
+    "type": "crop",
+    "sell_price": 190,
+    "color": "#C0A060",
+    "desc": "甜点之魂。"
+  },
+  "seed_ginger": {
+    "id": "seed_ginger",
+    "name": "姜种",
+    "type": "seed",
+    "crop_id": "ginger",
+    "buy_price": 39,
+    "color": "#8FBC6B",
+    "desc": "暖胃。"
+  },
+  "ginger": {
+    "id": "ginger",
+    "name": "姜块",
+    "type": "crop",
+    "sell_price": 78,
+    "color": "#D0A060",
+    "desc": "暖胃。"
+  },
+  "seed_lotus": {
+    "id": "seed_lotus",
+    "name": "莲藕种",
+    "type": "seed",
+    "crop_id": "lotus",
+    "buy_price": 62,
+    "color": "#5A8A4A",
+    "desc": "湖边亲戚。"
+  },
+  "lotus": {
+    "id": "lotus",
+    "name": "莲藕",
+    "type": "crop",
+    "sell_price": 125,
+    "color": "#E8D0C0",
+    "desc": "湖边亲戚。"
+  },
+  "seed_bamboo_shoot": {
+    "id": "seed_bamboo_shoot",
+    "name": "竹笋种",
+    "type": "seed",
+    "crop_id": "bamboo_shoot",
+    "buy_price": 44,
+    "color": "#5A8A4A",
+    "desc": "雨后特别甜。"
+  },
+  "bamboo_shoot": {
+    "id": "bamboo_shoot",
+    "name": "竹笋",
+    "type": "crop",
+    "sell_price": 88,
+    "color": "#C0D080",
+    "desc": "雨后特别甜。"
+  },
+  "seed_cocoa_bean": {
+    "id": "seed_cocoa_bean",
+    "name": "咖啡苗",
+    "type": "seed",
+    "crop_id": "cocoa_bean",
+    "buy_price": 100,
+    "color": "#5A8A4A",
+    "desc": "提神。"
+  },
+  "cocoa_bean": {
+    "id": "cocoa_bean",
+    "name": "咖啡豆",
+    "type": "crop",
+    "sell_price": 200,
+    "color": "#6B5340",
+    "desc": "提神。"
+  },
+  "seed_wintermelon": {
+    "id": "seed_wintermelon",
+    "name": "冬瓜种子",
+    "type": "seed",
+    "crop_id": "wintermelon",
+    "buy_price": 65,
+    "color": "#8FBC6B",
+    "desc": "耐放。"
+  },
+  "wintermelon": {
+    "id": "wintermelon",
+    "name": "冬瓜",
+    "type": "crop",
+    "sell_price": 130,
+    "color": "#B0C8A0",
+    "desc": "耐放。"
+  },
+  "seed_snow_pea": {
+    "id": "seed_snow_pea",
+    "name": "雪豆种子",
+    "type": "seed",
+    "crop_id": "snow_pea",
+    "buy_price": 36,
+    "color": "#8FBC6B",
+    "desc": "冬天的脆响。"
+  },
+  "snow_pea": {
+    "id": "snow_pea",
+    "name": "雪豆",
+    "type": "crop",
+    "sell_price": 72,
+    "color": "#D0E8D0",
+    "desc": "冬天的脆响。"
+  },
+  "seed_holly": {
+    "id": "seed_holly",
+    "name": "冬青苗",
+    "type": "seed",
+    "crop_id": "holly",
+    "buy_price": 55,
+    "color": "#4A7A3A",
+    "desc": "节日点缀。"
+  },
+  "holly": {
+    "id": "holly",
+    "name": "冬青果",
+    "type": "crop",
+    "sell_price": 110,
+    "color": "#E04040",
+    "desc": "节日点缀。"
+  },
+  "seed_mandarin": {
+    "id": "seed_mandarin",
+    "name": "橘树苗",
+    "type": "seed",
+    "crop_id": "mandarin",
+    "buy_price": 77,
+    "color": "#6B9B4A",
+    "desc": "冬天的甜。"
+  },
+  "mandarin": {
+    "id": "mandarin",
+    "name": "金橘",
+    "type": "crop",
+    "sell_price": 155,
+    "color": "#E0A040",
+    "desc": "冬天的甜。"
+  },
+  "seed_asparagus": {
+    "id": "seed_asparagus",
+    "name": "芦笋种子",
+    "type": "seed",
+    "crop_id": "asparagus",
+    "buy_price": 46,
+    "color": "#8FBC6B",
+    "desc": "春天贵客。"
+  },
+  "asparagus": {
+    "id": "asparagus",
+    "name": "芦笋",
+    "type": "crop",
+    "sell_price": 92,
+    "color": "#7FA36A",
+    "desc": "春天贵客。"
+  },
+  "seed_artichoke": {
+    "id": "seed_artichoke",
+    "name": "洋蓟种子",
+    "type": "seed",
+    "crop_id": "artichoke",
+    "buy_price": 59,
+    "color": "#8FBC6B",
+    "desc": "造型派。"
+  },
+  "artichoke": {
+    "id": "artichoke",
+    "name": "洋蓟",
+    "type": "crop",
+    "sell_price": 118,
+    "color": "#A0A890",
+    "desc": "造型派。"
+  },
+  "carp_spring": {
+    "id": "carp_spring",
+    "name": "溪鲤",
+    "type": "fish",
+    "sell_price": 40,
+    "color": "#C8B090",
+    "desc": "钓鱼获得。"
+  },
+  "crucian": {
+    "id": "crucian",
+    "name": "银鲫",
+    "type": "fish",
+    "sell_price": 48,
+    "color": "#D0D0C0",
+    "desc": "钓鱼获得。"
+  },
+  "loach": {
+    "id": "loach",
+    "name": "泥鳅",
+    "type": "fish",
+    "sell_price": 35,
+    "color": "#A08060",
+    "desc": "钓鱼获得。"
+  },
+  "dace": {
+    "id": "dace",
+    "name": "雅罗",
+    "type": "fish",
+    "sell_price": 52,
+    "color": "#B0C0A0",
+    "desc": "钓鱼获得。"
+  },
+  "bluegill": {
+    "id": "bluegill",
+    "name": "蓝鳃太阳鱼",
+    "type": "fish",
+    "sell_price": 55,
+    "color": "#7EB8D0",
+    "desc": "钓鱼获得。"
+  },
+  "bass": {
+    "id": "bass",
+    "name": "河鲈",
+    "type": "fish",
+    "sell_price": 70,
+    "color": "#90A8B0",
+    "desc": "钓鱼获得。"
+  },
+  "catfish": {
+    "id": "catfish",
+    "name": "鲶鱼",
+    "type": "fish",
+    "sell_price": 80,
+    "color": "#6B5340",
+    "desc": "钓鱼获得。"
+  },
+  "puffer": {
+    "id": "puffer",
+    "name": "河豚",
+    "type": "fish",
+    "sell_price": 95,
+    "color": "#E8D080",
+    "desc": "钓鱼获得。"
+  },
+  "mackerel": {
+    "id": "mackerel",
+    "name": "鲭鱼",
+    "type": "fish",
+    "sell_price": 88,
+    "color": "#80A0C0",
+    "desc": "钓鱼获得。"
+  },
+  "salmon": {
+    "id": "salmon",
+    "name": "溯河鲑",
+    "type": "fish",
+    "sell_price": 120,
+    "color": "#E09080",
+    "desc": "钓鱼获得。"
+  },
+  "carp_mirror": {
+    "id": "carp_mirror",
+    "name": "镜鲤",
+    "type": "fish",
+    "sell_price": 100,
+    "color": "#D0B080",
+    "desc": "钓鱼获得。"
+  },
+  "night_eel": {
+    "id": "night_eel",
+    "name": "夜鳗",
+    "type": "fish",
+    "sell_price": 90,
+    "color": "#6A5A8A",
+    "desc": "钓鱼获得。"
+  },
+  "eel": {
+    "id": "eel",
+    "name": "黄鳝",
+    "type": "fish",
+    "sell_price": 75,
+    "color": "#A09050",
+    "desc": "钓鱼获得。"
+  },
+  "gudgeon": {
+    "id": "gudgeon",
+    "name": "吻鮈",
+    "type": "fish",
+    "sell_price": 42,
+    "color": "#C0B090",
+    "desc": "钓鱼获得。"
+  },
+  "ice_trout": {
+    "id": "ice_trout",
+    "name": "冰晶鳟",
+    "type": "fish",
+    "sell_price": 110,
+    "color": "#B0D8E8",
+    "desc": "钓鱼获得。"
+  },
+  "whitefish": {
+    "id": "whitefish",
+    "name": "白鲑",
+    "type": "fish",
+    "sell_price": 98,
+    "color": "#E0E8E8",
+    "desc": "钓鱼获得。"
+  },
+  "smelt": {
+    "id": "smelt",
+    "name": "胡瓜鱼",
+    "type": "fish",
+    "sell_price": 60,
+    "color": "#C0D0B0",
+    "desc": "钓鱼获得。"
+  },
+  "pike": {
+    "id": "pike",
+    "name": "狗鱼",
+    "type": "fish",
+    "sell_price": 130,
+    "color": "#8A9A70",
+    "desc": "钓鱼获得。"
+  },
+  "moon_koi": {
+    "id": "moon_koi",
+    "name": "月光锦鲤",
+    "type": "fish",
+    "sell_price": 200,
+    "color": "#E8C87A",
+    "desc": "钓鱼获得。"
+  },
+  "ghost_fish": {
+    "id": "ghost_fish",
+    "name": "幽灵鱼",
+    "type": "fish",
+    "sell_price": 180,
+    "color": "#C0C8D8",
+    "desc": "钓鱼获得。"
+  },
+  "crystal_shrimp": {
+    "id": "crystal_shrimp",
+    "name": "雾晶虾",
+    "type": "fish",
+    "sell_price": 70,
+    "color": "#A8D8E8",
+    "desc": "钓鱼获得。"
+  },
+  "stone_loach": {
+    "id": "stone_loach",
+    "name": "石鳅",
+    "type": "fish",
+    "sell_price": 50,
+    "color": "#A0A0A0",
+    "desc": "钓鱼获得。"
+  },
+  "pond_turtle": {
+    "id": "pond_turtle",
+    "name": "池龟",
+    "type": "fish",
+    "sell_price": 150,
+    "color": "#6B8F5A",
+    "desc": "钓鱼获得。"
+  },
+  "legend_fish": {
+    "id": "legend_fish",
+    "name": "传说之鱼",
+    "type": "fish",
+    "sell_price": 500,
+    "color": "#E8A0E8",
+    "desc": "钓鱼获得。"
+  },
+  "clay_bell": {
+    "id": "clay_bell",
+    "name": "陶铃残片",
+    "type": "antique",
+    "sell_price": 30,
+    "color": "#D0A070",
+    "desc": "博物馆藏品。"
+  },
+  "glass_marble": {
+    "id": "glass_marble",
+    "name": "雾晶弹珠",
+    "type": "antique",
+    "sell_price": 45,
+    "color": "#A8D8E8",
+    "desc": "博物馆藏品。"
+  },
+  "old_letter": {
+    "id": "old_letter",
+    "name": "风干的信",
+    "type": "antique",
+    "sell_price": 25,
+    "color": "#E8DCC0",
+    "desc": "博物馆藏品。"
+  },
+  "gear_toy": {
+    "id": "gear_toy",
+    "name": "齿轮玩具",
+    "type": "antique",
+    "sell_price": 55,
+    "color": "#A0A8B0",
+    "desc": "博物馆藏品。"
+  },
+  "porcelain_shard": {
+    "id": "porcelain_shard",
+    "name": "青瓷片",
+    "type": "antique",
+    "sell_price": 40,
+    "color": "#A0C0C0",
+    "desc": "博物馆藏品。"
+  },
+  "bronze_coin": {
+    "id": "bronze_coin",
+    "name": "青铜钱",
+    "type": "antique",
+    "sell_price": 35,
+    "color": "#C0A060",
+    "desc": "博物馆藏品。"
+  },
+  "wooden_comb": {
+    "id": "wooden_comb",
+    "name": "木梳",
+    "type": "antique",
+    "sell_price": 28,
+    "color": "#B8956C",
+    "desc": "博物馆藏品。"
+  },
+  "stone_bead": {
+    "id": "stone_bead",
+    "name": "石珠",
+    "type": "antique",
+    "sell_price": 32,
+    "color": "#9A9A9A",
+    "desc": "博物馆藏品。"
+  },
+  "glass_bottle": {
+    "id": "glass_bottle",
+    "name": "雾玻璃瓶",
+    "type": "antique",
+    "sell_price": 38,
+    "color": "#C0E0E0",
+    "desc": "博物馆藏品。"
+  },
+  "iron_key": {
+    "id": "iron_key",
+    "name": "旧铁钥",
+    "type": "antique",
+    "sell_price": 50,
+    "color": "#A0A8B0",
+    "desc": "博物馆藏品。"
+  },
+  "bone_flake": {
+    "id": "bone_flake",
+    "name": "骨哨残片",
+    "type": "antique",
+    "sell_price": 33,
+    "color": "#E8E0D0",
+    "desc": "博物馆藏品。"
+  },
+  "pocket_watch": {
+    "id": "pocket_watch",
+    "name": "怀表（停了）",
+    "type": "antique",
+    "sell_price": 80,
+    "color": "#E8C87A",
+    "desc": "博物馆藏品。"
+  },
+  "tomato_soup": {
+    "id": "tomato_soup",
+    "name": "番茄汤",
+    "type": "cooked",
+    "sell_price": 140,
+    "color": "#E07050",
+    "desc": "厨房出品。"
+  },
+  "potato_stew": {
+    "id": "potato_stew",
+    "name": "土豆炖锅",
+    "type": "cooked",
+    "sell_price": 160,
+    "color": "#C0A070",
+    "desc": "厨房出品。"
+  },
+  "salad": {
+    "id": "salad",
+    "name": "田园沙拉",
+    "type": "cooked",
+    "sell_price": 110,
+    "color": "#B8D48A",
+    "desc": "厨房出品。"
+  },
+  "veggie_skewer": {
+    "id": "veggie_skewer",
+    "name": "烤蔬菜串",
+    "type": "cooked",
+    "sell_price": 130,
+    "color": "#E0A050",
+    "desc": "厨房出品。"
+  },
+  "fish_grill": {
+    "id": "fish_grill",
+    "name": "烤溪鲤",
+    "type": "cooked",
+    "sell_price": 100,
+    "color": "#D0B080",
+    "desc": "厨房出品。"
+  },
+  "fish_stew": {
+    "id": "fish_stew",
+    "name": "渔夫炖鱼",
+    "type": "cooked",
+    "sell_price": 180,
+    "color": "#C09070",
+    "desc": "厨房出品。"
+  },
+  "berry_pie": {
+    "id": "berry_pie",
+    "name": "山莓派",
+    "type": "cooked",
+    "sell_price": 240,
+    "color": "#E090A0",
+    "desc": "厨房出品。"
+  },
+  "apple_pie": {
+    "id": "apple_pie",
+    "name": "苹果派",
+    "type": "cooked",
+    "sell_price": 280,
+    "color": "#E0B070",
+    "desc": "厨房出品。"
+  },
+  "corn_bread": {
+    "id": "corn_bread",
+    "name": "玉米面包",
+    "type": "cooked",
+    "sell_price": 150,
+    "color": "#E8D080",
+    "desc": "厨房出品。"
+  },
+  "pumpkin_soup": {
+    "id": "pumpkin_soup",
+    "name": "南瓜浓汤",
+    "type": "cooked",
+    "sell_price": 210,
+    "color": "#E09040",
+    "desc": "厨房出品。"
+  },
+  "mushroom_risotto": {
+    "id": "mushroom_risotto",
+    "name": "蘑菇烩饭",
+    "type": "cooked",
+    "sell_price": 230,
+    "color": "#D0B090",
+    "desc": "厨房出品。"
+  },
+  "honey_toast": {
+    "id": "honey_toast",
+    "name": "蜜糖吐司",
+    "type": "cooked",
+    "sell_price": 170,
+    "color": "#E8C87A",
+    "desc": "厨房出品。"
+  },
+  "tea_set": {
+    "id": "tea_set",
+    "name": "山雾茶",
+    "type": "cooked",
+    "sell_price": 190,
+    "color": "#8FBC6B",
+    "desc": "厨房出品。"
+  },
+  "coffee": {
+    "id": "coffee",
+    "name": "咖啡",
+    "type": "cooked",
+    "sell_price": 250,
+    "color": "#6B5340",
+    "desc": "厨房出品。"
+  },
+  "hot_cocoa": {
+    "id": "hot_cocoa",
+    "name": "热可可",
+    "type": "cooked",
+    "sell_price": 260,
+    "color": "#A06040",
+    "desc": "厨房出品。"
+  },
+  "wine_grape": {
+    "id": "wine_grape",
+    "name": "葡萄酿",
+    "type": "cooked",
+    "sell_price": 300,
+    "color": "#8A5A9A",
+    "desc": "厨房出品。"
+  },
+  "sushi": {
+    "id": "sushi",
+    "name": "湖鲜寿司",
+    "type": "cooked",
+    "sell_price": 270,
+    "color": "#E8E0D0",
+    "desc": "厨房出品。"
+  },
+  "rice_bowl": {
+    "id": "rice_bowl",
+    "name": "盖浇饭",
+    "type": "cooked",
+    "sell_price": 160,
+    "color": "#F0E8D0",
+    "desc": "厨房出品。"
+  },
+  "noodle": {
+    "id": "noodle",
+    "name": "清汤面",
+    "type": "cooked",
+    "sell_price": 145,
+    "color": "#E8E0B0",
+    "desc": "厨房出品。"
+  },
+  "dumpling": {
+    "id": "dumpling",
+    "name": "时蔬饺",
+    "type": "cooked",
+    "sell_price": 175,
+    "color": "#F0F0E0",
+    "desc": "厨房出品。"
+  },
+  "hotpot": {
+    "id": "hotpot",
+    "name": "丰收火锅",
+    "type": "cooked",
+    "sell_price": 320,
+    "color": "#E06040",
+    "desc": "厨房出品。"
+  },
+  "cheese": {
+    "id": "cheese",
+    "name": "农舍奶酪",
+    "type": "cooked",
+    "sell_price": 200,
+    "color": "#F0E0A0",
+    "desc": "厨房出品。"
+  },
+  "butter_toast": {
+    "id": "butter_toast",
+    "name": "黄油面包",
+    "type": "cooked",
+    "sell_price": 130,
+    "color": "#E8D0A0",
+    "desc": "厨房出品。"
+  },
+  "jam_toast": {
+    "id": "jam_toast",
+    "name": "果酱吐司",
+    "type": "cooked",
+    "sell_price": 155,
+    "color": "#E0A0A0",
+    "desc": "厨房出品。"
+  },
+  "pickles": {
+    "id": "pickles",
+    "name": "腌菜坛",
+    "type": "cooked",
+    "sell_price": 120,
+    "color": "#A0B060",
+    "desc": "厨房出品。"
+  },
+  "kimchi": {
+    "id": "kimchi",
+    "name": "泡菜",
+    "type": "cooked",
+    "sell_price": 125,
+    "color": "#E06050",
+    "desc": "厨房出品。"
+  },
+  "smoked_eel": {
+    "id": "smoked_eel",
+    "name": "熏鳗",
+    "type": "cooked",
+    "sell_price": 220,
+    "color": "#A08070",
+    "desc": "厨房出品。"
+  },
+  "honey": {
+    "id": "honey",
+    "name": "野花蜜",
+    "type": "cooked",
+    "sell_price": 180,
+    "color": "#E8C060",
+    "desc": "厨房出品。"
+  },
+  "candy": {
+    "id": "candy",
+    "name": "风铃糖",
+    "type": "cooked",
+    "sell_price": 140,
+    "color": "#E8A0E8",
+    "desc": "厨房出品。"
+  },
+  "chocolate": {
+    "id": "chocolate",
+    "name": "可可甜点",
+    "type": "cooked",
+    "sell_price": 290,
+    "color": "#6B5340",
+    "desc": "厨房出品。"
+  },
+  "cake": {
+    "id": "cake",
+    "name": "奶油蛋糕",
+    "type": "cooked",
+    "sell_price": 310,
+    "color": "#F5F0E1",
+    "desc": "厨房出品。"
+  },
+  "pudding": {
+    "id": "pudding",
+    "name": "焦糖布丁",
+    "type": "cooked",
+    "sell_price": 230,
+    "color": "#E0C080",
+    "desc": "厨房出品。"
+  },
+  "ice": {
+    "id": "ice",
+    "name": "雾晶冰沙",
+    "type": "cooked",
+    "sell_price": 160,
+    "color": "#A8D8E8",
+    "desc": "厨房出品。"
+  },
+  "sun_cake": {
+    "id": "sun_cake",
+    "name": "向日葵饼",
+    "type": "cooked",
+    "sell_price": 190,
+    "color": "#E8C87A",
+    "desc": "厨房出品。"
+  },
+  "herb_salt": {
+    "id": "herb_salt",
+    "name": "香草盐",
+    "type": "cooked",
+    "sell_price": 150,
+    "color": "#A0C0A0",
+    "desc": "厨房出品。"
+  },
+  "ginger_tea": {
+    "id": "ginger_tea",
+    "name": "姜茶",
+    "type": "cooked",
+    "sell_price": 155,
+    "color": "#D0A060",
+    "desc": "厨房出品。"
+  },
+  "mixed_juice": {
+    "id": "mixed_juice",
+    "name": "鲜榨果汁",
+    "type": "cooked",
+    "sell_price": 200,
+    "color": "#E0A0B0",
+    "desc": "厨房出品。"
+  },
+  "legend_feast": {
+    "id": "legend_feast",
+    "name": "风铃盛宴",
+    "type": "cooked",
+    "sell_price": 500,
+    "color": "#E8A0E8",
+    "desc": "厨房出品。"
+  },
+  "wood_fence": {
+    "id": "wood_fence",
+    "name": "木栅栏",
+    "type": "furniture",
+    "sell_price": 12,
+    "color": "#B8956C",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "stone_path": {
+    "id": "stone_path",
+    "name": "石板路",
+    "type": "furniture",
+    "sell_price": 10,
+    "color": "#9A9A9A",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "flower_pot": {
+    "id": "flower_pot",
+    "name": "花盆",
+    "type": "furniture",
+    "sell_price": 25,
+    "color": "#C07850",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "lantern": {
+    "id": "lantern",
+    "name": "纸灯笼",
+    "type": "furniture",
+    "sell_price": 45,
+    "color": "#E8C87A",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "bench": {
+    "id": "bench",
+    "name": "长椅",
+    "type": "furniture",
+    "sell_price": 60,
+    "color": "#B8956C",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "sign_post": {
+    "id": "sign_post",
+    "name": "木牌",
+    "type": "furniture",
+    "sell_price": 20,
+    "color": "#C4A574",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "well": {
+    "id": "well",
+    "name": "小水井",
+    "type": "furniture",
+    "sell_price": 120,
+    "color": "#A0A8B0",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "birdhouse": {
+    "id": "birdhouse",
+    "name": "鸟屋",
+    "type": "furniture",
+    "sell_price": 70,
+    "color": "#B8956C",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "windmill_toy": {
+    "id": "windmill_toy",
+    "name": "风车玩具",
+    "type": "furniture",
+    "sell_price": 90,
+    "color": "#E0A050",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "crystal_lamp": {
+    "id": "crystal_lamp",
+    "name": "晶石灯",
+    "type": "furniture",
+    "sell_price": 110,
+    "color": "#A8D8E8",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "rug": {
+    "id": "rug",
+    "name": "织毯",
+    "type": "furniture",
+    "sell_price": 85,
+    "color": "#C07080",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "curtain": {
+    "id": "curtain",
+    "name": "布帘",
+    "type": "furniture",
+    "sell_price": 55,
+    "color": "#E0D0B0",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "bookshelf": {
+    "id": "bookshelf",
+    "name": "书架",
+    "type": "furniture",
+    "sell_price": 130,
+    "color": "#B8956C",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "tea_table": {
+    "id": "tea_table",
+    "name": "茶几",
+    "type": "furniture",
+    "sell_price": 95,
+    "color": "#C4A574",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "painting_hills": {
+    "id": "painting_hills",
+    "name": "画·翠谷",
+    "type": "furniture",
+    "sell_price": 200,
+    "color": "#8FB56F",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "painting_lake": {
+    "id": "painting_lake",
+    "name": "画·湖心",
+    "type": "furniture",
+    "sell_price": 200,
+    "color": "#8FC0D8",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "painting_mine": {
+    "id": "painting_mine",
+    "name": "画·晶洞",
+    "type": "furniture",
+    "sell_price": 200,
+    "color": "#6A8AAA",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "bell_mobile": {
+    "id": "bell_mobile",
+    "name": "铃串挂饰",
+    "type": "furniture",
+    "sell_price": 140,
+    "color": "#E8C87A",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "festival_banner": {
+    "id": "festival_banner",
+    "name": "祭典幡",
+    "type": "furniture",
+    "sell_price": 160,
+    "color": "#E05555",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "photo_frame": {
+    "id": "photo_frame",
+    "name": "相框",
+    "type": "furniture",
+    "sell_price": 75,
+    "color": "#C4A574",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "trophy_cup": {
+    "id": "trophy_cup",
+    "name": "纪念杯",
+    "type": "furniture",
+    "sell_price": 100,
+    "color": "#E8C87A",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "music_box": {
+    "id": "music_box",
+    "name": "音乐盒",
+    "type": "furniture",
+    "sell_price": 180,
+    "color": "#D0A070",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "potted_tree": {
+    "id": "potted_tree",
+    "name": "盆栽树",
+    "type": "furniture",
+    "sell_price": 120,
+    "color": "#6B8F5A",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "stone_lantern": {
+    "id": "stone_lantern",
+    "name": "石灯",
+    "type": "furniture",
+    "sell_price": 100,
+    "color": "#9A9A9A",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "hanging_bells": {
+    "id": "hanging_bells",
+    "name": "檐铃",
+    "type": "furniture",
+    "sell_price": 95,
+    "color": "#E8C87A",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "picnic_set": {
+    "id": "picnic_set",
+    "name": "野餐篮",
+    "type": "furniture",
+    "sell_price": 88,
+    "color": "#C4A574",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "cat_bed": {
+    "id": "cat_bed",
+    "name": "猫窝",
+    "type": "furniture",
+    "sell_price": 110,
+    "color": "#E0C0B0",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "telescope": {
+    "id": "telescope",
+    "name": "望远镜",
+    "type": "furniture",
+    "sell_price": 220,
+    "color": "#A0A8B0",
+    "placeable": true,
+    "desc": "家园装饰。"
+  },
+  "silver_ore": {
+    "id": "silver_ore",
+    "name": "银矿",
+    "type": "resource",
+    "sell_price": 55,
+    "color": "#D0D8E0",
+    "desc": "矿物。"
+  },
+  "gold_ore": {
+    "id": "gold_ore",
+    "name": "金矿",
+    "type": "resource",
+    "sell_price": 90,
+    "color": "#E8C87A",
+    "desc": "矿物。"
+  },
+  "mythril_shard": {
+    "id": "mythril_shard",
+    "name": "星纹晶",
+    "type": "resource",
+    "sell_price": 150,
+    "color": "#A0E0E8",
+    "desc": "矿物。"
+  },
+  "egg": {
+    "id": "egg",
+    "name": "鸡蛋",
+    "type": "resource",
+    "sell_price": 40,
+    "color": "#F0E6C8",
+    "desc": "牧场产出。"
+  },
+  "milk": {
+    "id": "milk",
+    "name": "牛奶",
+    "type": "resource",
+    "sell_price": 60,
+    "color": "#F5F5E8",
+    "desc": "牧场产出。"
+  },
+  "wool": {
+    "id": "wool",
+    "name": "羊毛",
+    "type": "resource",
+    "sell_price": 75,
+    "color": "#F0F0E8",
+    "desc": "牧场产出。"
+  },
+  "duck_egg": {
+    "id": "duck_egg",
+    "name": "鸭蛋",
+    "type": "resource",
+    "sell_price": 55,
+    "color": "#E8E0B0",
+    "desc": "牧场产出。"
+  },
+  "goat_milk": {
+    "id": "goat_milk",
+    "name": "羊奶",
+    "type": "resource",
+    "sell_price": 70,
+    "color": "#F0E8D0",
+    "desc": "牧场产出。"
+  },
+  "copper_wire": {
+    "id": "copper_wire",
+    "name": "铜件",
+    "type": "resource",
+    "sell_price": 28,
+    "color": "#D09060",
+    "desc": "矿物。"
+  },
+  "hoe_copper": {
+    "id": "hoe_copper",
+    "name": "铜锄头",
+    "type": "tool",
+    "tool_action": "till",
+    "tool_tier": 1,
+    "tool_base": "hoe",
+    "sell_price": 40,
+    "color": "#8B7355",
+    "desc": "铜阶锄头，效率 2。"
+  },
+  "hoe_iron": {
+    "id": "hoe_iron",
+    "name": "铁锄头",
+    "type": "tool",
+    "tool_action": "till",
+    "tool_tier": 2,
+    "tool_base": "hoe",
+    "sell_price": 90,
+    "color": "#8B7355",
+    "desc": "铁阶锄头，效率 3。"
+  },
+  "hoe_silver": {
+    "id": "hoe_silver",
+    "name": "银晶锄头",
+    "type": "tool",
+    "tool_action": "till",
+    "tool_tier": 3,
+    "tool_base": "hoe",
+    "sell_price": 160,
+    "color": "#8B7355",
+    "desc": "银晶阶锄头，效率 4。"
+  },
+  "hoe_star": {
+    "id": "hoe_star",
+    "name": "星纹锄头",
+    "type": "tool",
+    "tool_action": "till",
+    "tool_tier": 4,
+    "tool_base": "hoe",
+    "sell_price": 280,
+    "color": "#8B7355",
+    "desc": "星纹阶锄头，效率 5。"
+  },
+  "watering_can_copper": {
+    "id": "watering_can_copper",
+    "name": "铜水壶",
+    "type": "tool",
+    "tool_action": "water",
+    "tool_tier": 1,
+    "tool_base": "watering_can",
+    "sell_price": 40,
+    "color": "#5B8FA8",
+    "desc": "铜阶水壶，效率 2。"
+  },
+  "watering_can_iron": {
+    "id": "watering_can_iron",
+    "name": "铁水壶",
+    "type": "tool",
+    "tool_action": "water",
+    "tool_tier": 2,
+    "tool_base": "watering_can",
+    "sell_price": 90,
+    "color": "#5B8FA8",
+    "desc": "铁阶水壶，效率 3。"
+  },
+  "watering_can_silver": {
+    "id": "watering_can_silver",
+    "name": "银晶水壶",
+    "type": "tool",
+    "tool_action": "water",
+    "tool_tier": 3,
+    "tool_base": "watering_can",
+    "sell_price": 160,
+    "color": "#5B8FA8",
+    "desc": "银晶阶水壶，效率 4。"
+  },
+  "watering_can_star": {
+    "id": "watering_can_star",
+    "name": "星纹水壶",
+    "type": "tool",
+    "tool_action": "water",
+    "tool_tier": 4,
+    "tool_base": "watering_can",
+    "sell_price": 280,
+    "color": "#5B8FA8",
+    "desc": "星纹阶水壶，效率 5。"
+  },
+  "wood_axe_copper": {
+    "id": "wood_axe_copper",
+    "name": "铜斧头",
+    "type": "tool",
+    "tool_action": "chop",
+    "tool_tier": 1,
+    "tool_base": "wood_axe",
+    "sell_price": 40,
+    "color": "#A67C52",
+    "desc": "铜阶斧头，效率 2。"
+  },
+  "wood_axe_iron": {
+    "id": "wood_axe_iron",
+    "name": "铁斧头",
+    "type": "tool",
+    "tool_action": "chop",
+    "tool_tier": 2,
+    "tool_base": "wood_axe",
+    "sell_price": 90,
+    "color": "#A67C52",
+    "desc": "铁阶斧头，效率 3。"
+  },
+  "wood_axe_silver": {
+    "id": "wood_axe_silver",
+    "name": "银晶斧头",
+    "type": "tool",
+    "tool_action": "chop",
+    "tool_tier": 3,
+    "tool_base": "wood_axe",
+    "sell_price": 160,
+    "color": "#A67C52",
+    "desc": "银晶阶斧头，效率 4。"
+  },
+  "wood_axe_star": {
+    "id": "wood_axe_star",
+    "name": "星纹斧头",
+    "type": "tool",
+    "tool_action": "chop",
+    "tool_tier": 4,
+    "tool_base": "wood_axe",
+    "sell_price": 280,
+    "color": "#A67C52",
+    "desc": "星纹阶斧头，效率 5。"
+  },
+  "stone_pick_copper": {
+    "id": "stone_pick_copper",
+    "name": "铜镐子",
+    "type": "tool",
+    "tool_action": "mine",
+    "tool_tier": 1,
+    "tool_base": "stone_pick",
+    "sell_price": 40,
+    "color": "#7A8B99",
+    "desc": "铜阶镐子，效率 2。"
+  },
+  "stone_pick_iron": {
+    "id": "stone_pick_iron",
+    "name": "铁镐子",
+    "type": "tool",
+    "tool_action": "mine",
+    "tool_tier": 2,
+    "tool_base": "stone_pick",
+    "sell_price": 90,
+    "color": "#7A8B99",
+    "desc": "铁阶镐子，效率 3。"
+  },
+  "stone_pick_silver": {
+    "id": "stone_pick_silver",
+    "name": "银晶镐子",
+    "type": "tool",
+    "tool_action": "mine",
+    "tool_tier": 3,
+    "tool_base": "stone_pick",
+    "sell_price": 160,
+    "color": "#7A8B99",
+    "desc": "银晶阶镐子，效率 4。"
+  },
+  "stone_pick_star": {
+    "id": "stone_pick_star",
+    "name": "星纹镐子",
+    "type": "tool",
+    "tool_action": "mine",
+    "tool_tier": 4,
+    "tool_base": "stone_pick",
+    "sell_price": 280,
+    "color": "#7A8B99",
+    "desc": "星纹阶镐子，效率 5。"
+  }
+}

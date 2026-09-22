@@ -1,0 +1,8 @@
+entries: 441
+bad lines: 10
+  extends RefCounted
+  ## 美术 id -> 文件 映射表（由 tools/gen_art_map_gd.py 从 docs/art/art_id_map.json 生成，请勿手改）
+  ## key 格式 "<kind>:<id>"，value 为相对 res://art/ 的相对路径。
+  ## 共 441 条。
+  
+size KB: 24.3

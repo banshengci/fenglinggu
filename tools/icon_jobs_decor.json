@@ -1,0 +1,8 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/decor7.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/furniture",
+    "names": ["furniture_eave_chime", "furniture_picnic_basket", "furniture_cat_bed", "furniture_telescope", "furniture_painting_valley", "furniture_painting_lake", "furniture_painting_shore", "furniture_painting_cave"],
+    "out_size": 256, "tol": 22, "margin_frac": 0.12, "merge_gap": 34, "min_area_frac": 0.004
+  }
+]

@@ -1,0 +1,6 @@
+[
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_overlay_cloudy.png", "inset": 0.13, "out_size": 512, "margin": 0.0 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_overlay_storm.png", "inset": 0.13, "out_size": 512, "margin": 0.0 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_overlay_fog.png", "inset": 0.13, "out_size": 512, "margin": 0.0 },
+  { "path": "D:/xinxiangmu/youxi/game/art/fx/fx_overlay_night.png", "inset": 0.13, "out_size": 512, "margin": 0.0 }
+]

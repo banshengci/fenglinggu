@@ -1,0 +1,38 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/crop_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_berry", "crop_cabbage", "crop_carrot", "crop_onion", "crop_garlic", "crop_radish", "crop_lettuce", "crop_spinach", "crop_pea", "crop_watermelon", "crop_melon", "crop_pepper"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/crop_p2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_eggplant", "crop_cucumber", "crop_sweet_potato", "crop_wheat", "crop_hazelnut", "crop_lavender", "crop_chrysanthemum", "crop_plum", "crop_pear", "crop_herb", "crop_cotton", "crop_flax"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/crop_p3.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_cocoa_seed", "crop_vanilla", "crop_ginger", "crop_lotus", "crop_bamboo_shoot", "crop_cocoa_bean", "crop_wintermelon", "crop_snow_pea", "crop_holly", "crop_mandarin", "crop_asparagus", "crop_artichoke"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/fish_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["fish_brook_carp", "fish_stone_grouper", "fish_silver_crucian", "fish_medaka", "fish_loach", "fish_river_perch", "fish_sweetfish", "fish_eel", "fish_mandarin", "fish_catfish", "fish_grass_carp", "fish_crucian"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/fish_p2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["fish_lake_sturgeon", "fish_rainbow_trout", "fish_lanternfish", "fish_moonfish", "fish_koi", "fish_snakehead", "fish_bronze_carp", "fish_mist_fish", "fish_star_bass", "fish_golden_koi", "fish_crystal_fish", "fish_legendary"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/relics_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["relic_clay_bell_shard", "relic_mist_marble", "relic_old_letter", "relic_gear_toy", "relic_celadon_shard", "relic_bronze_coin", "relic_wood_mask", "relic_ring_fragment", "relic_clay_jug", "relic_stone_tablet", "relic_compass", "relic_star_map"],
+    "cols": 4, "rows": 3, "out_size": 256, "tol": 25, "margin_frac": 0.16
+  }
+]

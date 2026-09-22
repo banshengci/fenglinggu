@@ -1,0 +1,57 @@
+﻿== tools (expect 5) bg=[244, 231, 207] distmax=655
+   tol= 20 gap=10 raw= 5 merged= 2
+   tol= 20 gap=20 raw= 5 merged= 2
+   tol= 20 gap=30 raw= 5 merged= 1
+   tol= 30 gap=10 raw= 5 merged= 3
+   tol= 30 gap=20 raw= 5 merged= 3
+   tol= 30 gap=30 raw= 5 merged= 1
+   tol= 40 gap=10 raw= 5 merged= 3
+   tol= 40 gap=20 raw= 5 merged= 3
+   tol= 40 gap=30 raw= 5 merged= 2
+   tol= 50 gap=10 raw= 5 merged= 3
+   tol= 50 gap=20 raw= 5 merged= 3
+   tol= 50 gap=30 raw= 5 merged= 2
+   tol= 60 gap=10 raw= 5 merged= 3
+   tol= 60 gap=20 raw= 5 merged= 3
+   tol= 60 gap=30 raw= 5 merged= 2
+   tol= 80 gap=10 raw= 5 merged= 3
+   tol= 80 gap=20 raw= 5 merged= 3
+   tol= 80 gap=30 raw= 5 merged= 2
+== resources (expect 9) bg=[233, 217, 189] distmax=595
+   tol= 20 gap=10 raw= 9 merged= 9
+   tol= 20 gap=20 raw= 9 merged= 9
+   tol= 20 gap=30 raw= 9 merged= 7
+   tol= 30 gap=10 raw=10 merged= 9
+   tol= 30 gap=20 raw=10 merged= 9
+   tol= 30 gap=30 raw=10 merged= 7
+   tol= 40 gap=10 raw=13 merged= 9
+   tol= 40 gap=20 raw=13 merged= 9
+   tol= 40 gap=30 raw=13 merged= 7
+   tol= 50 gap=10 raw=17 merged= 9
+   tol= 50 gap=20 raw=17 merged= 9
+   tol= 50 gap=30 raw=17 merged= 7
+   tol= 60 gap=10 raw=17 merged= 9
+   tol= 60 gap=20 raw=17 merged= 9
+   tol= 60 gap=30 raw=17 merged= 8
+   tol= 80 gap=10 raw=18 merged=10
+   tol= 80 gap=20 raw=18 merged=10
+   tol= 80 gap=30 raw=18 merged=10
+== crops (expect 12) bg=[239, 229, 207] distmax=590
+   tol= 20 gap=10 raw=12 merged=11
+   tol= 20 gap=20 raw=12 merged=11
+   tol= 20 gap=30 raw=12 merged= 9
+   tol= 30 gap=10 raw=12 merged=12
+   tol= 30 gap=20 raw=12 merged=11
+   tol= 30 gap=30 raw=12 merged= 9
+   tol= 40 gap=10 raw=12 merged=12
+   tol= 40 gap=20 raw=12 merged=11
+   tol= 40 gap=30 raw=12 merged= 9
+   tol= 50 gap=10 raw=12 merged=12
+   tol= 50 gap=20 raw=12 merged=12
+   tol= 50 gap=30 raw=12 merged= 9
+   tol= 60 gap=10 raw=12 merged=12
+   tol= 60 gap=20 raw=12 merged=12
+   tol= 60 gap=30 raw=12 merged=10
+   tol= 80 gap=10 raw=16 merged=12
+   tol= 80 gap=20 raw=16 merged=12
+   tol= 80 gap=30 raw=16 merged=11

@@ -1,0 +1,50 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/crop_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_berry", "crop_cabbage", "crop_carrot", "crop_onion", "crop_garlic", "crop_radish", "crop_lettuce", "crop_spinach", "crop_pea", "crop_watermelon", "crop_melon", "crop_pepper"],
+    "out_size": 256, "tol": 22, "merge_gap": 8, "min_area_frac": 0.006, "margin_frac": 0.12
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/crop_p2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_eggplant", "crop_cucumber", "crop_sweet_potato", "crop_wheat", "crop_hazelnut", "crop_lavender", "crop_chrysanthemum", "crop_plum", "crop_pear", "crop_herb", "crop_cotton", "crop_flax"],
+    "out_size": 256, "tol": 22, "merge_gap": 8, "min_area_frac": 0.006, "margin_frac": 0.12
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/crop_p3.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_cocoa_seed", "crop_vanilla", "crop_ginger", "crop_lotus", "crop_bamboo_shoot", "crop_cocoa_bean", "crop_wintermelon", "crop_snow_pea", "crop_holly", "crop_mandarin", "crop_asparagus", "crop_artichoke"],
+    "out_size": 256, "tol": 22, "merge_gap": 8, "min_area_frac": 0.006, "margin_frac": 0.12
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/fish_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["fish_brook_carp", "fish_stone_grouper", "fish_silver_crucian", "fish_medaka", "fish_loach", "fish_river_perch", "fish_sweetfish", "fish_eel", "fish_mandarin", "fish_catfish", "fish_grass_carp", "fish_crucian"],
+    "out_size": 256, "tol": 22, "merge_gap": 8, "min_area_frac": 0.006, "margin_frac": 0.12
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/fish_p2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["fish_lake_sturgeon", "fish_rainbow_trout", "fish_lanternfish", "fish_moonfish", "fish_koi", "fish_snakehead", "fish_bronze_carp", "fish_mist_fish", "fish_star_bass", "fish_golden_koi", "fish_crystal_fish", "fish_legendary"],
+    "out_size": 256, "tol": 22, "merge_gap": 8, "min_area_frac": 0.006, "margin_frac": 0.12
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p1.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_berry", "seed_cabbage", "seed_carrot", "seed_onion", "seed_garlic", "seed_radish", "seed_lettuce", "seed_spinach", "seed_pea", "seed_watermelon", "seed_melon", "seed_pepper"],
+    "out_size": 256, "tol": 45, "merge_gap": 10, "min_area_frac": 0.010, "margin_frac": 0.14
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_eggplant", "seed_cucumber", "seed_sweet_potato", "seed_wheat", "seed_hazelnut", "seed_lavender", "seed_chrysanthemum", "seed_plum", "seed_pear", "seed_herb", "seed_cotton", "seed_flax"],
+    "out_size": 256, "tol": 45, "merge_gap": 10, "min_area_frac": 0.010, "margin_frac": 0.14
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/seed_p3.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["seed_cocoa_seed", "seed_vanilla", "seed_ginger", "seed_lotus", "seed_bamboo_shoot", "seed_cocoa_bean", "seed_wintermelon", "seed_snow_pea", "seed_holly", "seed_mandarin", "seed_asparagus", "seed_artichoke"],
+    "out_size": 256, "tol": 45, "merge_gap": 10, "min_area_frac": 0.010, "margin_frac": 0.14
+  }
+]

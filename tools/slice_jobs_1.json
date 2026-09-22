@@ -1,0 +1,20 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/items/icon_tools_row.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["icon_hoe", "icon_watering_can", "icon_axe", "icon_pickaxe", "icon_fishing_rod"],
+    "out_size": 256, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.14
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/items/icon_resources_grid.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["icon_wood", "icon_stone", "icon_fiber", "icon_copper", "icon_iron", "icon_silver", "icon_gold", "icon_star_crystal", "icon_bell_shard"],
+    "out_size": 256, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.14
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/keys/crops_plate.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/crops",
+    "names": ["crop_turnip", "crop_potato", "crop_tomato", "crop_strawberry", "crop_corn", "crop_pumpkin", "crop_grape", "crop_rice", "crop_tea", "crop_sunflower", "crop_mushroom", "crop_apple"],
+    "out_size": 256, "tol": 25, "merge_gap": 0, "min_area_frac": 0.006, "margin_frac": 0.14
+  }
+]

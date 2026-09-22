@@ -1,0 +1,11 @@
+[
+  { "source": "D:/xinxiangmu/youxi/generated-images/A_warm_storybook_cutscene_illu_2026-09-22T09-20-12.png", "target": "D:/xinxiangmu/youxi/game/art/cutscenes/cutscene_01_door.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/A_serene_cutscene_illustration_2026-09-22T09-20-32.png", "target": "D:/xinxiangmu/youxi/game/art/cutscenes/cutscene_02_lake.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/A_sun_dappled_cutscene_illustr_2026-09-22T09-20-50.png", "target": "D:/xinxiangmu/youxi/game/art/cutscenes/cutscene_03_forest.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/A_dramatic_cutscene_illustrati_2026-09-22T09-21-15.png", "target": "D:/xinxiangmu/youxi/game/art/cutscenes/cutscene_04_underworld.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/A_festive_cutscene_illustratio_2026-09-22T09-21-35.png", "target": "D:/xinxiangmu/youxi/game/art/cutscenes/cutscene_05_windfestival.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/Wide_cinematic_key_art_for_a_g_2026-09-22T09-22-18.png", "target": "D:/xinxiangmu/youxi/game/art/marketing/capsule_main.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/Vertical_game_cover_artwork_in_2026-09-22T09-22-35.png", "target": "D:/xinxiangmu/youxi/game/art/marketing/library_art.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/A_vertical_splash_screen_illus_2026-09-22T09-22-54.png", "target": "D:/xinxiangmu/youxi/game/art/marketing/splash.png" },
+  { "source": "D:/xinxiangmu/youxi/generated-images/Four_separate_pastoral_event_p_2026-09-22T09-21-57.png", "target": "D:/xinxiangmu/youxi/game/art/_stage/posters4.png" }
+]

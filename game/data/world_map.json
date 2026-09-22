@@ -1,0 +1,33 @@
+{
+  "regions": [
+    {"id": "town", "name": "翠谷镇", "x": 400, "y": 320, "radius": 120, "biome": "town", "unlock": 0, "desc": "家园与集市"},
+    {"id": "farm_valley", "name": "河畔田埂", "x": 560, "y": 420, "radius": 100, "biome": "meadow", "unlock": 0, "desc": "可垦荒原"},
+    {"id": "lakeside", "name": "湖畔栈道", "x": 780, "y": 360, "radius": 110, "biome": "lake", "unlock": 2, "desc": "钓鱼与小船"},
+    {"id": "forest", "name": "旧风车林", "x": 260, "y": 180, "radius": 130, "biome": "forest", "unlock": 3, "desc": "木材、风车、旧约"},
+    {"id": "mine_camp", "name": "矿营", "x": 900, "y": 180, "radius": 90, "biome": "mine", "unlock": 1, "desc": "矿洞入口"},
+    {"id": "deep_mine", "name": "矿脉深部", "x": 1040, "y": 140, "radius": 80, "biome": "mine_deep", "unlock": 4, "desc": "高阶矿脉"},
+    {"id": "festival", "name": "风铃祭广场", "x": 400, "y": 160, "radius": 70, "biome": "plaza", "unlock": 5, "desc": "终局庆贺"},
+    {"id": "wild_woods", "name": "雾林秘境", "x": 140, "y": 380, "radius": 110, "biome": "wild", "unlock": 2, "desc": "开放秘境，采蘑菇与古物"},
+    {"id": "cliff_top", "name": "风脊崖顶", "x": 700, "y": 120, "radius": 90, "biome": "cliff", "unlock": 3, "desc": "观星、望远镜、稀有材料"},
+    {"id": "pasture", "name": "南坡牧场", "x": 620, "y": 540, "radius": 110, "biome": "pasture", "unlock": 2, "desc": "畜牧与牧草"}
+  ],
+  "links": [
+    ["town", "farm_valley"], ["town", "lakeside"], ["town", "forest"],
+    ["town", "festival"], ["town", "wild_woods"], ["farm_valley", "pasture"],
+    ["lakeside", "cliff_top"], ["forest", "cliff_top"], ["mine_camp", "deep_mine"],
+    ["forest", "wild_woods"], ["pasture", "lakeside"]
+  ],
+  "biomes": {
+    "town": {"ground": "#8FB56F", "accent": "#C4B090"},
+    "meadow": {"ground": "#9BC47A", "accent": "#E8D48A"},
+    "lake": {"ground": "#7AA8C8", "accent": "#8FC0D8"},
+    "forest": {"ground": "#4A6B3A", "accent": "#8FBC6B"},
+    "mine": {"ground": "#5C5C6A", "accent": "#A0A8B0"},
+    "mine_deep": {"ground": "#243040", "accent": "#6A8AAA"},
+    "plaza": {"ground": "#C8A86A", "accent": "#E8C87A"},
+    "wild": {"ground": "#3A5A4A", "accent": "#7BA88A"},
+    "cliff": {"ground": "#8A9AAA", "accent": "#C0D0E0"},
+    "pasture": {"ground": "#A8C870", "accent": "#E0E8A0"}
+  },
+  "fast_travel_unlock_bells": 1
+}

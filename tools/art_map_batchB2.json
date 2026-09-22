@@ -1,0 +1,12 @@
+[
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_single_garden_hoe_tool_icon__2026-09-22T08-09-26.png", "target": "D:/xinxiangmu/youxi/game/art/items/icon_hoe.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_single_tin_watering_can_icon_2026-09-22T08-09-18.png", "target": "D:/xinxiangmu/youxi/game/art/items/icon_watering_can.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_single_woodcutter_axe_icon___2026-09-22T08-09-18.png", "target": "D:/xinxiangmu/youxi/game/art/items/icon_axe.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_single_miner_pickaxe_icon__c_2026-09-22T08-09-20.png", "target": "D:/xinxiangmu/youxi/game/art/items/icon_pickaxe.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_single_fishing_rod_icon__cen_2026-09-22T08-09-20.png", "target": "D:/xinxiangmu/youxi/game/art/items/icon_fishing_rod.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_cute_crystal_slime_monster___2026-09-22T08-09-18.png", "target": "D:/xinxiangmu/youxi/game/art/enemies/enemy_slime.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_cute_mist_bat_monster__cente_2026-09-22T08-09-19.png", "target": "D:/xinxiangmu/youxi/game/art/enemies/enemy_mist_bat.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_friendly_stone_guardian_gole_2026-09-22T08-09-17.png", "target": "D:/xinxiangmu/youxi/game/art/enemies/enemy_stone_guardian.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_cracked_ore_boulder_prop__ce_2026-09-22T08-09-19.png", "target": "D:/xinxiangmu/youxi/game/art/enemies/enemy_ore_rock.png"},
+  {"source": "D:/xinxiangmu/youxi/game/art/_stage/A_small_wooden_treasure_chest__2026-09-22T08-09-19.png", "target": "D:/xinxiangmu/youxi/game/art/enemies/prop_treasure_chest.png"}
+]

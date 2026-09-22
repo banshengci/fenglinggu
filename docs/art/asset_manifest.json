@@ -1,0 +1,16 @@
+{
+  "style_anchor": [
+    "game/art/keys/town_square.png",
+    "game/art/keys/garden_dusk.png",
+    "game/art/keys/mine_crystal.png"
+  ],
+  "naming_doc": "docs/art/美术需求清单.md",
+  "counts": {
+    "crops": 48,
+    "items": 220,
+    "fish": 24,
+    "antiques": 12,
+    "checklist_rows": 304
+  },
+  "drop_into": "game/art/{chars,crops,tiles,buildings,items,enemies,ui,fx}"
+}

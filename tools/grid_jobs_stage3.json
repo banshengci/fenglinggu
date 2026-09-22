@@ -1,0 +1,20 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/fx6.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/fx",
+    "names": ["fx_till_dust", "fx_water_drop", "fx_rock_spark", "fx_chime_ring", "fx_sun_dapple", "fx_breeze_leaf"],
+    "cols": 3, "rows": 2, "out_size": 256, "tol": 25, "margin_frac": 0.14
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/weather4.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/fx",
+    "names": ["fx_overlay_cloudy", "fx_overlay_storm", "fx_overlay_fog", "fx_overlay_night"],
+    "cols": 2, "rows": 2, "out_size": 512, "tol": 25, "margin_frac": 0.10
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/produce6.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/items",
+    "names": ["icon_egg", "icon_milk", "icon_wool", "icon_duck_egg", "icon_goat_milk", "icon_honey"],
+    "cols": 3, "rows": 2, "out_size": 256, "tol": 25, "margin_frac": 0.14
+  }
+]

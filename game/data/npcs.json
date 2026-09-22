@@ -1,0 +1,283 @@
+{
+  "grandpa_lin": {
+    "id": "grandpa_lin",
+    "name": "林爷爷",
+    "role": "退休守铃人",
+    "color": "#C8B8A0",
+    "accent": "#8B6F47",
+    "position": {
+      "x": 520,
+      "y": 280
+    },
+    "likes": [
+      "turnip_cake",
+      "wind_shard"
+    ],
+    "dislikes": [
+      "stone"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "哎呀……是新搬来的孩子吧？",
+        "我是林爷爷，以前守着谷里的风铃。",
+        "风停了以后，铃也哑了。你愿意帮忙把它们找回来吗？",
+        "先从菜园开始吧。日子要一口一口过，铃也要一枚一枚修。"
+      ],
+      "default": [
+        "今儿风有点意思，像是想说话。",
+        "菜园子嘛，急不来的。",
+        "矿洞里偶尔有闪光的东西，说不定就是铃片。"
+      ],
+      "liked_gift": [
+        "哈哈，还记得老头子的口味！",
+        "这味道……让我想起从前集市上的点心摊。"
+      ],
+      "disliked_gift": [
+        "这、这个就免了吧……我牙口不好。"
+      ]
+    }
+  },
+  "xiaoman": {
+    "id": "xiaoman",
+    "name": "小满",
+    "role": "铁匠学徒",
+    "color": "#E8C8A0",
+    "accent": "#C05040",
+    "position": {
+      "x": 860,
+      "y": 300
+    },
+    "likes": [
+      "potato",
+      "stone"
+    ],
+    "dislikes": [
+      "turnip"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "你好！我是小满，在铁匠铺当学徒。",
+        "我想造一台「会自己响」的风铃机器！",
+        "你要是捡到奇怪的金属或亮晶晶的东西，拿来看看嘛！"
+      ],
+      "default": [
+        "叮叮当当——就是这个节奏！",
+        "今天炉火刚好，适合打点小玩意儿。",
+        "林爷爷说风铃会记得风的味道，真的假的？"
+      ],
+      "liked_gift": [
+        "哇！这个能当配重！太谢谢了！"
+      ],
+      "disliked_gift": [
+        "白萝卜啊……我昨天才吃撑。"
+      ]
+    }
+  },
+  "zhi_tao": {
+    "id": "zhi_tao",
+    "name": "桃枝",
+    "role": "花艺师",
+    "color": "#F5C8D0",
+    "accent": "#E07090",
+    "position": {
+      "x": 700,
+      "y": 360
+    },
+    "likes": [
+      "turnip_cake",
+      "tomato",
+      "turnip"
+    ],
+    "dislikes": [
+      "wood"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "新开的邻居？我是桃枝，给镇上门牌换花的。",
+        "你菜园要是开了花，记得叫我看一眼。",
+        "对了……如果你做了萝卜糕，请务必让我尝一口。"
+      ],
+      "default": [
+        "今天的风适合把花搬到门口。",
+        "镇子热闹起来以后，我要办个小花展。",
+        "你的田越来越有样子啦。"
+      ],
+      "liked_gift": [
+        "天哪，正是我喜欢的！谢谢你。"
+      ],
+      "disliked_gift": [
+        "木头啊……我对木屑过敏。抱歉。"
+      ]
+    }
+  },
+  "atang": {
+    "id": "atang",
+    "name": "阿棠",
+    "role": "杂货店主",
+    "color": "#E8C8A0",
+    "accent": "#C05040",
+    "position": {
+      "x": 500,
+      "y": 300
+    },
+    "likes": [
+      "turnip_cake",
+      "coffee"
+    ],
+    "dislikes": [
+      "stone"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "我是阿棠，杂货摊的老板。",
+        "谷币和人情，我两样都记账。"
+      ],
+      "default": [
+        "今天的市价我可盯着呢。",
+        "缺种子就来。"
+      ],
+      "liked_gift": [
+        "识货！"
+      ],
+      "disliked_gift": [
+        "这玩意儿压秤不值钱。"
+      ]
+    }
+  },
+  "jiangcheng": {
+    "id": "jiangcheng",
+    "name": "江澄",
+    "role": "渔夫",
+    "color": "#A0C0D0",
+    "accent": "#3A6A8A",
+    "position": {
+      "x": 900,
+      "y": 450
+    },
+    "likes": [
+      "fish_grill",
+      "carp_spring"
+    ],
+    "dislikes": [
+      "turnip"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "江澄。水里的事，问我。",
+        "昨天那条大的……算了。"
+      ],
+      "default": [
+        "风向对了，鱼才开口。",
+        "湖边安静才好。"
+      ],
+      "liked_gift": [
+        "好味道！下回教你起竿。"
+      ],
+      "disliked_gift": [
+        "田里的东西啊……也行吧。"
+      ]
+    }
+  },
+  "yunzhou": {
+    "id": "yunzhou",
+    "name": "云舟",
+    "role": "画师",
+    "color": "#D0C0E0",
+    "accent": "#7A5A9A",
+    "position": {
+      "x": 720,
+      "y": 220
+    },
+    "likes": [
+      "painting_hills",
+      "tea_set"
+    ],
+    "dislikes": [
+      "copper_ore"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "云舟，来借住写生。",
+        "你这谷子，光影会讲故事。"
+      ],
+      "default": [
+        "别动，再给我一笔。",
+        "颜料不够了……"
+      ],
+      "liked_gift": [
+        "妙极。这颜色我要了。"
+      ],
+      "disliked_gift": [
+        "金属？我的画笔会哭。"
+      ]
+    }
+  },
+  "shijiang": {
+    "id": "shijiang",
+    "name": "石老",
+    "role": "石匠",
+    "color": "#C0B8A8",
+    "accent": "#8A8A8A",
+    "position": {
+      "x": 320,
+      "y": 500
+    },
+    "likes": [
+      "stone",
+      "iron_ore"
+    ],
+    "dislikes": [
+      "berry"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "石老。石头比人诚实。",
+        "要修什么，拿材料来。"
+      ],
+      "default": [
+        "叮当叮当，日子就过去了。",
+        "好石头会自己唱歌。"
+      ],
+      "liked_gift": [
+        "嗯，有分量。"
+      ],
+      "disliked_gift": [
+        "酸果子留着吧。"
+      ]
+    }
+  },
+  "chapo": {
+    "id": "chapo",
+    "name": "茶婆",
+    "role": "茶师",
+    "color": "#E0C8B0",
+    "accent": "#6B8F5A",
+    "position": {
+      "x": 580,
+      "y": 420
+    },
+    "likes": [
+      "tea_set",
+      "ginger_tea"
+    ],
+    "dislikes": [
+      "stone"
+    ],
+    "dialogues": {
+      "first_meet": [
+        "来，坐下喝一口。",
+        "山上的雾，都在这杯里。"
+      ],
+      "default": [
+        "水开了。",
+        "慢慢来，茶不怕等。"
+      ],
+      "liked_gift": [
+        "真是细心的孩子。"
+      ],
+      "disliked_gift": [
+        "这个……泡不开。"
+      ]
+    }
+  }
+}

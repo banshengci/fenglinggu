@@ -1,0 +1,19 @@
+[
+  {
+    "source": "D:\\xinxiangmu\\youxi\\game\\art\\_stage\\A_sprite_sheet_grid_of_exactly_2026-09-22T10-28-53.png",
+    "out_dir": "D:\\xinxiangmu\\youxi\\game\\art\\chars\\walk",
+    "names": [
+      "player_down_00", "player_down_01", "player_down_02", "player_down_03",
+      "player_left_00", "player_left_01", "player_left_02", "player_left_03",
+      "player_right_00", "player_right_01", "player_right_02", "player_right_03",
+      "player_up_00", "player_up_01", "player_up_02", "player_up_03"
+    ],
+    "cols": 4,
+    "rows": 4,
+    "out_w": 192,
+    "out_h": 288,
+    "tol": 25,
+    "fill": 0.92,
+    "margin_frac": 0.06
+  }
+]

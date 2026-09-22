@@ -1,0 +1,14 @@
+[
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/animals6.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/animals",
+    "names": ["animal_chicken", "animal_cow", "animal_sheep", "animal_duck", "animal_goat", "animal_beehive"],
+    "count": 6, "out_size": 512, "tol": 22, "margin_frac": 0.12, "search_frac": 0.40
+  },
+  {
+    "source": "D:/xinxiangmu/youxi/game/art/_stage/slimehit2.png",
+    "out_dir": "D:/xinxiangmu/youxi/game/art/enemies",
+    "names": ["enemy_slime_hit_00", "enemy_slime_hit_01", "enemy_slime_hit_02", "enemy_slime_hit_03"],
+    "count": 4, "out_size": 256, "tol": 22, "margin_frac": 0.16, "search_frac": 0.40
+  }
+]
