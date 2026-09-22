@@ -1,0 +1,22 @@
+# 绿联云 NAS · Gitea Actions Runner（Docker）
+# 用法：把本目录放到 NAS，改好 token 后 `docker compose up -d`
+# 注册 Token：Gitea 网页 → 仓库设置 → 工作流 → 运行器 → 创建新运行器
+
+services:
+  gitea-runner:
+    image: gitea/act_runner:latest
+    container_name: gitea-runner
+    restart: unless-stopped
+    environment:
+      # 改成你的 Gitea 地址（NAS 内网）
+      GITEA_INSTANCE_URL: http://192.168.31.125:13000
+      # 创建新运行器后粘贴 Token（只用一次，注册后写入 /data）
+      GITEA_RUNNER_REGISTRATION_TOKEN: "REPLACE_WITH_TOKEN"
+      GITEA_RUNNER_NAME: nas-docker
+      GITEA_RUNNER_LABELS: ubuntu-latest:docker://node:20-bookworm
+      GITEA_RUNNER_IN_CONTAINER: "true"
+    volumes:
+      - ./runner-data:/data
+      # 挂载 Docker socket，以便 job 里再起 Godot 构建容器
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/docker/certs.d:/etc/docker/certs.d:ro

@@ -7,50 +7,38 @@ on:
 
 jobs:
   windows:
-    runs-on: windows
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.7
     steps:
       - name: Export Windows
-        shell: powershell
         run: |
-          $ErrorActionPreference = "Stop"
-          Set-Location "D:\xiangmu\youxi"
-          $godot = (Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64_console.exe" | Select-Object -First 1).FullName
-          if (-not $godot) { Write-Host "Godot not found"; exit 1 }
-          Write-Host "Using Godot: $godot"
-          New-Item -ItemType Directory -Force -Path dist | Out-Null
-          & $godot --headless --path game --export-release "Windows Desktop" dist/fenglinggu_win.exe
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          Get-ChildItem dist | Format-Table Name, Length
+          mkdir -p dist
+          godot --headless --path game --export-release "Windows Desktop" dist/fenglinggu_win.exe
+          ls -lh dist/
 
   web:
-    runs-on: windows
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.7
     steps:
       - name: Export Web
-        shell: powershell
         run: |
-          $ErrorActionPreference = "Stop"
-          Set-Location "D:\xiangmu\youxi"
-          $godot = (Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64_console.exe" | Select-Object -First 1).FullName
-          if (-not $godot) { Write-Host "Godot not found"; exit 1 }
-          New-Item -ItemType Directory -Force -Path dist/web | Out-Null
-          & $godot --headless --path game --export-release "Web" dist/web/index.html
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          Get-ChildItem dist/web | Format-Table Name, Length
+          mkdir -p dist/web
+          godot --headless --path game --export-release "Web" dist/web/index.html
+          ls -lh dist/web/
 
   android:
-    runs-on: windows
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.7
     steps:
       - name: Export Android APK
-        shell: powershell
         run: |
-          $ErrorActionPreference = "Stop"
-          Set-Location "D:\xiangmu\youxi"
-          $godot = (Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64_console.exe" | Select-Object -First 1).FullName
-          if (-not $godot) { Write-Host "Godot not found"; exit 1 }
-          New-Item -ItemType Directory -Force -Path dist | Out-Null
-          if (-not (Test-Path dist\debug.keystore)) {
-            keytool -genkeypair -v -keystore dist\debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=FengLingGu Debug, OU=Dev, O=WindChime, L=NA, S=NA, C=CN"
-          }
-          & $godot --headless --path game --export-release "Android" dist/fenglinggu.apk
-          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          Get-ChildItem dist\fenglinggu.apk | Format-Table Name, Length
+          mkdir -p dist
+          keytool -genkeypair -v -keystore dist/debug.keystore -alias androiddebugkey \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass android -keypass android \
+            -dname "CN=FengLingGu Debug, OU=Dev, O=WindChime, L=NA, S=NA, C=CN"
+          godot --headless --path game --export-release "Android" dist/fenglinggu.apk
+          ls -lh dist/
