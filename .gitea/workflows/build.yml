@@ -14,15 +14,7 @@ jobs:
         run: |
           $ErrorActionPreference = "Stop"
           Set-Location "D:\xiangmu\youxi"
-          Write-Host "HEAD: $(git rev-parse --short HEAD)"
-          $godot = @(
-            "C:\Users\半生此\AppData\Local\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64_console.exe",
-            "C:\Users\半生此\AppData\Local\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64.exe"
-          ) | Where-Object { Test-Path $_ } | Select-Object -First 1
-          if (-not $godot) {
-            $found = Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64*.exe" -ErrorAction SilentlyContinue | Select-Object -First 1
-            if ($found) { $godot = $found.FullName }
-          }
+          $godot = (Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64_console.exe" | Select-Object -First 1).FullName
           if (-not $godot) { Write-Host "Godot not found"; exit 1 }
           Write-Host "Using Godot: $godot"
           New-Item -ItemType Directory -Force -Path dist | Out-Null
@@ -38,18 +30,27 @@ jobs:
         run: |
           $ErrorActionPreference = "Stop"
           Set-Location "D:\xiangmu\youxi"
-          Write-Host "HEAD: $(git rev-parse --short HEAD)"
-          $godot = @(
-            "C:\Users\半生此\AppData\Local\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64_console.exe",
-            "C:\Users\半生此\AppData\Local\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64.exe"
-          ) | Where-Object { Test-Path $_ } | Select-Object -First 1
-          if (-not $godot) {
-            $found = Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64*.exe" -ErrorAction SilentlyContinue | Select-Object -First 1
-            if ($found) { $godot = $found.FullName }
-          }
+          $godot = (Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64_console.exe" | Select-Object -First 1).FullName
           if (-not $godot) { Write-Host "Godot not found"; exit 1 }
-          Write-Host "Using Godot: $godot"
           New-Item -ItemType Directory -Force -Path dist/web | Out-Null
           & $godot --headless --path game --export-release "Web" dist/web/index.html
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           Get-ChildItem dist/web | Format-Table Name, Length
+
+  android:
+    runs-on: windows
+    steps:
+      - name: Export Android APK
+        shell: powershell
+        run: |
+          $ErrorActionPreference = "Stop"
+          Set-Location "D:\xiangmu\youxi"
+          $godot = (Get-ChildItem "$env:LOCALAPPDATA\Microsoft\WinGet\Packages" -Recurse -Filter "Godot*win64_console.exe" | Select-Object -First 1).FullName
+          if (-not $godot) { Write-Host "Godot not found"; exit 1 }
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+          if (-not (Test-Path dist\debug.keystore)) {
+            keytool -genkeypair -v -keystore dist\debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=FengLingGu Debug, OU=Dev, O=WindChime, L=NA, S=NA, C=CN"
+          }
+          & $godot --headless --path game --export-release "Android" dist/fenglinggu.apk
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Get-ChildItem dist\fenglinggu.apk | Format-Table Name, Length
