@@ -1,0 +1,35 @@
+name: build
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: ubuntu-latest
+    container: barichello/godot-ci:4.7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export Windows
+        run: |
+          mkdir -p dist
+          godot --headless --path game --export-release "Windows Desktop" dist/fenglinggu_win.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: dist/
+
+  web:
+    runs-on: ubuntu-latest
+    container: barichello/godot-ci:4.7
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export Web
+        run: |
+          mkdir -p dist/web
+          godot --headless --path game --export-release "Web" dist/web/index.html
+      - uses: actions/upload-artifact@v4
+        with:
+          name: web
+          path: dist/web/
