@@ -5,35 +5,63 @@ on:
     branches: [master]
   workflow_dispatch:
 
+env:
+  GIT_TERMINAL_PROMPT: "0"
+  GCM_INTERACTIVE: never
+
 jobs:
   windows:
     runs-on: windows
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        shell: powershell
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global --add safe.directory '*'
+          git config --global credential.helper ''
+          git clone --depth 1 "http://oauth2:${TOKEN}@192.168.31.125:13000/banshengci/fenglinggu.git" repo
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Set-Location repo
+          git rev-parse --short HEAD
       - name: Export Windows
         shell: powershell
         run: |
+          Set-Location repo
           $godot = "C:\Users\半生此\AppData\Local\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64_console.exe"
           New-Item -ItemType Directory -Force -Path dist | Out-Null
           & $godot --headless --path game --export-release "Windows Desktop" dist/fenglinggu_win.exe
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Get-ChildItem dist
       - uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: dist/
+          path: repo/dist/
 
   web:
     runs-on: windows
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        shell: powershell
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global --add safe.directory '*'
+          git config --global credential.helper ''
+          git clone --depth 1 "http://oauth2:${TOKEN}@192.168.31.125:13000/banshengci/fenglinggu.git" repo
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Set-Location repo
+          git rev-parse --short HEAD
       - name: Export Web
         shell: powershell
         run: |
+          Set-Location repo
           $godot = "C:\Users\半生此\AppData\Local\Microsoft\WinGet\Packages\GodotEngine.GodotEngine_Microsoft.Winget.Source_8wekyb3d8bbwe\Godot_v4.7.2-stable_win64_console.exe"
           New-Item -ItemType Directory -Force -Path dist/web | Out-Null
           & $godot --headless --path game --export-release "Web" dist/web/index.html
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Get-ChildItem dist/web
       - uses: actions/upload-artifact@v4
         with:
           name: web
-          path: dist/web/
+          path: repo/dist/web/

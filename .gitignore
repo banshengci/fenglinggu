@@ -4,6 +4,11 @@ game/.godot/
 # 本地导出
 dist/
 
+# Runner（含 Token）
+.runner
+tools/runner.log
+tools/runner.err.log
+
 # 中间产物
 docs/art/_raw_scratch/
 tools/*.report.txt
