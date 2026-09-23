@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="theme-color" content="#1A2420"/>
+<title>风铃谷 · iOS 安装</title>
+<style>
+:root{
+  --bg:#1A2420; --card:#24332C; --ink:#F3EFE4; --muted:#A8B5A8;
+  --accent:#E8D48A; --ok:#6FCF6A; --warn:#E8A060; --line:rgba(255,255,255,.08);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);
+  font:15px/1.55 -apple-system,'PingFang SC','Microsoft YaHei',sans-serif}
+#app{max-width:430px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;
+  padding-bottom:calc(64px + env(safe-area-inset-bottom))}
+header{position:sticky;top:0;z-index:10;padding:calc(12px + env(safe-area-inset-top)) 16px 12px;
+  background:linear-gradient(#1A2420 70%,transparent);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--accent);color:#1A2420;
+  display:grid;place-items:center;font-weight:700;font-size:18px}
+h1{margin:0;font-size:18px;font-weight:600}
+.ver{margin-left:auto;font-size:12px;color:var(--muted);background:var(--card);
+  padding:4px 8px;border-radius:999px}
+main{padding:8px 16px 24px;flex:1}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:16px;margin-bottom:14px}
+.card h2{margin:0 0 8px;font-size:16px}
+.card p{margin:0 0 8px;color:var(--muted);font-size:14px}
+.badge{display:inline-block;font-size:12px;padding:3px 8px;border-radius:999px;margin:0 6px 8px 0}
+.b-ok{background:rgba(111,207,106,.15);color:var(--ok)}
+.b-warn{background:rgba(232,160,96,.15);color:var(--warn)}
+.b-acc{background:rgba(232,212,138,.15);color:var(--accent)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:12px 12px 12px 44px;
+  border-top:1px solid var(--line);font-size:14px}
+.steps li:first-child{border-top:0}
+.steps li::before{content:counter(s);position:absolute;left:8px;top:12px;width:24px;height:24px;
+  border-radius:50%;background:var(--accent);color:#1A2420;font-weight:700;font-size:12px;
+  display:grid;place-items:center}
+.steps li b{color:var(--ink)}
+.steps li span{display:block;color:var(--muted);margin-top:2px;font-size:13px}
+.dl{display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:12px 0;border-top:1px solid var(--line)}
+.dl:first-of-type{border-top:0}
+.dl .name{font-size:14px}
+.dl .sub{font-size:12px;color:var(--muted)}
+.btn{appearance:none;border:0;border-radius:12px;padding:10px 14px;font-size:13px;
+  font-weight:600;background:var(--accent);color:#1A2420;cursor:pointer;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.btn:active{transform:scale(.97)}
+.warn-box{background:rgba(232,160,96,.1);border:1px solid rgba(232,160,96,.35);
+  border-radius:12px;padding:12px;font-size:13px;color:#F0C89A;margin-top:10px}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:20;max-width:430px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(4,1fr);background:#1E2C26;
+  border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav button{background:none;border:0;color:var(--muted);padding:10px 4px 12px;font-size:11px;
+  display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer}
+nav button.on{color:var(--accent)}
+nav .ic{font-size:18px;line-height:1}
+.hide{display:none!important}
+code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px;font-size:12px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);
+  background:#000c;color:#fff;padding:10px 16px;border-radius:999px;font-size:13px;
+  opacity:0;transition:.25s;pointer-events:none;z-index:99;max-width:90%;text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="brand">
+      <div class="logo">铃</div>
+      <h1>风铃谷 · iOS 安装</h1>
+      <div class="ver">v0.01</div>
+    </div>
+  </header>
+  <main>
+    <!-- 首页 -->
+    <section id="page-home">
+      <div class="card">
+        <h2>自签安装 · 不上架</h2>
+        <p>无付费开发者账号也能装到 iPhone / iPad。不走 App Store，用免费 Apple ID 自签侧载即可。</p>
+        <span class="badge b-ok">免开发者账号</span>
+        <span class="badge b-acc">版本 0.01</span>
+        <span class="badge b-warn">7 天需重签</span>
+        <div class="warn-box">
+          苹果免费签名有效期约 <b>7 天</b>，到期用同样步骤重签即可。越狱 / TrollStore 可永久，属可选进阶。
+        </div>
+      </div>
+      <div class="card">
+        <h2>安装包</h2>
+        <div class="dl">
+          <div><div class="name">iOS 工程 / IPA</div><div class="sub">Godot 导出 · 自签用</div></div>
+          <button class="btn" data-copy="https://github.com/banshengci/fenglinggu/releases">下载</button>
+        </div>
+        <div class="dl">
+          <div><div class="name">Web 版（可先试玩）</div><div class="sub">Safari 打开 → 添加到主屏幕</div></div>
+          <button class="btn ghost" data-copy="fenglinggu-web-0.01">获取</button>
+        </div>
+        <div class="dl">
+          <div><div class="name">Android APK</div><div class="sub">对照参考 · 0.01</div></div>
+          <button class="btn ghost" data-copy="fenglinggu_0.01.apk">获取</button>
+        </div>
+      </div>
+      <div class="card">
+        <h2>最快上手</h2>
+        <p>手机上没有开发者账号时，推荐顺序：</p>
+        <p><b>①</b> 先装 Web 版当 App 用（零签名）→ <b>②</b> 需要原生 IPA 再用 AltStore 自签。</p>
+      </div>
+    </section>
+
+    <!-- 自签步骤 -->
+    <section id="page-sign" class="hide">
+      <div class="card">
+        <h2>自签步骤（AltStore）</h2>
+        <ol class="steps">
+          <li><b>电脑装 AltServer</b><span>Windows / Mac 官网下载，同一 Wi-Fi 连上 iPhone</span></li>
+          <li><b>手机装 AltStore</b><span>AltServer → Install AltStore → 你的设备，登录免费 Apple ID</span></li>
+          <li><b>获取 IPA</b><span>云端构建产物 fenglinggu_0.01.ipa，传到手机（文件 / 网盘）</span></li>
+          <li><b>AltStore 打开 IPA</b><span>「我的应用」→ + → 选中 IPA → 输入 Apple ID 签名安装</span></li>
+          <li><b>信任证书</b><span>设置 → 通用 → VPN 与设备管理 → 信任你的 Apple ID</span></li>
+          <li><b>每 7 天续签</b><span>打开 AltStore 点 Refresh，或重复第 4 步</span></li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>备选：Sideloadly</h2>
+        <p>与 AltStore 类似，电脑插线安装更稳。拖入 IPA → 填 Apple ID → Start 即可。</p>
+        <button class="btn ghost" data-copy="Sideloadly：sideloadly.io">复制官网</button>
+      </div>
+    </section>
+
+    <!-- 包说明 -->
+    <section id="page-pack" class="hide">
+      <div class="card">
+        <h2>0.01 包一览</h2>
+        <div class="dl"><div><div class="name">Windows</div><div class="sub">fenglinggu_win_0.01.exe</div></div><span class="badge b-ok">自动</span></div>
+        <div class="dl"><div><div class="name">Linux</div><div class="sub">fenglinggu_linux_0.01.x86_64</div></div><span class="badge b-ok">自动</span></div>
+        <div class="dl"><div><div class="name">Web</div><div class="sub">index.html 静态站</div></div><span class="badge b-ok">自动</span></div>
+        <div class="dl"><div><div class="name">Android</div><div class="sub">fenglinggu_0.01.apk</div></div><span class="badge b-ok">自动</span></div>
+        <div class="dl"><div><div class="name">iOS</div><div class="sub">ipa / xcodeproj · 自签</div></div><span class="badge b-warn">自签</span></div>
+        <div class="dl"><div><div class="name">macOS</div><div class="sub">zip · 需本机 Godot</div></div><span class="badge b-warn">预留</span></div>
+      </div>
+      <div class="card">
+        <h2>为什么 iOS 要自签？</h2>
+        <p>上架 App Store 需付费开发者账号与审核。个人自用走「免费 Apple ID + 侧载」完全够用，代价是 7 天续签。</p>
+      </div>
+    </section>
+
+    <!-- 帮助 -->
+    <section id="page-help" class="hide">
+      <div class="card">
+        <h2>常见问题</h2>
+        <p><b>Q：没有开发者账号能装吗？</b><br/>能。用免费 Apple ID 自签，不发布商店。</p>
+        <p><b>Q：会掉签吗？</b><br/>会，约 7 天。AltStore 后台可自动续；或到期重签。</p>
+        <p><b>Q：不想折腾签名？</b><br/>Safari 打开 Web 版 → 分享 → 添加到主屏幕，当 App 图标用。</p>
+        <p><b>Q：能永久签吗？</b><br/>TrollStore / 越狱可，设备与系统版本受限，不作默认路径。</p>
+      </div>
+      <div class="card">
+        <h2>本机操作对照</h2>
+        <p>手机：摇杆移动 · 交互/使用/风琴/告白/婚礼/背包/合成/地图</p>
+        <p>电脑：WASD · E · G 风琴 · J 告白 · H 婚礼 · R 休整 · I/C/M</p>
+      </div>
+    </section>
+  </main>
+  <nav>
+    <button data-page="home" class="on"><span class="ic">⌂</span>首页</button>
+    <button data-page="sign"><span class="ic">✎</span>自签</button>
+    <button data-page="pack"><span class="ic">▣</span>安装包</button>
+    <button data-page="help"><span class="ic">?</span>帮助</button>
+  </nav>
+  <div class="toast" id="toast"></div>
+</div>
+<script>
+(function(){
+  const pages=['home','sign','pack','help'];
+  function show(id){
+    pages.forEach(p=>{
+      document.getElementById('page-'+p).classList.toggle('hide',p!==id);
+    });
+    document.querySelectorAll('nav button').forEach(b=>{
+      b.classList.toggle('on',b.dataset.page===id);
+    });
+    window.scrollTo(0,0);
+  }
+  document.querySelectorAll('nav button').forEach(b=>{
+    b.addEventListener('click',()=>show(b.dataset.page));
+  });
+  const toast=document.getElementById('toast');
+  function tip(msg){
+    toast.textContent=msg;toast.classList.add('show');
+    setTimeout(()=>toast.classList.remove('show'),1800);
+  }
+  document.querySelectorAll('[data-copy]').forEach(btn=>{
+    btn.addEventListener('click',async()=>{
+      const t=btn.getAttribute('data-copy');
+      try{ await navigator.clipboard.writeText(t); tip('已复制：'+t); }
+      catch(e){ tip(t); }
+    });
+  });
+  // 深链：#sign #pack #help
+  const h=(location.hash||'').replace('#','');
+  if(pages.includes(h)) show(h);
+})();
+</script>
+</body>
+</html>

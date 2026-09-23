@@ -98,18 +98,30 @@ jobs:
           path: dist/
 
   ios:
+    name: ios-xcodeproj
     runs-on: macos-latest
     continue-on-error: true
     steps:
       - uses: actions/checkout@v4
-      - name: Export iOS (xcodeproj)
+      - name: Setup Godot
         run: |
-          mkdir -p dist
-          echo "iOS 需签名证书，流水线预留；请本地 Xcode 导出"
-        continue-on-error: true
+          curl -L -o godot.zip "https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_macos.universal.zip"
+          unzip -q godot.zip -d godot
+          echo "$PWD/godot/Godot.app/Contents/MacOS/Godot" >> $GITHUB_PATH
+      - name: Export iOS Xcode project
+        run: |
+          mkdir -p dist/ios
+          godot --headless --path game --export-release "iOS" "dist/ios/fenglinggu.xcodeproj"
+          cd dist/ios
+          # 无开发者账号：生成自签用 IPA 骨架（Ad Hoc / 本地签）
+          if [ -d fenglinggu.xcodeproj ]; then
+            zip -qr "fenglinggu_ios_${GAME_VERSION}_xcode.zip" fenglinggu.xcodeproj
+            echo "用 Xcode 打开工程 → Product → Archive → Export（Development）可得 IPA"
+            echo "或 AltStore/Sideloadly 直接装 IPA（免费 Apple ID 自签，7 天续签）"
+          fi
+          ls -lh
       - uses: actions/upload-artifact@v4
-        if: always()
         with:
-          name: fenglinggu-ios-${{ env.GAME_VERSION }}
-          path: dist/
+          name: fenglinggu-ios-${{ env.GAME_VERSION }}-xcode
+          path: dist/ios/
           if-no-files-found: ignore
