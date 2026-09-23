@@ -26,6 +26,28 @@ func from_dict(d: Dictionary) -> void:
 func can_confess(npc_id: String) -> bool:
 	return stage == 0 and GameState.friendship_of(npc_id) >= CONFESS_FP
 
+func _npc_label(npc_id: String) -> String:
+	if NpcDb == null:
+		return npc_id
+	if NpcDb.has_method("npc_name"):
+		return str(NpcDb.npc_name(npc_id))
+	if NpcDb.has_method("get_name"):
+		return str(NpcDb.get_name(npc_id))
+	var info: Dictionary = NpcDb.get_npc(npc_id) if NpcDb.has_method("get_npc") else {}
+	return str(info.get("name", npc_id))
+
+func _player_gold() -> int:
+	if Inventory != null and "money" in Inventory:
+		return int(Inventory.money)
+	return 0
+
+func _spend_gold(n: int) -> void:
+	if Inventory != null and Inventory.has_method("spend_money"):
+		Inventory.spend_money(n)
+	elif Inventory != null and "money" in Inventory:
+		Inventory.money = maxi(0, int(Inventory.money) - n)
+		EventBus.money_changed.emit(int(Inventory.money))
+
 func try_confess(npc_id: String) -> bool:
 	if not can_confess(npc_id):
 		return false
@@ -34,9 +56,9 @@ func try_confess(npc_id: String) -> bool:
 	GameState.add_friendship(npc_id, 10)
 	EventBus.dialogue_started.emit([
 		"风把话送到了对方心里。",
-		"%s 答应了。从今日起，旅途有伴。" % NpcDb.npc_name(npc_id) if NpcDb.has_method("npc_name") else "对方答应了。",
+		"%s 答应了。从今日起，旅途有伴。" % _npc_label(npc_id),
 	], npc_id)
-	EventBus.toast.emit("告白成功！%s 成为伴侣" % (NpcDb.npc_name(npc_id) if NpcDb.has_method("npc_name") else npc_id))
+	EventBus.toast.emit("告白成功！%s 成为伴侣" % _npc_label(npc_id))
 	EventBus.hud_refresh.emit()
 	return true
 
@@ -51,7 +73,7 @@ func try_wedding() -> bool:
 	GameState.add_friendship(partner_id, 20)
 	EventBus.dialogue_started.emit([
 		"风铃全谷齐响。",
-		"你与 %s 在星风下结为终身伴侣。" % (NpcDb.npc_name(partner_id) if NpcDb.has_method("npc_name") else partner_id),
+		"你与 %s 在星风下结为终身伴侣。" % _npc_label(partner_id),
 	], "system")
 	EventBus.toast.emit("婚礼完成！风铃谷最甜的一天")
 	EventBus.hud_refresh.emit()
@@ -90,7 +112,7 @@ func can_repair(pid: String) -> bool:
 		return false
 	return Inventory.count_of("wood") >= int(p.get("wood", 0)) \
 		and Inventory.count_of("stone") >= int(p.get("stone", 0)) \
-		and GameState.gold >= int(p.get("gold", 0))
+		and _player_gold() >= int(p.get("gold", 0))
 
 func try_repair(pid: String) -> bool:
 	if not can_repair(pid):
@@ -98,7 +120,7 @@ func try_repair(pid: String) -> bool:
 	var p: Dictionary = COUNCIL_PROJECTS[pid]
 	Inventory.remove_item("wood", int(p.get("wood", 0)))
 	Inventory.remove_item("stone", int(p.get("stone", 0)))
-	GameState.gold -= int(p.get("gold", 0))
+	_spend_gold(int(p.get("gold", 0)))
 	council_repairs[pid] = true
 	EventBus.toast.emit("议事会：%s 完成！" % str(p.get("name", pid)))
 	EventBus.hud_refresh.emit()

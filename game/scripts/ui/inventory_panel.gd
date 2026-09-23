@@ -115,10 +115,12 @@ func rebuild() -> void:
 		grid.add_child(slot)
 		if i < shown.size():
 			var s: Dictionary = shown[i]
-			slot.setup(str(s["id"]), int(s["count"]), false)
+			var real_idx := Inventory.slots.find(s)
+			var is_sel := real_idx == selected_index
+			slot.setup(str(s["id"]), int(s["count"]), is_sel)
+			slot.pressed.connect(_on_slot.bind(real_idx if real_idx >= 0 else i))
 		else:
 			slot.setup_empty(false)
-		slot.pressed.connect(_on_slot.bind(-1))
 	_update_detail()
 
 func _on_slot(index: int) -> void:

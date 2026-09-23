@@ -153,8 +153,6 @@ func _craft(id: String) -> void:
 		_qte.start("合成")
 	else:
 		_do_craft(id, 0.5)
-		return
-	Inventory.add_item(out, n)
 	MuseumDb.mark_discover(out)
 	if ItemDb.get_type(out) == "cooked":
 		Achievements.add_stat("cook_count", 1)
