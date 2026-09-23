@@ -136,6 +136,12 @@ func _do_craft(id: String, quality: float = 0.5) -> void:
 	if quality > 0.75:
 		n += 1
 	Inventory.add_item(out, n)
+	MuseumDb.mark_discover(out)
+	if ItemDb.get_type(out) == "cooked":
+		Achievements.add_stat("cook_count", 1)
+		RanchWeather.add_exp("cooking", 2)
+	if out == "tiny_bell":
+		GameState.add_flag("has_tiny_bell", true)
 	EventBus.toast.emit("完成：%s ×%d" % [ItemDb.item_name(out), n])
 	rebuild()
 
@@ -153,14 +159,6 @@ func _craft(id: String) -> void:
 		_qte.start("合成")
 	else:
 		_do_craft(id, 0.5)
-	MuseumDb.mark_discover(out)
-	if ItemDb.get_type(out) == "cooked":
-		Achievements.add_stat("cook_count", 1)
-		RanchWeather.add_exp("cooking", 2)
-	if out == "tiny_bell":
-		GameState.add_flag("has_tiny_bell", true)
-	EventBus.toast.emit("合成：%s ×%d" % [ItemDb.item_name(out), n])
-	rebuild()
 
 func _unhandled_input(event: InputEvent) -> void:
 	if not visible:

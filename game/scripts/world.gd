@@ -30,7 +30,7 @@ func _ready() -> void:
 	queue_redraw()
 
 func _build_farm() -> void:
-	const FarmPlotScript := preload("res://scripts/entities/farm_plot.gd")
+	var FarmPlotScript = preload("res://scripts/entities/farm_plot.gd")
 	for y in FARM_H:
 		for x in FARM_W:
 			var p = FarmPlotScript.new()

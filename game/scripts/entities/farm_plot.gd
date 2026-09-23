@@ -14,9 +14,9 @@ var growth_days := 0
 var regrow_left := 0
 var ready_to_harvest := false
 var flash_quality := false
-	## 浮岛温室：可反季种植
-	var allow_any_season := false
-	var _crop_tex: Texture2D = null  ## 保留字段兼容旧存档/外部引用；当前绘制走 _crop_texture_for()
+## 浮岛温室：可反季种植
+var allow_any_season := false
+var _crop_tex: Texture2D = null  ## 保留字段兼容旧存档/外部引用；当前绘制走 _crop_texture_for()
 
 signal interacted(plot: FarmPlot)
 
