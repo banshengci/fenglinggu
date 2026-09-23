@@ -52,6 +52,7 @@ func _build_entities() -> void:
 	const CommissionBoardScript := preload("res://scripts/entities/commission_board.gd")
 	const MuseumScript := preload("res://scripts/entities/museum_building.gd")
 	const PadScript := preload("res://scripts/entities/furniture_pad.gd")
+	const ShrineScript := preload("res://scripts/entities/wind_shrine.gd")
 
 	var bin = ShippingBinScript.new()
 	bin.position = Vector2(180, 300)
@@ -112,6 +113,28 @@ func _build_entities() -> void:
 	var museum = MuseumScript.new()
 	museum.position = Vector2(420, 160)
 	entities_root.add_child(museum)
+
+	var shrine = ShrineScript.new()
+	shrine.area_id = "town"
+	shrine.position = Vector2(600, 320)
+	entities_root.add_child(shrine)
+	# 热气球：空中航线 → 浮岛农场
+	var balloon = PortalScript.new()
+	balloon.target_area = "sky_farm"
+	balloon.target_floor = 0
+	balloon.custom_label = "乘热气球登上浮岛"
+	balloon.position = Vector2(720, 280)
+	entities_root.add_child(balloon)
+	# 议事会告示板
+	var CouncilScript := preload("res://scripts/entities/council_board.gd")
+	var council = CouncilScript.new()
+	council.position = Vector2(500, 240)
+	entities_root.add_child(council)
+	# 联赛奖杯架
+	var TrophyScript := preload("res://scripts/entities/trophy_shelf.gd")
+	var shelf = TrophyScript.new()
+	shelf.position = Vector2(380, 240)
+	entities_root.add_child(shelf)
 
 	for i in 4:
 		var pad = PadScript.new()
@@ -294,6 +317,8 @@ func try_interact() -> void:
 		target.interact(player)
 
 func _unhandled_input(event: InputEvent) -> void:
+	if get_tree().paused:
+		return
 	if event.is_action_pressed("interact") or event.is_action_pressed("use_tool"):
 		try_interact()
 		get_viewport().set_input_as_handled()
@@ -328,40 +353,74 @@ func on_save_restore() -> void:
 	EventBus.crop_state_changed.emit()
 
 func _draw() -> void:
-	# 田园底色
-	draw_rect(Rect2(-80, -40, 1360, 800), Color("#8FB56F"))
+	# 田园底色：有 tile 则铺贴图
+	var grass := ArtPipeline.tex("tile_grass")
+	if grass:
+		var x := -80.0
+		while x < 1280:
+			var y := -40.0
+			while y < 760:
+				draw_texture_rect(grass, Rect2(x, y, 32, 32), false)
+				y += 32
+			x += 32
+	else:
+		draw_rect(Rect2(-80, -40, 1360, 800), Color("#8FB56F"))
 	# 天气叠色
-	match RanchWeather.weather:
-		"细雨":
-			draw_rect(Rect2(-80, -40, 1360, 800), Color(0.5, 0.6, 0.7, 0.18))
-		"雾":
-			draw_rect(Rect2(-80, -40, 1360, 800), Color(0.8, 0.8, 0.85, 0.28))
-		"小雪":
-			draw_rect(Rect2(-80, -40, 1360, 800), Color(0.9, 0.9, 1.0, 0.22))
-		"风暴前夜":
-			draw_rect(Rect2(-80, -40, 1360, 800), Color(0.3, 0.3, 0.45, 0.25))
-		"多云":
-			draw_rect(Rect2(-80, -40, 1360, 800), Color(0.7, 0.7, 0.7, 0.12))
+	# 天气叠色（性能档可关）
+	if not GameState.get_flag("low_fx", false):
+		match RanchWeather.weather:
+			"细雨":
+				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.5, 0.6, 0.7, 0.18))
+			"雾":
+				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.8, 0.8, 0.85, 0.28))
+			"小雪":
+				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.9, 0.9, 1.0, 0.22))
+			"风暴前夜":
+				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.3, 0.3, 0.45, 0.25))
+			"多云":
+				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.7, 0.7, 0.7, 0.12))
 	# 草地斑块
 	for i in 18:
 		var x := 40.0 + i * 70.0
 		var y := 620.0 + sin(i * 0.7) * 40.0
 		draw_circle(Vector2(x, y), 28.0, Color("#7FA36A"))
 	# 小路
-	draw_rect(Rect2(160, 250, 44, 330), Color("#D2B48C"))
-	draw_rect(Rect2(160, 250, 230, 40), Color("#D2B48C"))
-	draw_rect(Rect2(600, 160, 90, 44), Color("#D2B48C"))
-	draw_rect(Rect2(1020, 230, 80, 40), Color("#D2B48C"))
+	var path := ArtPipeline.tex("tile_path")
+	if path:
+		for i in 10:
+			draw_texture_rect(path, Rect2(160, 250 + i * 33, 44, 33), false)
+		for i in 7:
+			draw_texture_rect(path, Rect2(160 + i * 33, 250, 33, 40), false)
+	else:
+		draw_rect(Rect2(160, 250, 44, 330), Color("#D2B48C"))
+		draw_rect(Rect2(160, 250, 230, 40), Color("#D2B48C"))
+		draw_rect(Rect2(600, 160, 90, 44), Color("#D2B48C"))
+		draw_rect(Rect2(1020, 230, 80, 40), Color("#D2B48C"))
+	# 杂货摊
+	var shop := ArtPipeline.building("shop")
+	if shop:
+		draw_texture_rect(shop, Rect2(460, 220, 80, 50), false)
 	# 水池
 	draw_circle(Vector2(1050, 380), 56.0, Color("#5A90B8"))
 	draw_circle(Vector2(1050, 380), 48.0, Color("#8FC0D8"))
 	draw_circle(Vector2(1035, 365), 10.0, Color(1, 1, 1, 0.25))
-	# 屋舍
-	draw_rect(Rect2(200, 130, 90, 60), Color("#E8D4B0"))
-	draw_colored_polygon(PackedVector2Array([
-		Vector2(190, 132), Vector2(245, 100), Vector2(300, 132)
-	]), Color("#B08968"))
-	draw_rect(Rect2(235, 150, 22, 40), Color("#6B5340"))
+	# 屋舍：优先贴图
+	var house := ArtPipeline.building("house")
+	if house:
+		draw_texture_rect(house, Rect2(190, 120, 110, 80), false)
+	else:
+		draw_rect(Rect2(200, 130, 90, 60), Color("#E8D4B0"))
+		draw_colored_polygon(PackedVector2Array([
+			Vector2(190, 132), Vector2(245, 100), Vector2(300, 132)
+		]), Color("#B08968"))
+		draw_rect(Rect2(235, 150, 22, 40), Color("#6B5340"))
+	# 风铃塔
+	var tower := ArtPipeline.building("belltower")
+	if tower:
+		draw_texture_rect(tower, Rect2(610, 120, 60, 100), false)
+	else:
+		draw_rect(Rect2(628, 150, 24, 70), Color("#A8B8C0"))
+		draw_circle(Vector2(640, 140), 12.0, Color("#E8C87A"))
 	# 栅栏示意
 	for i in 8:
 		draw_rect(Rect2(220 + i * 36, 400, 4, 18), Color("#C4A574"))

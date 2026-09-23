@@ -7,13 +7,8 @@ const STEPS := [
 	{"id": "till", "text": "选中锄头，对荒地按 E 翻地", "done": false},
 	{"id": "plant", "text": "选中种子播种", "done": false},
 	{"id": "water", "text": "选中水壶浇水", "done": false},
-	{"id": "sleep", "text": "回屋在床上按 T 睡觉，进入第二天", "done": false},
-	{"id": "harvest", "text": "作物成熟后按 E 收获", "done": false},
-	{"id": "sell", "text": "到出货箱卖掉农产品", "done": false},
-	{"id": "talk", "text": "和林爷爷聊聊天", "done": false},
-	{"id": "mine", "text": "到镇东雾晶矿洞挖点矿", "done": false},
-	{"id": "bell", "text": "收集风铃碎片，修复风铃塔", "done": false},
-	{"id": "chapter5", "text": "推进主线至风之祭（5 枚风铃）", "done": false},
+	{"id": "harvest", "text": "睡觉到第二天后按 E 收获", "done": false},
+	{"id": "talk", "text": "和林爷爷聊聊，了解风铃", "done": false},
 ]
 
 var steps: Array = []

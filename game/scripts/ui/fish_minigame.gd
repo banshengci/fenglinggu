@@ -16,6 +16,20 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	visible = false
 	add_to_group("fish_ui")
+	var btn := Button.new()
+	btn.text = "起竿"
+	btn.custom_minimum_size = Vector2(120, 56)
+	btn.anchor_left = 0.5
+	btn.anchor_top = 1.0
+	btn.anchor_right = 0.5
+	btn.anchor_bottom = 1.0
+	btn.offset_left = -60
+	btn.offset_top = -70
+	btn.offset_right = 60
+	btn.offset_bottom = -12
+	btn.button_down.connect(func(): set_meta("hold", true))
+	btn.button_up.connect(func(): set_meta("hold", false))
+	add_child(btn)
 
 func play_round(fish_id: String) -> void:
 	_fish_id = fish_id
@@ -39,12 +53,13 @@ func _process(delta: float) -> void:
 		_pos = clampf(_pos, 0.0, 1.0)
 	_time_left -= delta
 	var in_zone := _pos >= _zone and _pos <= _zone + _zone_w
-	if in_zone:
+	var holding := Input.is_action_pressed("interact") or Input.is_action_pressed("use_tool") or bool(get_meta("hold", false))
+	if in_zone and holding:
 		_ok_time += delta
 	else:
 		_ok_time = maxf(0.0, _ok_time - delta * 0.5)
 	if tip:
-		tip.text = "把指针停在亮条内 %.1fs / 1.0s（剩余 %.1fs）" % [_ok_time, maxf(_time_left, 0.0)]
+		tip.text = "按住「起竿」停在亮条内 %.1fs / 1.0s（剩余 %.1fs）" % [_ok_time, maxf(_time_left, 0.0)]
 	queue_redraw()
 	if _ok_time >= 1.0:
 		_finish(true)

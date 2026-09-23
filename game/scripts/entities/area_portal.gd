@@ -2,20 +2,34 @@ extends "res://scripts/entities/interactable.gd"
 class_name AreaPortal
 ## 区域出入口 / 矿洞楼梯
 
-@export var target_area := "town"   # town | mine
+@export var target_area := "town"   # town | mine | sky_farm | sky_cliff
 @export var target_floor := 0      # 矿洞层索引，town 为 0
 @export var locked := false
 @export var lock_hint := "似乎需要先修好风铃。"
+@export var custom_label := ""
 
 func _ready() -> void:
+	if custom_label != "":
+		display_name = custom_label
+	else:
+		match target_area:
+			"mine":
+				display_name = "进入雾晶矿洞" if target_floor == 0 else "深入下一层"
+			"town":
+				display_name = "返回翠谷镇" if target_floor < 0 else "返回地面"
+			"sky_farm":
+				display_name = "登上浮岛农场"
+			"sky_cliff":
+				display_name = "前往星风崖"
+			_:
+				display_name = "通道"
 	match target_area:
 		"mine":
-			display_name = "进入雾晶矿洞" if target_floor == 0 else "深入下一层"
-		"town":
-			display_name = "返回翠谷镇" if target_floor < 0 else "返回地面"
+			color = Color("#8FC0D8")
+		"sky_farm", "sky_cliff":
+			color = Color("#E8D48A")
 		_:
-			display_name = "通道"
-	color = Color("#8FC0D8") if target_area == "mine" else Color("#C4B090")
+			color = Color("#C4B090")
 	size = Vector2(28, 28)
 	super._ready()
 

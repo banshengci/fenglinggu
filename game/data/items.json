@@ -98,6 +98,14 @@
     "color": "#B8956C",
     "desc": "建造与合成的基础材料。"
   },
+  "star_bell_part": {
+    "id": "star_bell_part",
+    "name": "星风铃部件",
+    "type": "quest",
+    "sell_price": 0,
+    "color": "#E8D48A",
+    "desc": "风蚀迷宫守卫留下的星尘部件，可组装星风铃。"
+  },
   "stone": {
     "id": "stone",
     "name": "石块",

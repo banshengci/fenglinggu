@@ -6,8 +6,12 @@ dist/
 
 # Runner（含 Token）
 .runner
+.runner.lock
 tools/runner.log
 tools/runner.err.log
+tools/runner-err.log
+tools/runner-out.log
+tools/act_runner.exe
 
 # 中间产物
 docs/art/_raw_scratch/

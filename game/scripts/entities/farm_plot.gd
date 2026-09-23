@@ -14,12 +14,15 @@ var growth_days := 0
 var regrow_left := 0
 var ready_to_harvest := false
 var flash_quality := false
-var _crop_tex: Texture2D = null  ## 保留字段兼容旧存档/外部引用；当前绘制走 _crop_texture_for()
+	## 浮岛温室：可反季种植
+	var allow_any_season := false
+	var _crop_tex: Texture2D = null  ## 保留字段兼容旧存档/外部引用；当前绘制走 _crop_texture_for()
 
 signal interacted(plot: FarmPlot)
 
 func _ready() -> void:
 	add_to_group("daily_tick")
+	add_to_group("farm_plots")
 	queue_redraw()
 
 func on_new_day() -> void:
@@ -78,7 +81,7 @@ func try_till() -> bool:
 func try_plant(crop: String) -> bool:
 	if state != State.TILLED or crop_id != "":
 		return false
-	if not CropDb.can_plant_in_season(crop, TimeSystem.season()):
+	if not allow_any_season and not CropDb.can_plant_in_season(crop, TimeSystem.season()):
 		EventBus.toast.emit("%s 不适合在 %s 种植" % [CropDb.crop_name(crop), TimeSystem.season()])
 		return false
 	state = State.PLANTED
@@ -245,7 +248,11 @@ func _draw() -> void:
 			var mod := Color(1.35, 1.35, 1.15) if (ready_to_harvest and flash_quality) else Color.WHITE
 			draw_texture_rect(crop_tex, Rect2(-10, -16, 20, 20), false, mod)
 			if ready_to_harvest:
-				draw_circle(Vector2(0, -8), 3.0, Color("#FFF2A8"))
+				var fx := ArtPipeline.tex("fx_harvest")
+				if fx:
+					draw_texture_rect(fx, Rect2(-12, -20, 24, 24), false)
+				else:
+					draw_circle(Vector2(0, -8), 3.0, Color("#FFF2A8"))
 		else:
 			var stages: int = CropDb.get_stages(crop_id)
 			var col: Color
@@ -260,7 +267,11 @@ func _draw() -> void:
 			draw_circle(Vector2(-5, 2), 3.0 + stage, col.darkened(0.1))
 			draw_circle(Vector2(5, 2), 3.0 + stage, col.darkened(0.1))
 			if ready_to_harvest:
-				draw_circle(Vector2(0, -8), 3.0, Color("#FFF2A8"))
+				var fx := ArtPipeline.tex("fx_harvest")
+				if fx:
+					draw_texture_rect(fx, Rect2(-12, -20, 24, 24), false)
+				else:
+					draw_circle(Vector2(0, -8), 3.0, Color("#FFF2A8"))
 	# 浇水标记
 	if watered and state != State.GRASS:
 		draw_circle(Vector2(TILE * 0.5 - 5, -TILE * 0.5 + 5), 3.0, Color("#7EC8E3"))

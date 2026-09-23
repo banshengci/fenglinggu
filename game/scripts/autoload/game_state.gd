@@ -59,6 +59,9 @@ func to_dict() -> Dictionary:
 		"season_events": SeasonEvents.to_dict(),
 		"festival_games": FestivalGames.to_dict(),
 		"ranch": RanchWeather.to_dict(),
+		"wind": WindDb.to_dict(),
+		"bond": BondDb.to_dict(),
+		"league": SeasonLeague.to_dict(),
 	}
 
 func from_dict(d: Dictionary) -> void:
@@ -79,6 +82,9 @@ func from_dict(d: Dictionary) -> void:
 	SeasonEvents.from_dict(d.get("season_events", {}))
 	FestivalGames.from_dict(d.get("festival_games", {}))
 	RanchWeather.from_dict(d.get("ranch", {}))
+	WindDb.from_dict(d.get("wind", {}))
+	BondDb.from_dict(d.get("bond", {}))
+	SeasonLeague.from_dict(d.get("league", {}))
 
 func start_new_game_plus() -> void:
 	var museum := MuseumDb.to_dict()

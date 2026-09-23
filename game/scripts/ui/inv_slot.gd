@@ -4,7 +4,10 @@ extends Button
 func setup(item_id: String, count: int, selected: bool) -> void:
 	var item_name := ItemDb.item_name(item_id)
 	var col := ItemDb.get_color(item_id)
-	text = "%s\n×%d" % [item_name, count]
+	var icon := ArtPipeline.item_icon(item_id)
+	if icon:
+		set_button_icon(icon)
+	text = "%s×%d" % [item_name, count]
 	modulate = Color(1.2, 1.2, 1.0) if selected else Color.WHITE
 	var style := StyleBoxFlat.new()
 	style.bg_color = col.darkened(0.15)

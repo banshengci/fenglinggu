@@ -50,5 +50,9 @@ func on_save_restore() -> void:
 func _draw() -> void:
 	draw_rect(Rect2(-14, -10, 28, 20), Color(0.2, 0.2, 0.2, 0.2))
 	if placed_id != "":
-		draw_rect(Rect2(-10, -12, 20, 16), ItemDb.get_color(placed_id))
-		draw_circle(Vector2(0, -16), 5.0, ItemDb.get_color(placed_id).lightened(0.2))
+		var tex := ArtPipeline.item_icon(placed_id)
+		if tex:
+			draw_texture_rect(tex, Rect2(-12, -14, 24, 24), false)
+		else:
+			draw_rect(Rect2(-10, -12, 20, 16), ItemDb.get_color(placed_id))
+			draw_circle(Vector2(0, -16), 5.0, ItemDb.get_color(placed_id).lightened(0.2))

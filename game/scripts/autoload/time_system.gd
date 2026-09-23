@@ -18,7 +18,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if paused:
 		return
-	_accum += delta
+	_accum += delta * (SysPrefs.time_scale() if SysPrefs else 1.0)
 	var step := MINUTES_PER_GAME_MINUTE
 	while _accum >= step:
 		_accum -= step
@@ -66,6 +66,8 @@ func force_sleep() -> void:
 	minute = 0
 	_accum = 0.0
 	EventBus.day_started.emit(day, season())
+	if SeasonLeague:
+		SeasonLeague.run_today_league()
 	EventBus.time_changed.emit(hour, minute)
 	EventBus.toast.emit("新的一天：%s" % format_date())
 

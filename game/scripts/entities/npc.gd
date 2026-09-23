@@ -41,12 +41,17 @@ func interact(_player: Node) -> void:
 		lines = heart.get("lines", lines)
 		EventBus.toast.emit("心事件：%s" % str(heart.get("title", "")))
 	var fp := GameState.friendship_of(npc_id)
-	if fp >= 90:
-		lines.append("（羁绊已达最深处 · 终生挚友）")
-	elif fp >= 50:
-		lines.append("（羁绊很深）")
-	elif fp >= 20:
-		lines.append("（已成为朋友）")
+	var bond := ""
+	if BondDb.can_confess(npc_id):
+		bond = "（可以告白了 · 按 G）"
+		lines.append("（对方似乎在等你说些什么……）")
+	elif BondDb.can_wedding() and BondDb.partner_id == npc_id:
+		bond = "（可以举办婚礼 · 按 H）"
+		lines.append("（风铃已经准备好了。）")
+	else:
+		bond = BondDb.bond_text(npc_id)
+	if bond != "":
+		lines.append(bond)
 	EventBus.dialogue_started.emit(lines.duplicate(), npc_id)
 
 func _held_gift() -> String:

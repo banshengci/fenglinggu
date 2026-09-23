@@ -1,0 +1,19 @@
+{
+  "wind_words": [
+    {"id": "breeze", "name": "微风", "note": 0, "color": "#C8E0D0", "desc": "掠过指尖的轻响", "where": "town", "how": "晴天在镇上聆听"},
+    {"id": "dawn", "name": "晨风", "note": 1, "color": "#E8C87A", "desc": "带露水的第一口气", "where": "farm_valley", "how": "清晨 6-8 点聆听"},
+    {"id": "lake", "name": "湖风", "note": 2, "color": "#8FC0D8", "desc": "水面推来的凉意", "where": "lakeside", "how": "湖畔聆听"},
+    {"id": "grove", "name": "林风", "note": 3, "color": "#6B8F5A", "desc": "树叶集体呼吸", "where": "forest", "how": "风车林中聆听"},
+    {"id": "vale", "name": "谷风", "note": 4, "color": "#D2B48C", "desc": "回荡的山谷回声", "where": "cliff_top", "how": "风脊崖顶聆听"},
+    {"id": "snow", "name": "雪风", "note": 5, "color": "#E8F0F5", "desc": "细雪打旋的声音", "where": "wild_woods", "how": "静雪冬雪天聆听"},
+    {"id": "star", "name": "星风", "note": 6, "color": "#A8D8E8", "desc": "夜空很近时的风", "where": "cliff_top", "how": "夜晚聆听"},
+    {"id": "heart", "name": "心风", "note": 7, "color": "#E8A0B0", "desc": "想起来就会柔软", "where": "festival", "how": "风之祭后在广场聆听"}
+  ],
+  "melodies": [
+    {"id": "growth", "name": "生长之歌", "notes": [0, 2, 4, 2], "buff": "今日作物生长加成", "desc": "让苗儿多长一寸"},
+    {"id": "friendship", "name": "同心谣", "notes": [1, 3, 5, 3], "buff": "今日好感获取提升", "desc": "让镇民心情变好"},
+    {"id": "luck", "name": "拾穗调", "notes": [4, 2, 0, 2], "buff": "今日掉率提升", "desc": "让篮子更满"},
+    {"id": "calm", "name": "安眠曲", "notes": [5, 3, 1, 3], "buff": "明日天气偏好", "desc": "给夜空一个好梦"}
+  ],
+  "play_slots": 4
+}

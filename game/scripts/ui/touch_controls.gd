@@ -8,6 +8,21 @@ var move_vector := Vector2.ZERO
 func _ready() -> void:
 	visible = DisplayServer.is_touchscreen_available()
 	set_process_unhandled_input(visible)
+	_add_btn("背包", Vector2(1180, 420), "open_inventory")
+	_add_btn("合成", Vector2(1180, 490), "open_craft")
+	_add_btn("地图", Vector2(1180, 560), "open_map")
+	_add_btn("关", Vector2(1180, 630), "ui_cancel")
+
+func _add_btn(label: String, pos: Vector2, action: String) -> void:
+	var b := Button.new()
+	b.text = label
+	b.custom_minimum_size = Vector2(64, 48)
+	b.position = pos - Vector2(32, 24)
+	var icon := ArtPipeline.ui("icon_" + action)
+	if icon:
+		b.icon = icon
+	b.pressed.connect(func(): Input.action_press(action); Input.action_release(action))
+	add_child(b)
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventScreenTouch:

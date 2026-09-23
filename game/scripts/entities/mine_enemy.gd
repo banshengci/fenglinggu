@@ -63,12 +63,18 @@ func _drop_loot() -> void:
 		EventBus.toast.emit("晶核里嵌着风铃碎片！")
 
 func _draw() -> void:
-	var c := body_color
-	if _hit_flash > 0.0:
-		c = Color.WHITE
-	draw_circle(Vector2.ZERO, body_size * 0.5, c)
-	draw_circle(Vector2.ZERO, body_size * 0.5, c.darkened(0.35), false, 2.0)
-	# 眼睛
+	var tex := ArtPipeline.tex("enemy_%s_0" % type_id)
+	if tex == null:
+		tex = ArtPipeline.tex("enemy_%s" % type_id)
+	if tex and _hit_flash <= 0.0:
+		var s := body_size * 2.0
+		draw_texture_rect(tex, Rect2(-s * 0.5, -s * 0.5, s, s), false)
+	else:
+		var c := body_color
+		if _hit_flash > 0.0:
+			c = Color.WHITE
+		draw_circle(Vector2.ZERO, body_size * 0.5, c)
+		draw_circle(Vector2.ZERO, body_size * 0.5, c.darkened(0.35), false, 2.0)
 	draw_circle(Vector2(-4, -3), 2.0, Color("#1A2418"))
 	draw_circle(Vector2(4, -3), 2.0, Color("#1A2418"))
 	# 血条

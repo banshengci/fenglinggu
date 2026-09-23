@@ -3,6 +3,7 @@ extends Node
 
 const TownWorldScript := preload("res://scripts/world.gd")
 const MineLevelScript := preload("res://scripts/mine_level.gd")
+const MazeLevelScript := preload("res://scripts/maze_level.gd")
 const OverworldScript := preload("res://scripts/overworld_area.gd")
 const PlayerScript := preload("res://scripts/player.gd")
 
@@ -38,6 +39,8 @@ func _ready() -> void:
 func is_area_unlocked(area: String) -> bool:
 	if area == "town" or area == "mine":
 		return true
+	if area == "maze":
+		return is_area_unlocked("cliff_top") or StoryDb.bells_repaired >= 3
 	if WorldMapDb.data.size() > 0 and not WorldMapDb.region(area).is_empty():
 		return WorldMapDb.is_unlocked(area)
 	return area in StoryDb.unlocked_areas()
@@ -75,7 +78,14 @@ func travel_to(area: String, floor_idx: int = 0, silent: bool = false) -> void:
 			current_level.player = player
 			host.add_child(current_level)
 			player.position = Vector2(120, 400)
-		"lakeside", "forest", "festival", "farm_valley", "wild_woods", "cliff_top", "pasture", "mine_camp", "plaza":
+		"maze":
+			current_level = MazeLevelScript.new()
+			current_level.floor_index = current_floor
+			current_level.maze_session = mine_session
+			current_level.player = player
+			host.add_child(current_level)
+			player.position = Vector2(120, 400)
+		"lakeside", "forest", "festival", "farm_valley", "wild_woods", "cliff_top", "pasture", "mine_camp", "plaza", "sky_farm", "sky_cliff":
 			current_level = OverworldScript.new()
 			current_level.area_id = area
 			current_level.player = player

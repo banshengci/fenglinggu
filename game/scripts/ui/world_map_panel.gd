@@ -63,6 +63,9 @@ func _wander() -> void:
 func _unhandled_input(event: InputEvent) -> void:
 	if not visible:
 		return
-	if event.is_action_pressed("ui_cancel") or event.is_action_pressed("open_map"):
+	if event.is_action_pressed("ui_cancel") \
+		or event.is_action_pressed("interact") \
+		or event.is_action_pressed("use_tool") \
+		or event.is_action_pressed("open_map"):
 		close()
 		get_viewport().set_input_as_handled()

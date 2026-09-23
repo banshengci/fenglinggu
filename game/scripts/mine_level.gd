@@ -206,6 +206,8 @@ func try_interact() -> void:
 		target.interact(player)
 
 func _unhandled_input(event: InputEvent) -> void:
+	if get_tree().paused:
+		return
 	if event.is_action_pressed("interact") or event.is_action_pressed("use_tool"):
 		try_interact()
 		get_viewport().set_input_as_handled()

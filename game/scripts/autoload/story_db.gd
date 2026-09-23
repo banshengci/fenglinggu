@@ -112,6 +112,9 @@ func unlocked_areas() -> Array:
 		out.append("mine")
 	if bells_repaired >= 2:
 		out.append("lakeside")
+		out.append("sky_farm")
+	if bells_repaired >= 3:
+		out.append("sky_cliff")
 	if bells_repaired >= 3:
 		out.append("forest")
 	if bells_repaired >= 4:

@@ -21,6 +21,8 @@ var _palette := {
 	"cliff_top": {"ground": Color("#8A9AAA"), "accent": Color("#C0D0E0"), "name": "风脊崖顶", "desc": "风很大，星星很低。"},
 	"pasture": {"ground": Color("#A8C870"), "accent": Color("#E0E8A0"), "name": "南坡牧场", "desc": "动物与牧草的气味。"},
 	"mine_camp": {"ground": Color("#5C5C6A"), "accent": Color("#A0A8B0"), "name": "矿营", "desc": "帐篷、炉火与镐子。"},
+	"sky_farm": {"ground": Color("#B8D8E8"), "accent": Color("#E8D48A"), "name": "浮岛农场", "desc": "云上的温室，风语花正开。"},
+	"sky_cliff": {"ground": Color("#8A9AAA"), "accent": Color("#E8F0F5"), "name": "星风崖", "desc": "离星空最近的风口。"},
 }
 
 func _ready() -> void:
@@ -53,8 +55,70 @@ func _build() -> void:
 			_build_cliff()
 		"mine_camp":
 			_build_mine_camp()
+		"sky_farm":
+			_build_sky_farm()
+		"sky_cliff":
+			_build_sky_cliff()
 		_:
 			_build_meadow()
+
+func _build_sky_farm() -> void:
+	var shrine = preload("res://scripts/entities/wind_shrine.gd").new()
+	shrine.area_id = "sky_farm"
+	shrine.position = Vector2(480, 300)
+	entities_root.add_child(shrine)
+	# 浮岛温室：反季种植田
+	var FarmPlotScript := preload("res://scripts/entities/farm_plot.gd")
+	for i in range(6):
+		for j in range(4):
+			var p = FarmPlotScript.new()
+			p.grid = Vector2i(i, j)
+			p.allow_any_season = true
+			p.position = Vector2(200 + i * 40, 360 + j * 40)
+			entities_root.add_child(p)
+	var chest = ChestScript.new()
+	chest.position = Vector2(760, 220)
+	entities_root.add_child(chest)
+	# 返回镇上 + 通往星风崖
+	var PortalScript := preload("res://scripts/entities/area_portal.gd")
+	var home = PortalScript.new()
+	home.target_area = "town"
+	home.target_floor = 0
+	home.custom_label = "乘热气球返回翠谷镇"
+	home.position = Vector2(120, 200)
+	entities_root.add_child(home)
+	var to_cliff = PortalScript.new()
+	to_cliff.target_area = "sky_cliff"
+	to_cliff.target_floor = 0
+	to_cliff.custom_label = "前往星风崖"
+	to_cliff.position = Vector2(880, 300)
+	entities_root.add_child(to_cliff)
+	for i in 6:
+		var pad = preload("res://scripts/entities/furniture_pad.gd").new()
+		pad.position = Vector2(360 + i * 50, 420)
+		entities_root.add_child(pad)
+
+func _build_sky_cliff() -> void:
+	var shrine = preload("res://scripts/entities/wind_shrine.gd").new()
+	shrine.area_id = "sky_cliff"
+	shrine.position = Vector2(560, 260)
+	entities_root.add_child(shrine)
+	var chest = ChestScript.new()
+	chest.position = Vector2(900, 360)
+	entities_root.add_child(chest)
+	var PortalScript := preload("res://scripts/entities/area_portal.gd")
+	var home = PortalScript.new()
+	home.target_area = "town"
+	home.target_floor = 0
+	home.custom_label = "乘热气球返回翠谷镇"
+	home.position = Vector2(140, 220)
+	entities_root.add_child(home)
+	var to_farm = PortalScript.new()
+	to_farm.target_area = "sky_farm"
+	to_farm.target_floor = 0
+	to_farm.custom_label = "返回浮岛农场"
+	to_farm.position = Vector2(320, 360)
+	entities_root.add_child(to_farm)
 
 func _build_meadow() -> void:
 	for i in 6:
@@ -77,6 +141,14 @@ func _build_cliff() -> void:
 	var chest = ChestScript.new()
 	chest.position = Vector2(720, 280)
 	entities_root.add_child(chest)
+	# 风蚀迷宫入口
+	var PortalScript := preload("res://scripts/entities/area_portal.gd")
+	var maze = PortalScript.new()
+	maze.target_area = "maze"
+	maze.target_floor = 0
+	maze.custom_label = "踏入风蚀迷宫"
+	maze.position = Vector2(200, 200)
+	entities_root.add_child(maze)
 	var r = ResourceNodeScript.new()
 	r.resource_id = "mythril_shard"
 	r.position = Vector2(520, 360)
@@ -186,6 +258,8 @@ func try_interact() -> void:
 		target.interact(player)
 
 func _unhandled_input(event: InputEvent) -> void:
+	if get_tree().paused:
+		return
 	if event.is_action_pressed("interact") or event.is_action_pressed("use_tool"):
 		try_interact()
 		get_viewport().set_input_as_handled()

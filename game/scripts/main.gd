@@ -13,6 +13,7 @@ extends Node
 @onready var museum_ui: Control = $UI/MuseumPanel
 @onready var look_ui: Control = $UI/LookPanel
 @onready var settings_ui: Control = $UI/SettingsPanel
+@onready var harp_ui: Control = $UI/WindHarp
 @onready var area_manager: Node = $AreaManager
 
 var _game_started := false
@@ -32,6 +33,18 @@ func _ready() -> void:
 
 func _on_world_travel(region_id: String) -> void:
 	area_manager.travel_to(region_id)
+
+func _try_confess_key() -> void:
+	for id in GameState.friendship:
+		if BondDb.can_confess(str(id)):
+			BondDb.try_confess(str(id))
+			return
+	EventBus.toast.emit("还没有可以告白的对象（羁绊 80+）")
+
+func _try_wedding_key() -> void:
+	if BondDb.try_wedding():
+		return
+	EventBus.toast.emit("还不能举办婚礼（需伴侣羁绊 120+）")
 	world_map_ui.close()
 
 func _on_start(load_save: bool) -> void:
@@ -85,6 +98,10 @@ func _unhandled_input(event: InputEvent) -> void:
 		else:
 			_close_panels_except(craft_ui)
 			craft_ui.open_station("workbench")
+	elif event is InputEventKey and event.pressed and event.keycode == KEY_G:
+		_try_confess_key()
+	elif event is InputEventKey and event.pressed and event.keycode == KEY_H:
+		_try_wedding_key()
 		get_viewport().set_input_as_handled()
 	elif event.is_action_pressed("ui_cancel"):
 		if inventory_ui.visible:
@@ -114,6 +131,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		get_viewport().set_input_as_handled()
 	elif event.is_action_pressed("open_map"):
 		world_map_ui.toggle()
+		get_viewport().set_input_as_handled()
+	elif event.is_physical_key_pressed(KEY_G):
+		harp_ui.toggle()
 		get_viewport().set_input_as_handled()
 	elif event.is_physical_key_pressed(KEY_U):
 		museum_ui.toggle()

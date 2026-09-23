@@ -51,8 +51,11 @@ func hit(damage: int = 1) -> void:
 
 func _draw() -> void:
 	var s := size.x * 0.5 + (2 - _hp) * 1.5
-	draw_circle(Vector2.ZERO, s, color)
-	draw_rect(Rect2(-s, -s, s * 2, s * 2), color.darkened(0.3), false, 2.0)
-	# 裂纹
+	var tex := ArtPipeline.tex("prop_mine_rock")
+	if tex:
+		draw_texture_rect(tex, Rect2(-s, -s, s * 2, s * 2), false)
+	else:
+		draw_circle(Vector2.ZERO, s, color)
+		draw_rect(Rect2(-s, -s, s * 2, s * 2), color.darkened(0.3), false, 2.0)
 	if _hp < hp:
 		draw_line(Vector2(-4, -3), Vector2(4, 5), Color(0, 0, 0, 0.35), 1.5)

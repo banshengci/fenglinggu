@@ -18,6 +18,18 @@ func _ready() -> void:
 	visible = false
 	next_label.text = "E / 空格 继续"
 
+func show_cutscene(key: String) -> void:
+	var tex := ArtPipeline.tex(key)
+	if tex:
+		var img := TextureRect.new()
+		img.texture = tex
+		img.expand_mode = TextureRect.EXPAND_IGNORE_SIZE
+		img.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
+		img.custom_minimum_size = Vector2(400, 220)
+		add_child(img)
+		await get_tree().create_timer(2.5).timeout
+		img.queue_free()
+
 func _on_start(lines: Array, npc_id: String) -> void:
 	_lines = lines
 	_index = 0
