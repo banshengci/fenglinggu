@@ -18,26 +18,23 @@ jobs:
       image: barichello/godot-ci:4.3
     steps:
       - uses: actions/checkout@v4
-      - name: Install export templates
+      - name: Install templates
         shell: bash
         run: |
           set -e
-          (command -v curl >/dev/null || apt-get update -qq && apt-get install -y -qq curl unzip wget) || true
-          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}"
-          if command -v curl >/dev/null; then
-            curl -L -o /tmp/tpl.tpz "$TPL_URL"
-          else
-            wget -q -O /tmp/tpl.tpz "$TPL_URL"
-          fi
+          command -v curl >/dev/null || apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq curl unzip wget ca-certificates
+          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}" "$PWD/dist" "$PWD/game/dist"
+          wget -q -O /tmp/tpl.tpz "$TPL_URL" || curl -L -o /tmp/tpl.tpz "$TPL_URL"
           unzip -qo /tmp/tpl.tpz -d /tmp/tpl
           cp -a /tmp/tpl/templates/. "$HOME/.local/share/godot/export_templates/${TPL_VER}/"
-          ls "$HOME/.local/share/godot/export_templates/${TPL_VER}/" | head
+          ls "$HOME/.local/share/godot/export_templates/${TPL_VER}/" | wc -l
       - name: Export Windows
         shell: bash
         run: |
-          mkdir -p dist
-          godot --headless --path game --export-release "Windows Desktop" "dist/fenglinggu_win_${GAME_VERSION}.exe"
-          ls -lh dist/
+          set -e
+          OUT="$PWD/dist/fenglinggu_win_${GAME_VERSION}.exe"
+          godot --headless --path "$PWD/game" --export-release "Windows Desktop" "$OUT"
+          ls -lh "$OUT"
       - uses: actions/upload-artifact@v4
         with:
           name: fenglinggu-win-${{ env.GAME_VERSION }}
@@ -49,21 +46,22 @@ jobs:
       image: barichello/godot-ci:4.3
     steps:
       - uses: actions/checkout@v4
-      - name: Install export templates
+      - name: Install templates
         shell: bash
         run: |
           set -e
-          (command -v curl >/dev/null || apt-get update -qq && apt-get install -y -qq curl unzip wget) || true
-          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}"
-          if command -v curl >/dev/null; then curl -L -o /tmp/tpl.tpz "$TPL_URL"; else wget -q -O /tmp/tpl.tpz "$TPL_URL"; fi
+          command -v curl >/dev/null || apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq curl unzip wget ca-certificates
+          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}" "$PWD/dist"
+          wget -q -O /tmp/tpl.tpz "$TPL_URL" || curl -L -o /tmp/tpl.tpz "$TPL_URL"
           unzip -qo /tmp/tpl.tpz -d /tmp/tpl
           cp -a /tmp/tpl/templates/. "$HOME/.local/share/godot/export_templates/${TPL_VER}/"
       - name: Export Linux
         shell: bash
         run: |
-          mkdir -p dist
-          godot --headless --path game --export-release "Linux" "dist/fenglinggu_linux_${GAME_VERSION}.x86_64"
-          ls -lh dist/
+          set -e
+          OUT="$PWD/dist/fenglinggu_linux_${GAME_VERSION}.x86_64"
+          godot --headless --path "$PWD/game" --export-release "Linux" "$OUT"
+          ls -lh "$OUT"
       - uses: actions/upload-artifact@v4
         with:
           name: fenglinggu-linux-${{ env.GAME_VERSION }}
@@ -75,21 +73,22 @@ jobs:
       image: barichello/godot-ci:4.3
     steps:
       - uses: actions/checkout@v4
-      - name: Install export templates
+      - name: Install templates
         shell: bash
         run: |
           set -e
-          (command -v curl >/dev/null || apt-get update -qq && apt-get install -y -qq curl unzip wget) || true
-          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}"
-          if command -v curl >/dev/null; then curl -L -o /tmp/tpl.tpz "$TPL_URL"; else wget -q -O /tmp/tpl.tpz "$TPL_URL"; fi
+          command -v curl >/dev/null || apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq curl unzip wget ca-certificates
+          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}" "$PWD/dist/web"
+          wget -q -O /tmp/tpl.tpz "$TPL_URL" || curl -L -o /tmp/tpl.tpz "$TPL_URL"
           unzip -qo /tmp/tpl.tpz -d /tmp/tpl
           cp -a /tmp/tpl/templates/. "$HOME/.local/share/godot/export_templates/${TPL_VER}/"
       - name: Export Web
         shell: bash
         run: |
-          mkdir -p dist/web
-          godot --headless --path game --export-release "Web" "dist/web/index.html"
-          ls -lh dist/web/
+          set -e
+          OUT="$PWD/dist/web/index.html"
+          godot --headless --path "$PWD/game" --export-release "Web" "$OUT"
+          ls -lh "$PWD/dist/web/" | head
       - uses: actions/upload-artifact@v4
         with:
           name: fenglinggu-web-${{ env.GAME_VERSION }}
@@ -97,36 +96,37 @@ jobs:
 
   android:
     runs-on: ubuntu-latest
-    container:
-      image: barichello/godot-ci:4.3
     steps:
       - uses: actions/checkout@v4
-      - name: Install export templates
-        shell: bash
-        run: |
-          set -e
-          (command -v curl >/dev/null || apt-get update -qq && apt-get install -y -qq curl unzip wget) || true
-          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}"
-          if command -v curl >/dev/null; then curl -L -o /tmp/tpl.tpz "$TPL_URL"; else wget -q -O /tmp/tpl.tpz "$TPL_URL"; fi
-          unzip -qo /tmp/tpl.tpz -d /tmp/tpl
-          cp -a /tmp/tpl/templates/. "$HOME/.local/share/godot/export_templates/${TPL_VER}/"
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: "17"
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
-      - name: Accept SDK and make keystore
+      - name: Install Godot + templates
+        shell: bash
+        run: |
+          set -e
+          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}" "$PWD/dist" tools
+          curl -L -o /tmp/godot.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VER}/Godot_v${GODOT_VER}_linux.x86_64.zip"
+          unzip -q /tmp/godot.zip -d tools
+          GODOT_BIN="$(find tools -name 'Godot*' -type f | head -1)"
+          echo "GODOT_BIN=$PWD/$GODOT_BIN" >> $GITHUB_ENV
+          curl -L -o /tmp/tpl.tpz "$TPL_URL"
+          unzip -qo /tmp/tpl.tpz -d /tmp/tpl
+          cp -a /tmp/tpl/templates/. "$HOME/.local/share/godot/export_templates/${TPL_VER}/"
+      - name: Keystore and SDK packages
         shell: bash
         run: |
           set -e
           yes | sdkmanager --licenses >/dev/null || true
           sdkmanager "platforms;android-33" "build-tools;33.0.2" "platform-tools"
-          mkdir -p dist "$HOME/.config/godot"
-          keytool -genkeypair -v -keystore dist/debug.keystore -alias androiddebugkey \
+          keytool -genkeypair -v -keystore "$PWD/dist/debug.keystore" -alias androiddebugkey \
             -keyalg RSA -keysize 2048 -validity 10000 \
             -storepass android -keypass android \
             -dname "CN=FengLingGu Debug, OU=Dev, O=WindChime, L=NA, S=NA, C=CN"
+          mkdir -p "$HOME/.config/godot"
           cat > "$HOME/.config/godot/editor_settings-4.3.tres" <<EOF
           [gd_resource type="EditorSettings" format=3]
           [resource]
@@ -145,31 +145,28 @@ jobs:
           p = Path("game/export_presets.cfg")
           t = p.read_text(encoding="utf-8")
           keystore = str(Path("dist/debug.keystore").resolve()).replace("\\", "/")
-          repl = {
+          for key, val in {
               "keystore/debug": f'"{keystore}"',
               "keystore/debug_user": '"androiddebugkey"',
               "keystore/debug_password": '"android"',
               "keystore/release": f'"{keystore}"',
               "keystore/release_user": '"androiddebugkey"',
               "keystore/release_password": '"android"',
-              "version/code": "1",
-              "version/name": '"0.01"',
-          }
-          for key, val in repl.items():
+          }.items():
               if re.search(rf"^{re.escape(key)}=", t, re.M):
                   t = re.sub(rf"^{re.escape(key)}=.*$", f"{key}={val}", t, flags=re.M)
               else:
                   t = t.replace("[preset.3.options]", f"[preset.3.options]\n{key}={val}", 1)
           p.write_text(t, encoding="utf-8")
-          print("preset patched")
+          print("android preset patched")
           PY
       - name: Export Android APK
         shell: bash
         run: |
           set -e
-          mkdir -p dist
-          godot --headless --path game --export-release "Android" "dist/fenglinggu_${GAME_VERSION}.apk"
-          ls -lh dist/
+          OUT="$PWD/dist/fenglinggu_${GAME_VERSION}.apk"
+          "$GODOT_BIN" --headless --path "$PWD/game" --export-release "Android" "$OUT"
+          ls -lh "$OUT"
       - uses: actions/upload-artifact@v4
         with:
           name: fenglinggu-android-${{ env.GAME_VERSION }}
@@ -185,6 +182,7 @@ jobs:
         shell: bash
         run: |
           set -e
+          mkdir -p "$PWD/dist/ios"
           curl -L -o /tmp/godot.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VER}/Godot_v${GODOT_VER}_macos.universal.zip"
           unzip -q /tmp/godot.zip -d /tmp/godot
           GODOT_BIN="/tmp/godot/Godot.app/Contents/MacOS/Godot"
@@ -197,16 +195,15 @@ jobs:
         shell: bash
         run: |
           set -e
-          mkdir -p dist/ios
-          "$GODOT_BIN" --headless --path game --export-release "iOS" "dist/ios/fenglinggu.xcodeproj"
-          cd dist/ios
-          zip -qr "fenglinggu_ios_${GAME_VERSION}_xcode.zip" . -x "*.zip"
-          echo "自签：Xcode Archive → Export Development 得 IPA，或 AltStore/Sideloadly"
-          ls -lh
+          OUT="$PWD/dist/ios/fenglinggu.xcodeproj"
+          "$GODOT_BIN" --headless --path "$PWD/game" --export-release "iOS" "$OUT"
+          cd "$PWD/dist/ios"
+          zip -qr "../fenglinggu_ios_${GAME_VERSION}_xcode.zip" .
+          ls -lh "$PWD/dist"
       - uses: actions/upload-artifact@v4
         with:
           name: fenglinggu-ios-${{ env.GAME_VERSION }}-xcode
-          path: dist/ios/
+          path: dist/
           if-no-files-found: ignore
 
   macos:
@@ -218,6 +215,7 @@ jobs:
         shell: bash
         run: |
           set -e
+          mkdir -p "$PWD/dist"
           curl -L -o /tmp/godot.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VER}/Godot_v${GODOT_VER}_macos.universal.zip"
           unzip -q /tmp/godot.zip -d /tmp/godot
           GODOT_BIN="/tmp/godot/Godot.app/Contents/MacOS/Godot"
@@ -230,9 +228,9 @@ jobs:
         shell: bash
         run: |
           set -e
-          mkdir -p dist
-          "$GODOT_BIN" --headless --path game --export-release "macOS" "dist/fenglinggu_${GAME_VERSION}.zip"
-          ls -lh dist/
+          OUT="$PWD/dist/fenglinggu_${GAME_VERSION}.zip"
+          "$GODOT_BIN" --headless --path "$PWD/game" --export-release "macOS" "$OUT"
+          ls -lh "$OUT"
       - uses: actions/upload-artifact@v4
         with:
           name: fenglinggu-macos-${{ env.GAME_VERSION }}
