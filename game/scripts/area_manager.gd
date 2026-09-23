@@ -31,6 +31,15 @@ func _ready() -> void:
 	shape.size = Vector2(18, 22)
 	col.shape = shape
 	player.add_child(col)
+	# 跟随相机：走出屏幕时视野随人走，地图可继续扩
+	var cam := Camera2D.new()
+	cam.name = "PlayerCam"
+	cam.enabled = true
+	cam.make_current()
+	cam.zoom = Vector2(1.0, 1.0)
+	cam.position_smoothing_enabled = true
+	cam.position_smoothing_speed = 8.0
+	player.add_child(cam)
 	add_child(player)
 	player.position = Vector2(300, 360)
 

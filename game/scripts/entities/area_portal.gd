@@ -51,8 +51,9 @@ func prompt() -> String:
 func _draw() -> void:
 	var r := Rect2(-size * 0.5, size)
 	if locked:
-		draw_rect(r, Color(0.2, 0.2, 0.25, 0.7))
-		draw_rect(r, Color("#E05555"), false, 2.0)
+		# 未解锁：浅色虚影，避免满屏黑方块
+		draw_rect(r, Color(1, 1, 1, 0.08))
+		draw_circle(Vector2(0, size.y * 0.5), 8.0, Color(1, 1, 1, 0.12))
 		return
 	draw_rect(r, color)
 	draw_rect(r, color.darkened(0.35), false, 2.0)

@@ -21,7 +21,11 @@ func _ready() -> void:
 	EventBus.hud_refresh.connect(_refresh_all)
 	EventBus.inventory_changed.connect(_show_hotbar)
 	toast_label.modulate.a = 0.0
-	help_label.text = "WASD移动 · E交互 · I背包 · C合成 · M地图 · U图鉴 · O外观 · F1设置 · P拍照 · Esc暂停"
+	var touch_on := DisplayServer.is_touchscreen_available() or OS.has_feature("mobile")
+	if help_label:
+		help_label.visible = not touch_on
+		if not touch_on:
+			help_label.text = "WASD移动 · E交互 · I背包 · C合成 · M地图 · U图鉴 · O外观 · F1设置 · P拍照 · Esc暂停"
 	_refresh_all()
 
 func _refresh_all() -> void:
@@ -41,6 +45,11 @@ func _refresh_all() -> void:
 func _show_hotbar() -> void:
 	if hint_label == null:
 		return
+	var touch_on := DisplayServer.is_touchscreen_available() or OS.has_feature("mobile")
+	if touch_on:
+		hint_label.visible = false
+		return
+	hint_label.visible = true
 	var parts: PackedStringArray = []
 	for i in 4:
 		var n := i + 1

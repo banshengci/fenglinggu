@@ -54,6 +54,9 @@ func _physics_process(_delta: float) -> void:
 		# 停下即回到静止帧，避免停在抬腿姿势上
 		_anim_t = 0.0
 	move_and_slide()
+	# 限制在扩展后的世界范围内，相机跟随可看到更大地图
+	position.x = clampf(position.x, 20.0, 2400.0)
+	position.y = clampf(position.y, 20.0, 1500.0)
 	_sync_hand_color()
 	queue_redraw()
 

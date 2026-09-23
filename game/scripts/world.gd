@@ -364,21 +364,21 @@ func _draw() -> void:
 				y += 32
 			x += 32
 	else:
-		draw_rect(Rect2(-80, -40, 1360, 800), Color("#8FB56F"))
+		draw_rect(Rect2(-80, -40, 2560, 1600), Color("#8FB56F"))
 	# 天气叠色
 	# 天气叠色（性能档可关）
 	if not GameState.get_flag("low_fx", false):
 		match RanchWeather.weather:
 			"细雨":
-				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.5, 0.6, 0.7, 0.18))
+				draw_rect(Rect2(-80, -40, 2560, 1600), Color(0.5, 0.6, 0.7, 0.18))
 			"雾":
-				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.8, 0.8, 0.85, 0.28))
+				draw_rect(Rect2(-80, -40, 2560, 1600), Color(0.8, 0.8, 0.85, 0.28))
 			"小雪":
-				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.9, 0.9, 1.0, 0.22))
+				draw_rect(Rect2(-80, -40, 2560, 1600), Color(0.9, 0.9, 1.0, 0.22))
 			"风暴前夜":
-				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.3, 0.3, 0.45, 0.25))
+				draw_rect(Rect2(-80, -40, 2560, 1600), Color(0.3, 0.3, 0.45, 0.25))
 			"多云":
-				draw_rect(Rect2(-80, -40, 1360, 800), Color(0.7, 0.7, 0.7, 0.12))
+				draw_rect(Rect2(-80, -40, 2560, 1600), Color(0.7, 0.7, 0.7, 0.12))
 	# 草地斑块
 	for i in 18:
 		var x := 40.0 + i * 70.0

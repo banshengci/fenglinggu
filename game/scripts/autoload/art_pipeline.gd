@@ -43,10 +43,18 @@ const ORE_ALIAS := {
 var _cache: Dictionary = {}
 
 
+func _ok_tex(t: Texture2D) -> Texture2D:
+	# 1x1 占位图拉伸会变成纯色方块，直接当缺图处理，走程序化回退
+	if t == null:
+		return null
+	if t.get_width() < 8 or t.get_height() < 8:
+		return null
+	return t
+
 func tex(key: String) -> Texture2D:
 	if _cache.has(key):
 		return _cache[key]
-	var t := _try_load(key)
+	var t := _ok_tex(_try_load(key))
 	_cache[key] = t
 	return t
 
@@ -56,7 +64,7 @@ func mapped(kind: String, id: String) -> Texture2D:
 	var rel: String = ArtIdMap.path_of(kind, id)
 	if rel == "":
 		return null
-	return _load_rel(rel)
+	return _ok_tex(_load_rel(rel))
 
 
 ## 成熟作物图；传 stage>=0 时优先取该生长阶段图，取不到逐级回退到更早阶段。
