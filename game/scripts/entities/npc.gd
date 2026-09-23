@@ -43,10 +43,10 @@ func interact(_player: Node) -> void:
 	var fp := GameState.friendship_of(npc_id)
 	var bond := ""
 	if BondDb.can_confess(npc_id):
-		bond = "（可以告白了 · 按 G）"
+		bond = "（可以告白了 · 电脑按 J / 手机点「告白」）"
 		lines.append("（对方似乎在等你说些什么……）")
 	elif BondDb.can_wedding() and BondDb.partner_id == npc_id:
-		bond = "（可以举办婚礼 · 按 H）"
+		bond = "（可以举办婚礼 · 电脑按 H / 手机点「婚礼」）"
 		lines.append("（风铃已经准备好了。）")
 	else:
 		bond = BondDb.bond_text(npc_id)

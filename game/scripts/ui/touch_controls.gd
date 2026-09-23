@@ -1,27 +1,41 @@
 extends Control
-## 虚拟摇杆（触屏）
+## 触屏端操作层（手机）：左侧虚拟摇杆 + 右侧功能键
+## 电脑端默认隐藏，走键鼠/手柄
 
 var _touch_index := -1
 var _origin := Vector2.ZERO
 var move_vector := Vector2.ZERO
 
 func _ready() -> void:
-	visible = DisplayServer.is_touchscreen_available()
+	var touch_on := DisplayServer.is_touchscreen_available() or OS.has_feature("mobile")
+	visible = touch_on
 	set_process_unhandled_input(visible)
-	_add_btn("背包", Vector2(1180, 420), "open_inventory")
-	_add_btn("合成", Vector2(1180, 490), "open_craft")
-	_add_btn("地图", Vector2(1180, 560), "open_map")
-	_add_btn("关", Vector2(1180, 630), "ui_cancel")
+	if not visible:
+		return
+	# 右侧功能键：竖排，大拇指可及
+	var col := 1180.0
+	_add_btn("交互", Vector2(col, 300), "interact", Vector2(88, 52))
+	_add_btn("使用", Vector2(col, 360), "use_tool", Vector2(88, 52))
+	_add_btn("风琴", Vector2(col, 420), "open_harp", Vector2(88, 52))
+	_add_btn("告白", Vector2(col, 480), "bond_confess", Vector2(88, 52))
+	_add_btn("婚礼", Vector2(col, 540), "bond_wedding", Vector2(88, 52))
+	_add_btn("背包", Vector2(col, 600), "open_inventory", Vector2(88, 52))
+	_add_btn("合成", Vector2(col, 660), "open_craft", Vector2(88, 52))
+	_add_btn("地图", Vector2(col, 720), "open_map", Vector2(88, 52))
+	_add_btn("关", Vector2(80, 40), "ui_cancel", Vector2(64, 48))
 
-func _add_btn(label: String, pos: Vector2, action: String) -> void:
+func _add_btn(label: String, pos: Vector2, action: String, sz: Vector2 = Vector2(64, 48)) -> void:
 	var b := Button.new()
 	b.text = label
-	b.custom_minimum_size = Vector2(64, 48)
-	b.position = pos - Vector2(32, 24)
+	b.custom_minimum_size = sz
+	b.position = pos - sz * 0.5
 	var icon := ArtPipeline.ui("icon_" + action)
 	if icon:
 		b.icon = icon
-	b.pressed.connect(func(): Input.action_press(action); Input.action_release(action))
+	b.pressed.connect(func():
+		Input.action_press(action)
+		Input.action_release(action)
+	)
 	add_child(b)
 
 func _input(event: InputEvent) -> void:

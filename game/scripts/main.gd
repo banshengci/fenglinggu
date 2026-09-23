@@ -98,9 +98,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		else:
 			_close_panels_except(craft_ui)
 			craft_ui.open_station("workbench")
-	elif event is InputEventKey and event.pressed and event.keycode == KEY_G:
+	elif event.is_action_pressed("bond_confess"):
 		_try_confess_key()
-	elif event is InputEventKey and event.pressed and event.keycode == KEY_H:
+	elif event.is_action_pressed("bond_wedding"):
 		_try_wedding_key()
 		get_viewport().set_input_as_handled()
 	elif event.is_action_pressed("ui_cancel"):
@@ -124,7 +124,7 @@ func _unhandled_input(event: InputEvent) -> void:
 				if area_manager:
 					area_manager.heal_full()
 		get_viewport().set_input_as_handled()
-	elif event.is_physical_key_pressed(KEY_H):
+	elif event.is_physical_key_pressed(KEY_R):
 		if area_manager:
 			area_manager.heal_full()
 			EventBus.toast.emit("原地休整，HP 回满。")
@@ -132,7 +132,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event.is_action_pressed("open_map"):
 		world_map_ui.toggle()
 		get_viewport().set_input_as_handled()
-	elif event.is_physical_key_pressed(KEY_G):
+	elif event.is_action_pressed("open_harp"):
 		harp_ui.toggle()
 		get_viewport().set_input_as_handled()
 	elif event.is_physical_key_pressed(KEY_U):
