@@ -108,7 +108,7 @@ func rebuild() -> void:
 		list_box.add_child(btn)
 
 func _setup_qte() -> void:
-	var QteScript := preload("res://scripts/ui/craft_qte.gd")
+	var QteScript = preload("res://scripts/ui/craft_qte.gd")
 	_qte = QteScript.new()
 	_qte.name = "CraftQte"
 	get_tree().root.add_child.call_deferred(_qte)

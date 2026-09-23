@@ -31,10 +31,10 @@ func _npc_label(npc_id: String) -> String:
 		return npc_id
 	if NpcDb.has_method("npc_name"):
 		return str(NpcDb.npc_name(npc_id))
-	if NpcDb.has_method("get_name"):
-		return str(NpcDb.get_name(npc_id))
-	var info: Dictionary = NpcDb.get_npc(npc_id) if NpcDb.has_method("get_npc") else {}
-	return str(info.get("name", npc_id))
+	if NpcDb.has_method("get_npc"):
+		var info: Dictionary = NpcDb.get_npc(npc_id)
+		return str(info.get("name", info.get("id", npc_id)))
+	return npc_id
 
 func _player_gold() -> int:
 	if Inventory != null and "money" in Inventory:

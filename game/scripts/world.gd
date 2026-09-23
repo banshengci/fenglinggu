@@ -126,12 +126,12 @@ func _build_entities() -> void:
 	balloon.position = Vector2(720, 280)
 	entities_root.add_child(balloon)
 	# 议事会告示板
-	var CouncilScript := preload("res://scripts/entities/council_board.gd")
+	var CouncilScript = preload("res://scripts/entities/council_board.gd")
 	var council = CouncilScript.new()
 	council.position = Vector2(500, 240)
 	entities_root.add_child(council)
 	# 联赛奖杯架
-	var TrophyScript := preload("res://scripts/entities/trophy_shelf.gd")
+	var TrophyScript = preload("res://scripts/entities/trophy_shelf.gd")
 	var shelf = TrophyScript.new()
 	shelf.position = Vector2(380, 240)
 	entities_root.add_child(shelf)

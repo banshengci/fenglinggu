@@ -68,7 +68,7 @@ func _build_sky_farm() -> void:
 	shrine.position = Vector2(480, 300)
 	entities_root.add_child(shrine)
 	# 浮岛温室：反季种植田
-	var FarmPlotScript := preload("res://scripts/entities/farm_plot.gd")
+	var FarmPlotScript = preload("res://scripts/entities/farm_plot.gd")
 	for i in range(6):
 		for j in range(4):
 			var p = FarmPlotScript.new()
@@ -80,7 +80,7 @@ func _build_sky_farm() -> void:
 	chest.position = Vector2(760, 220)
 	entities_root.add_child(chest)
 	# 返回镇上 + 通往星风崖
-	var PortalScript := preload("res://scripts/entities/area_portal.gd")
+	var PortalScript = preload("res://scripts/entities/area_portal.gd")
 	var home = PortalScript.new()
 	home.target_area = "town"
 	home.target_floor = 0
@@ -106,7 +106,7 @@ func _build_sky_cliff() -> void:
 	var chest = ChestScript.new()
 	chest.position = Vector2(900, 360)
 	entities_root.add_child(chest)
-	var PortalScript := preload("res://scripts/entities/area_portal.gd")
+	var PortalScript = preload("res://scripts/entities/area_portal.gd")
 	var home = PortalScript.new()
 	home.target_area = "town"
 	home.target_floor = 0
@@ -142,7 +142,7 @@ func _build_cliff() -> void:
 	chest.position = Vector2(720, 280)
 	entities_root.add_child(chest)
 	# 风蚀迷宫入口
-	var PortalScript := preload("res://scripts/entities/area_portal.gd")
+	var PortalScript = preload("res://scripts/entities/area_portal.gd")
 	var maze = PortalScript.new()
 	maze.target_area = "maze"
 	maze.target_floor = 0
@@ -159,7 +159,7 @@ func _build_cliff() -> void:
 	entities_root.add_child(r2)
 
 func _build_pasture() -> void:
-	var PenScript := preload("res://scripts/entities/animal_pen.gd")
+	var PenScript = preload("res://scripts/entities/animal_pen.gd")
 	var pen = PenScript.new()
 	pen.position = Vector2(520, 320)
 	entities_root.add_child(pen)
