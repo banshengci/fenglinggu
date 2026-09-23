@@ -1,0 +1,115 @@
+name: build-0.01
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+env:
+  GAME_VERSION: "0.01"
+
+jobs:
+  windows:
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export Windows
+        run: |
+          mkdir -p dist
+          godot --headless --path game --export-release "Windows Desktop" "dist/fenglinggu_win_${GAME_VERSION}.exe"
+          ls -lh dist/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fenglinggu-win-${{ env.GAME_VERSION }}
+          path: dist/
+
+  linux:
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export Linux
+        run: |
+          mkdir -p dist
+          godot --headless --path game --export-release "Linux" "dist/fenglinggu_linux_${GAME_VERSION}.x86_64"
+          ls -lh dist/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fenglinggu-linux-${{ env.GAME_VERSION }}
+          path: dist/
+
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export macOS
+        run: |
+          mkdir -p dist
+          echo "需在 macos runner 安装 Godot 后导出；此处仅预留任务位"
+          # godot --headless --path game --export-release "macOS" "dist/fenglinggu_${GAME_VERSION}.zip"
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fenglinggu-macos-${{ env.GAME_VERSION }}
+          path: dist/
+          if-no-files-found: ignore
+
+  web:
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export Web
+        run: |
+          mkdir -p dist/web
+          godot --headless --path game --export-release "Web" "dist/web/index.html"
+          ls -lh dist/web/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fenglinggu-web-${{ env.GAME_VERSION }}
+          path: dist/web/
+
+  android:
+    runs-on: ubuntu-latest
+    container:
+      image: barichello/godot-ci:4.3
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export Android APK
+        run: |
+          mkdir -p dist
+          keytool -genkeypair -v -keystore dist/debug.keystore -alias androiddebugkey \
+            -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass android -keypass android \
+            -dname "CN=FengLingGu Debug, OU=Dev, O=WindChime, L=NA, S=NA, C=CN"
+          export GODOT_ANDROID_KEYSTORE_RELEASE_PATH="$PWD/dist/debug.keystore"
+          export GODOT_ANDROID_KEYSTORE_RELEASE_USER=androiddebugkey
+          export GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD=android
+          godot --headless --path game --export-release "Android" "dist/fenglinggu_${GAME_VERSION}.apk"
+          ls -lh dist/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fenglinggu-android-${{ env.GAME_VERSION }}
+          path: dist/
+
+  ios:
+    runs-on: macos-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export iOS (xcodeproj)
+        run: |
+          mkdir -p dist
+          echo "iOS 需签名证书，流水线预留；请本地 Xcode 导出"
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fenglinggu-ios-${{ env.GAME_VERSION }}
+          path: dist/
+          if-no-files-found: ignore

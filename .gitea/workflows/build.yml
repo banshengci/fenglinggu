@@ -14,7 +14,7 @@ jobs:
       - name: Export Windows
         run: |
           mkdir -p dist
-          godot --headless --path game --export-release "Windows Desktop" dist/fenglinggu_win.exe
+          godot --headless --path game --export-release "Windows Desktop" dist/fenglinggu_win_0.01.exe
           ls -lh dist/
 
   web:
