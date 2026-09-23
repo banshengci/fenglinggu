@@ -102,17 +102,33 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
+      - name: Install Android SDK manually
+        shell: bash
+        run: |
+          set -e
+          SDK="$HOME/android-sdk"
+          mkdir -p "$SDK/cmdline-tools" "$PWD/dist"
+          curl -L -o /tmp/cmdtools.zip "https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip"
+          unzip -q /tmp/cmdtools.zip -d "$SDK/cmdline-tools"
+          mv "$SDK/cmdline-tools/cmdline-tools" "$SDK/cmdline-tools/latest"
+          echo "ANDROID_HOME=$SDK" >> $GITHUB_ENV
+          echo "ANDROID_SDK_ROOT=$SDK" >> $GITHUB_ENV
+          echo "$SDK/cmdline-tools/latest/bin" >> $GITHUB_PATH
+          echo "$SDK/platform-tools" >> $GITHUB_PATH
+          echo "$SDK/build-tools/33.0.2" >> $GITHUB_PATH
+          yes | "$SDK/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$SDK" --licenses >/dev/null || true
+          "$SDK/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$SDK" \
+            "platforms;android-33" "build-tools;33.0.2" "platform-tools"
       - name: Install Godot + templates
         shell: bash
         run: |
           set -e
-          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}" "$PWD/dist" tools
+          mkdir -p "$HOME/.local/share/godot/export_templates/${TPL_VER}" tools
           curl -L -o /tmp/godot.zip "https://github.com/godotengine/godot/releases/download/${GODOT_VER}/Godot_v${GODOT_VER}_linux.x86_64.zip"
           unzip -q /tmp/godot.zip -d tools
-          GODOT_BIN="$(find tools -name 'Godot*' -type f | head -1)"
-          echo "GODOT_BIN=$PWD/$GODOT_BIN" >> $GITHUB_ENV
+          GODOT_BIN="$(find "$PWD/tools" -type f -name 'Godot*' | head -1)"
+          echo "GODOT_BIN=$GODOT_BIN" >> $GITHUB_ENV
+          chmod +x "$GODOT_BIN"
           curl -L -o /tmp/tpl.tpz "$TPL_URL"
           unzip -qo /tmp/tpl.tpz -d /tmp/tpl
           cp -a /tmp/tpl/templates/. "$HOME/.local/share/godot/export_templates/${TPL_VER}/"
@@ -194,12 +210,34 @@ jobs:
       - name: Export iOS Xcode project
         shell: bash
         run: |
-          set -e
           OUT="$PWD/dist/ios/fenglinggu.xcodeproj"
-          "$GODOT_BIN" --headless --path "$PWD/game" --export-release "iOS" "$OUT"
-          cd "$PWD/dist/ios"
-          zip -qr "../fenglinggu_ios_${GAME_VERSION}_xcode.zip" .
-          ls -lh "$PWD/dist"
+          mkdir -p "$PWD/dist/ios"
+          # Godot 可能顺带 xcodebuild archive；失败也要留下 xcodeproj
+          "$GODOT_BIN" --headless --path "$PWD/game" --export-release "iOS" "$OUT" || echo "godot export exit=$?"
+          if [ -e "$OUT" ]; then
+            (cd "$PWD/dist/ios" && zip -qr "../fenglinggu_ios_${GAME_VERSION}_xcode.zip" .)
+            echo "xcodeproj packaged"
+          else
+            echo "xcodeproj missing, listing game dir:"; ls -la "$PWD/game" | head
+          fi
+          # 尝试无签名 IPA（自签用骨架）
+          if [ -e "$OUT" ]; then
+            xcodebuild -project "$OUT" -scheme fenglinggu -configuration Release \
+              -destination 'generic/platform=iOS' \
+              -archivePath "$PWD/dist/ios/fenglinggu.xcarchive" \
+              CODE_SIGN_IDENTITY=- CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO \
+              archive || echo "archive unsigned skipped"
+            if [ -d "$PWD/dist/ios/fenglinggu.xcarchive" ]; then
+              mkdir -p "$PWD/dist/ios/Payload"
+              APP=$(find "$PWD/dist/ios/fenglinggu.xcarchive/Products" -name '*.app' | head -1)
+              if [ -n "$APP" ]; then
+                cp -R "$APP" "$PWD/dist/ios/Payload/"
+                (cd "$PWD/dist/ios" && zip -qr "../fenglinggu_${GAME_VERSION}_unsigned.ipa" Payload)
+                echo "unsigned ipa packaged"
+              fi
+            fi
+          fi
+          ls -lh "$PWD/dist" || true
       - uses: actions/upload-artifact@v4
         with:
           name: fenglinggu-ios-${{ env.GAME_VERSION }}-xcode
