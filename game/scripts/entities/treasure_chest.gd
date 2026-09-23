@@ -34,7 +34,8 @@ func interact(_player: Node) -> void:
 func prompt() -> String:
 	return "E：打开宝箱" if not opened else "空宝箱"
 
-func _draw() -> void:
+func _art_tex() -> Texture2D:
+	return ArtPipeline.tex("prop_treasure_chest")
 	var key := "prop_treasure_chest_open" if opened else "prop_treasure_chest"
 	var tex := ArtPipeline.tex(key)
 	if tex:

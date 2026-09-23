@@ -35,7 +35,7 @@ func _ready() -> void:
 	var cam := Camera2D.new()
 	cam.name = "PlayerCam"
 	cam.enabled = true
-	cam.make_current()
+	cam.make_current.call_deferred()
 	cam.zoom = Vector2(1.0, 1.0)
 	cam.position_smoothing_enabled = true
 	cam.position_smoothing_speed = 8.0

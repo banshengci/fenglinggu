@@ -58,6 +58,18 @@ func prompt() -> String:
 		return "E：采集 %s" % display_name
 	return "%s（待重生）" % display_name
 
+func _art_tex() -> Texture2D:
+	var map := {
+		"wood": "tree_summer_broadleaf",
+		"stone": "prop_rock_pile",
+		"fiber": "prop_grass_tuft",
+		"wind_shard": "icon_windchime_shard",
+	}
+	var key: String = map.get(resource_id, "")
+	if key == "":
+		return null
+	return ArtPipeline.tex(key)
+
 func _draw() -> void:
 	if not available:
 		draw_rect(Rect2(-size * 0.5, size), Color(0.3, 0.3, 0.3, 0.35))
