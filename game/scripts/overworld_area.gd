@@ -26,6 +26,8 @@ var _palette := {
 }
 
 func _ready() -> void:
+	var pal0: Dictionary = _palette.get(area_id, _palette["lakeside"])
+	RenderingServer.set_default_clear_color(pal0.get("ground", Color("#9BC47A")))
 	entities_root = Node2D.new()
 	add_child(entities_root)
 	_build()
@@ -266,7 +268,7 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func _draw() -> void:
 	var pal: Dictionary = _palette.get(area_id, _palette["lakeside"])
-	draw_rect(Rect2(-80, -40, 1360, 800), pal.ground)
+	draw_rect(Rect2(-2000, -2000, 6000, 5000), pal.ground)
 	if area_id == "lakeside":
 		draw_circle(Vector2(700, 360), 180.0, Color("#6BA3C8"))
 		draw_circle(Vector2(700, 360), 160.0, Color("#8FC0D8"))
