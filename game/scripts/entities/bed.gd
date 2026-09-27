@@ -18,3 +18,6 @@ func interact(_player: Node) -> void:
 
 func prompt() -> String:
 	return "E：睡觉（自动存档并到第二天）"
+
+func _art_tex() -> Texture2D:
+	return ArtPipeline.tex("building_bed")

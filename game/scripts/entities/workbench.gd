@@ -24,3 +24,14 @@ func interact(_player: Node) -> void:
 
 func prompt() -> String:
 	return "E：%s（C：合成）" % display_name
+
+func _art_tex() -> Texture2D:
+	var map := {
+		"workbench": "building_workbench",
+		"kitchen": "building_workbench",
+		"carpentry": "building_workbench",
+		"forge": "building_windmill",
+		"crystal_atelier": "building_belltower",
+	}
+	var key: String = map.get(station, "building_workbench")
+	return ArtPipeline.tex(key)

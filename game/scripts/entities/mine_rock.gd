@@ -21,6 +21,12 @@ func interact(_player: Node) -> void:
 func prompt() -> String:
 	return "E/左键：开采（%s）" % ItemDb.item_name(ore_id)
 
+func _art_tex() -> Texture2D:
+	var t := ArtPipeline.ore_rock(ore_id)
+	if t:
+		return t
+	return ArtPipeline.tex("prop_rock_pile")
+
 func hit(damage: int = 1) -> void:
 	var power := 1
 	var ui := get_tree().get_first_node_in_group("inventory_ui")
