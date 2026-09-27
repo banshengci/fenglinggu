@@ -28,7 +28,10 @@ func _ready() -> void:
 	save_btn.text = "存档槽…"
 	load_btn.text = "读档槽…"
 	quit_btn.text = "回到标题"
-	help_label.text = "WASD移动 · E交互 · I背包 · C合成 · M地图 · P拍照 · T睡觉 · H休整 · F2新周目+ · L对话日志"
+	if OS.get_name() in ["Android", "iOS"] or DisplayServer.is_touchscreen_available() or OS.has_feature("mobile"):
+		help_label.text = "摇杆移动 · 右侧按钮操作"
+	else:
+		help_label.text = "WASD移动 · E交互 · I背包 · C合成 · M地图 · P拍照 · T睡觉 · R休整 · F2新周目+ · L对话日志"
 	resume_btn.pressed.connect(func(): resume_requested.emit())
 	save_btn.pressed.connect(func(): _open_slots(true))
 	load_btn.pressed.connect(func(): _open_slots(false))

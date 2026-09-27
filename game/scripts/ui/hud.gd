@@ -12,6 +12,16 @@ extends Control
 
 var _toast_tween: Tween
 
+func _is_touch_ui() -> bool:
+	if OS.get_name() in ["Android", "iOS"]:
+		return true
+	if DisplayServer.is_touchscreen_available():
+		return true
+	if OS.has_feature("mobile"):
+		return true
+	# 触屏层若在场，也视为手机布局
+	return get_tree() != null and get_tree().get_first_node_in_group("touch_controls") != null
+
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	EventBus.time_changed.connect(_on_time)
@@ -21,10 +31,12 @@ func _ready() -> void:
 	EventBus.hud_refresh.connect(_refresh_all)
 	EventBus.inventory_changed.connect(_show_hotbar)
 	toast_label.modulate.a = 0.0
-	var touch_on := DisplayServer.is_touchscreen_available() or OS.has_feature("mobile")
 	if help_label:
-		help_label.visible = not touch_on
-		if not touch_on:
+		if _is_touch_ui():
+			help_label.visible = false
+			help_label.text = ""
+		else:
+			help_label.visible = true
 			help_label.text = "WASD移动 · E交互 · I背包 · C合成 · M地图 · U图鉴 · O外观 · F1设置 · P拍照 · Esc暂停"
 	_refresh_all()
 
@@ -45,9 +57,9 @@ func _refresh_all() -> void:
 func _show_hotbar() -> void:
 	if hint_label == null:
 		return
-	var touch_on := DisplayServer.is_touchscreen_available() or OS.has_feature("mobile")
-	if touch_on:
+	if _is_touch_ui():
 		hint_label.visible = false
+		hint_label.text = ""
 		return
 	hint_label.visible = true
 	var parts: PackedStringArray = []
@@ -90,4 +102,4 @@ func set_hint(text: String) -> void:
 
 func set_help_visible(v: bool) -> void:
 	if help_label:
-		help_label.visible = v
+		help_label.visible = v and not _is_touch_ui()

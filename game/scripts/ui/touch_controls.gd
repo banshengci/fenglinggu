@@ -7,28 +7,35 @@ var _origin := Vector2.ZERO
 var move_vector := Vector2.ZERO
 
 func _ready() -> void:
-	var touch_on := DisplayServer.is_touchscreen_available() or OS.has_feature("mobile")
+	add_to_group("touch_controls")
+	var touch_on := DisplayServer.is_touchscreen_available() or OS.has_feature("mobile") \
+		or OS.get_name() in ["Android", "iOS"]
 	visible = touch_on
 	set_process_unhandled_input(visible)
 	if not visible:
 		return
-	# 右侧功能键：竖排，大拇指可及
-	var col := 1180.0
-	_add_btn("交互", Vector2(col, 300), "interact", Vector2(88, 52))
-	_add_btn("使用", Vector2(col, 360), "use_tool", Vector2(88, 52))
-	_add_btn("风琴", Vector2(col, 420), "open_harp", Vector2(88, 52))
-	_add_btn("告白", Vector2(col, 480), "bond_confess", Vector2(88, 52))
-	_add_btn("婚礼", Vector2(col, 540), "bond_wedding", Vector2(88, 52))
-	_add_btn("背包", Vector2(col, 600), "open_inventory", Vector2(88, 52))
-	_add_btn("合成", Vector2(col, 660), "open_craft", Vector2(88, 52))
-	_add_btn("地图", Vector2(col, 720), "open_map", Vector2(88, 52))
-	_add_btn("关", Vector2(80, 40), "ui_cancel", Vector2(64, 48))
+	# 右侧功能键：小号、半透明，尽量少挡画面
+	var col := 1220.0
+	var y := 120.0
+	var sz := Vector2(72, 40)
+	for item in [
+		["交互", "interact"], ["使用", "use_tool"],
+		["风琴", "open_harp"], ["告白", "bond_confess"],
+		["婚礼", "bond_wedding"], ["背包", "open_inventory"],
+		["合成", "open_craft"], ["地图", "open_map"],
+	]:
+		_add_btn(item[0], Vector2(col, y), item[1], sz)
+		y += 48.0
+	_add_btn("关", Vector2(48, 36), "ui_cancel", Vector2(56, 36))
 
 func _add_btn(label: String, pos: Vector2, action: String, sz: Vector2 = Vector2(64, 48)) -> void:
 	var b := Button.new()
 	b.text = label
 	b.custom_minimum_size = sz
 	b.position = pos - sz * 0.5
+	b.modulate = Color(1, 1, 1, 0.82)
+	b.add_theme_color_override("font_color", Color("#F3EFE4"))
+	b.add_theme_font_size_override("font_size", 13)
 	var icon := ArtPipeline.ui("icon_" + action)
 	if icon:
 		b.icon = icon
